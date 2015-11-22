@@ -1,0 +1,415 @@
+.col-md-12 {
+  width: 100%;
+}
+
+.col-md-11 {
+  width: 91.66666666666666%;
+}
+
+.col-md-10 {
+  width: 83.33333333333334%;
+}
+
+.col-md-9 {
+  width: 75%;
+}
+
+.col-md-8 {
+  width: 66.66666666666666%;
+}
+
+.col-md-7 {
+  width: 58.333333333333336%;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+.col-md-5 {
+  width: 41.66666666666667%;
+}
+
+.col-md-4 {
+  width: 33.33333333333333%;
+}
+
+.col-md-3 {
+  width: 25%;
+}
+
+.col-md-2 {
+  width: 16.666666666666664%;
+}
+
+.col-md-1 {
+  width: 8.333333333333332%;
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11 {
+  float: left;
+}
+
+/* add new ---- 29/9 */
+.kopa-top-slide .control-top-slide a:after, .find-cars, .sub-page-slide .content, .control-sub-page-slide li:after {
+  background: transparent url("../images/background/bg-1.png") repeat 0 0;
+}
+
+.kopa-top-slide .intro {
+  background: transparent url("../images/background/bg-4.png") repeat 0 0;
+}
+
+.product-list-1 .thumbnail > *:first-child:before, .kopa-testimonial-2-widget .testimonial-box li:hover a:after, .kopa-testimonial-2-widget .testimonial-box li.active a:after, .kopa-widget-top-slide .item a:after, .kopa-top-product-list-2-widget .item:before, .product-list-1-o .thumbnail:hover:before, .kopa-latest-blogs-widget .product-list-1-o .thumbnail:after, .kopa-product-detail-1-widget .thumbnail:after, .kopa-product-detail-2-widget .thumbnail a:after {
+  background: transparent url("../images/background/bg-o-30.png") repeat 0 0;
+}
+
+.product-list-2 .content:before {
+  background: transparent url("../images/background/bg-o-80.png") repeat 0 0;
+}
+
+/* header */
+#kopa-page-header {
+  z-index: 3;
+}
+
+#main-menu > li > a {
+  background: #d90618;
+}
+#main-menu > li > a:after, #main-menu > li > a:before {
+  display: none;
+}
+#main-menu > li.active > a, #main-menu > li:hover > a {
+  background: #a80110;
+}
+
+.sub-main-menu {
+  background: #000;
+}
+.sub-main-menu .sub-menu > li.active > a, .sub-main-menu .sub-menu > li:hover > a {
+  background-color: #a80110;
+}
+
+/* kopa-top-slide */
+.kopa-top-slide .control-top-slide a {
+  border-width: 2px;
+}
+.kopa-top-slide .control-top-slide a:after {
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+}
+.kopa-top-slide .control-top-slide li.active a {
+  border-width: 3px;
+}
+.kopa-top-slide .control-top-slide li.active a:after {
+  background: none;
+  top: -3px;
+  left: -3px;
+  bottom: -3px;
+  right: -3px;
+}
+
+/* kopa-tab-1*/
+.kopa-tab-1 .nav li a {
+  background: #0e0e0e;
+}
+.kopa-tab-1 .nav li:hover:before, .kopa-tab-1 .nav li.active:before {
+  border-top-color: #d90618;
+}
+.kopa-tab-1 .nav li:hover a, .kopa-tab-1 .nav li.active a {
+  background: #d90618;
+}
+.kopa-tab-1 .nav li:hover a:hover, .kopa-tab-1 .nav li.active a:hover {
+  color: #fff;
+  background: #d90618;
+}
+
+.kopa-button-default.button-gde {
+  background: #d90618;
+}
+
+.checkbox-wrap {
+  padding-left: 20px;
+}
+.checkbox-wrap:after, .checkbox-wrap .fa {
+  display: none;
+}
+.checkbox-wrap input[type="checkbox"] {
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+
+.form-title:after {
+  top: 2px;
+}
+
+.page-nav li:after {
+  top: 0;
+}
+
+#kopa-page-header > div:first-child:after, #kopa-page-header > div:first-child:before {
+  background-image: url("../images/background/shadow-top.png");
+  background-repeat: no-repeat;
+  background-position: 995px 0;
+}
+#kopa-page-header > div:first-child:before {
+  background-position: -5px 0;
+}
+
+.sticky-wrapper .stuck:after, .sticky-wrapper .stuck:before {
+  background-image: url("../images/background/shadow-top.png");
+  background-repeat: no-repeat;
+  background-position: 995px 0;
+}
+.sticky-wrapper .stuck:before {
+  background-position: -5px 0;
+}
+
+.control-sub-page-slide li.active:after, .control-sub-page-slide li:hover:after {
+  background: none;
+}
+
+.kopa-top-slide-2 .intro {
+  background: none;
+}
+
+.logo-image:after {
+  width: auto;
+  left: 10px;
+  right: 10px;
+  margin-left: 0;
+}
+
+.product-list-1 .thumbnail:hover > *:first-child:before, .product-list-1 .thumbnail:hover > *:first-child:after {
+  background: none;
+}
+
+.product-list-1 .flag {
+  padding: 0;
+  height: 28px;
+  line-height: 28px;
+  width: 45px;
+  top: 0;
+  right: 8px;
+}
+.product-list-1 .flag i {
+  padding: 0;
+}
+
+.product-list-2 .thumbnail > *:first-child:before, .product-list-2 .thumbnail > *:first-child:after {
+  background: none;
+}
+.product-list-2 .thumbnail:hover > *:first-child:before, .product-list-2 .thumbnail:hover > *:first-child:after {
+  background: none;
+}
+.product-list-2 .content:after {
+  background: none;
+}
+.product-list-2 .content-title {
+  border-bottom: 1px solid transparent;
+}
+.product-list-2 .info-1, .product-list-2 .kopa-button-default {
+  display: none;
+}
+.product-list-2 .flag {
+  top: 70px;
+  right: 15px;
+}
+.product-list-2 .item:hover .content:after {
+  background: url("../images/background/bottom-prod-fea-hover.png") no-repeat 0 0;
+}
+.product-list-2 .item:hover .content-title {
+  border-bottom: 1px solid #6E6E6D;
+}
+.product-list-2 .item:hover .info-1 {
+  display: block;
+}
+.product-list-2 .item:hover .kopa-button-default {
+  display: inline-block;
+}
+.product-list-2 .item:hover .flag {
+  display: none;
+}
+
+.kopa-newsletter-1-widget .button-skew-1 {
+  margin-right: 0;
+  padding-right: 25px;
+  background-color: #e5091c;
+  border: 1px solid #e5091c;
+}
+
+.hexagon-1:after, .hexagon-1:before {
+  display: none;
+}
+.hexagon-1 > * {
+  width: 48px;
+  margin-left: -24px;
+  border: 1px solid #fff;
+}
+.hexagon-1 > *:after, .hexagon-1 > *:before {
+  display: none;
+}
+
+.kopa-home-1 .find-cars .col-lg-6 {
+  width: 50%;
+}
+.kopa-home-1 .find-cars .col-lg-12 {
+  width: 100%;
+}
+
+.kopa-product-tab-widget .item .flag {
+  top: 8px;
+  right: 15px;
+}
+
+.widget-title-8 .prev {
+  left: -44px;
+}
+
+.product-list-1-o .owl-controls {
+  right: 23px;
+}
+
+.kopa-home-4 .kopa-on-shoping-widget {
+  background-color: white;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity = 70)";
+}
+
+.button-half-skew {
+  background-color: white;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity = 70)";
+  padding: 0 15px;
+}
+.button-half-skew:after {
+  display: none;
+}
+
+.col-md-pull-9 {
+  position: relative;
+  right: 75%;
+}
+
+.col-md-push-3 {
+  position: relative;
+  left: 25%;
+}
+
+.kopa-featured-dealer-1-widget .col-lg-6 {
+  width: 50%;
+  float: left;
+}
+
+.col-md-12.col-lg-9 {
+  width: 75%;
+  float: left;
+}
+
+.col-md-12.col-lg-3 {
+  width: 25%;
+  float: left;
+}
+
+.buttons-box .col-lg-4 {
+  width: 33.3333%;
+}
+.buttons-box .col-lg-8 {
+  width: 66.6666%;
+}
+
+.shop-box .col-lg-4 {
+  width: 33.3333%;
+  float: left;
+}
+.shop-box .col-lg-3 {
+  width: 25%;
+  float: left;
+}
+
+.sub-main-menu-o {
+  margin-left: 0;
+}
+.sub-main-menu-o .sub-menu {
+  background: #000;
+}
+
+.on-shoping-box .item.shopping-cart .h6:before {
+  background: #e5091c;
+}
+
+.kopa-social-widget {
+  background: #e5091c;
+}
+.kopa-social-widget:before {
+  left: -1000px;
+  background: #e5091c;
+}
+.kopa-social-widget:after {
+  display: block;
+}
+
+.kopa-widget-top-slide .item:hover a:after {
+  background: transparent;
+}
+
+.kopa-top-product-list-2-widget .item:hover:before {
+  background: transparent;
+}
+
+.kopa-latest-blogs-widget .product-list-1-o .thumbnail:hover:after {
+  background: transparent;
+}
+
+.kopa-product-detail-1-widget .thumbnail:hover:after {
+  background: transparent;
+}
+
+.kopa-product-detail-2-widget .thumbnail:hover a:after {
+  background: transparent;
+}
+
+.purchase-box .wrapper {
+  padding-right: 170px;
+}
+.purchase-box .button-skew {
+  right: 0;
+}
+
+.kopa-home-2 .col-lg-6 {
+  width: 50%;
+  float: left;
+}
+
+.kopa-top-slide-2 .control-top-slide li.active a {
+  border-width: 2px;
+}
+.kopa-top-slide-2 .control-top-slide li.active a:after {
+  bottom: auto;
+  height: 100%;
+  left: 0;
+  right: auto;
+  top: 0;
+  width: 100%;
+}
+.kopa-top-slide-2 .control-top-slide li a {
+  border-width: 1px;
+}
+.kopa-top-slide-2 .control-top-slide li a:after {
+  bottom: auto;
+  height: 100%;
+  left: 0;
+  right: auto;
+  top: 0;
+  width: 100%;
+}
+
+.kopa-newsletter-1-widget .form-control-wrap-1 {
+  position: relative;
+  padding: 0 10px;
+}
+.kopa-newsletter-1-widget .button-skew-1 {
+  right: 0;
+  padding: 0 22px;
+  width: auto;
+}

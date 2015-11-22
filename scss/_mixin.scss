@@ -1,0 +1,225 @@
+@mixin border-radius($radius: 4px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin border($border) {
+  border: 1px solid $border;
+}
+@mixin opacity($opacity) {
+  opacity:$opacity;  
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity = " + $opacity*100 + ")";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = #{$opacity*100});
+  filter:Alpha(Opacity = $opacity*100); zoom:1;
+}
+@mixin box-shadow($val) {
+  box-shadow: $val;
+  -ms-box-shadow: $val;
+  -moz-box-shadow: $val;
+  -webkit-box-shadow: $val;
+}
+@mixin tuta-float($float,$margin,$list-style) {
+  float: $float;
+  margin: $margin;
+  list-style: $list-style;
+}
+@mixin before-left($top, $bottom, $right, $color) {
+  content: '';
+  position: absolute;
+  border-top: $top solid transparent;
+  border-bottom: $bottom solid transparent;
+  border-right: $right solid $color;
+}
+@mixin before-right($top, $bottom, $left, $color) {
+  content: '';
+  position: absolute;
+  border-top: $top solid transparent;
+  border-bottom: $bottom solid transparent;
+  border-left: $left solid $color;
+}
+@mixin before-bottom($left, $right, $top, $color) {
+  content: '';
+  position: absolute;
+  border-left: $left solid transparent;
+  border-right: $right solid transparent;
+  border-top: $top solid $color;
+}
+@mixin before-top($left, $right, $bottom, $color) {
+  content: '';
+  position: absolute;
+  border-left: $left solid transparent;
+  border-right: $right solid transparent;
+  border-bottom: $bottom solid $color;
+}
+@mixin transition($val: $transition) {
+  transition: $val;
+  -ms-transition: $val;
+  -webkit-transition: $val;
+  -moz-transition: $val;
+}
+@mixin transform($val) {
+  -ms-transform: $val;
+  -webkit-transform: $val;
+  transform: $val;
+}
+@mixin backface-visibility($val) {
+  -webkit-backface-visibility: $val;
+  -moz-backface-visibility: $val;
+  -ms-backface-visibility: $val;
+}
+// Overflow Ellipsis
+@mixin ellipsis() {
+  overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+}
+@mixin no-ellipsis() {
+  overflow: visible; white-space: normal; text-overflow: clip;
+}
+// Word Wrapping
+@mixin word-wrap() {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+@mixin placeholder($val) {
+  &::-webkit-input-placeholder { // WebKit browsers 
+    color: $val;
+  }
+  &:-moz-placeholder { // Mozilla Firefox 4 to 18
+    color: $val; opacity: 1;
+  }
+  &::-moz-placeholder { // Mozilla Firefox 19+
+    color: $val; opacity: 1;
+  }
+  &:-ms-input-placeholder { // Internet Explorer 10+
+    color: $val;
+  }
+}
+
+@mixin create-skew($val: -45deg) {
+  @include transform(skew($val)); border: 1px solid $border-10; color: $color-10; line-height: 38px; height: auto; //40px
+  padding: 0 25px; display: inline-block;
+  > * {
+    @include transform(skew(-$val)); display: inline-block;
+  }
+}
+// tinh kich thuoc control-top-slide khi responsive
+@mixin create-size-control($size-control, $size-control-active, $border-width) {
+  li {
+    width: $size-control-active; height: $size-control-active; 
+    &.active {
+      a {
+        border-width: $border-width+1;
+      }
+    }
+  }
+  a {
+    width: $size-control; height: $size-control; margin: #{-$size-control/2} 0 0 #{-$size-control/2}; border-width: $border-width;
+  }
+}
+
+$device-width-xs: 480px;
+$device-width-sm: 768px;
+$device-width-md: 992px;
+$device-width-lg: $width-page;//1210px;
+
+@mixin atLeast($device-width) {
+  @media screen and (min-width: $device-width) {@content;}
+}
+
+@mixin until($device-width) {
+  @media screen and (max-width: $device-width - 1) {@content;}
+}
+
+@mixin atLeastUntil($min-device-width, $max-device-width) {
+  @media screen and (min-width: $min-device-width) and (max-width: $max-device-width - 1) {@content;}
+}
+
+@mixin tuta-home-1 {
+  .tuta-home-1 {@content;}
+}
+@mixin tuta-home-2 {
+  .tuta-home-2 {@content;}
+}
+@mixin tuta-home-3 {
+  .tuta-home-3 {@content;}
+}
+@mixin tuta-home-4 {
+  .tuta-home-4 {@content;}
+}
+@mixin tuta-home-5 {
+  .tuta-home-5 {@content;}
+}
+@mixin tuta-home-6 {
+  .tuta-home-6 {@content;}
+}
+@mixin tuta-home-7 {
+  .tuta-home-7 {@content;}
+}
+@mixin tuta-sub-page {
+  .tuta-sub-page {@content;}
+}
+@mixin tuta-style-flat {
+  .tuta-style-flat {@content;}
+}
+@mixin tuta-style-grid-1 {
+  .tuta-style-grid-1 {@content;} //widget-margin-b: 60px; #main-content-margin-b: -60px; row-gutter:30px;
+}
+@mixin tuta-style-grid-2 {
+  .tuta-style-grid-2 {@content;} //widget-margin-b: 30px; row-gutter:30px;
+}
+@mixin bg-pattern {
+  .bg-pattern {@content;} //bg home5, shop
+}
+@mixin tuta-full-width {
+  .tuta-full-width {@content;}
+}
+
+@mixin widget-area-1 {
+  .widget-area-1 {@content;}
+}
+@mixin widget-area-2 {
+  .widget-area-2 {@content;}
+}
+@mixin widget-area-3 {
+  .widget-area-3 {@content;}
+}
+@mixin widget-area-4 {
+  .widget-area-4 {@content;}
+}
+@mixin widget-area-5 {
+  .widget-area-5 {@content;}
+}
+@mixin widget-area-6 {
+  .widget-area-6 {@content;}
+}
+@mixin widget-area-7 {
+  .widget-area-7 {@content;}
+}
+@mixin widget-area-8 {
+  .widget-area-8 {@content;}
+}
+@mixin widget-area-9 {
+  .widget-area-9 {@content;}
+}
+@mixin widget-area-10 {
+  .widget-area-10 {@content;}
+}
+@mixin widget-area-11 {
+  .widget-area-11 {@content;}
+}
+@mixin widget-area-12 {
+  .widget-area-12 {@content;}
+}
+@mixin widget-area-13 {
+  .widget-area-13 {@content;}
+}
+@mixin widget-area-14 {
+  .widget-area-14 {@content;}
+}
+@mixin widget-area-15 {
+  .widget-area-15 {@content;}
+}

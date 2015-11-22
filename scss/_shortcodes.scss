@@ -1,0 +1,1029 @@
+/**
+ * Shortcodes
+ */
+
+/*----- DropCap -----*/
+
+.kp-dropcap {
+  color: $color-5; display: inline-block; *display:inline; zoom:1; float: left; font-size: 38px; height: 40px;
+  line-height: 40px; margin: 0 10px 0 0; text-align: center; width: 40px; font-weight: 700;
+}
+.kp-dropcap.red {
+  background-color: $bg-3;
+}
+.kp-dropcap {
+  &.radius {
+    @include border-radius(50%); margin-top: 5px; color: $color-4; font-size: 26px;
+  }
+}
+.kp-dropcap {
+  &.square {
+    @extend .kp-dropcap.radius;
+    @include border-radius();
+  }
+}
+
+/*----- Blockquote -----*/
+
+.blockquote {
+  border: 6px solid $border-2; padding: 20px; @include border-radius();
+  &:before {
+    content: '\f10d'; display: block; text-align: center; height: 28px;
+    color: $color-2; font: 300 20px/20px FontAwesome;
+  }
+  p {
+    font-size: 16px; font-style: italic; font-weight: normal; word-wrap: break-word; line-height: 23px; margin: 18px 0 0 0;
+    &:first-child {
+      margin: 0;
+    }
+  }
+  .customer {
+    text-align: center; font: bold 13px $font-heading; color: $color-3; text-transform: uppercase; display: block;
+    span {
+      text-transform: capitalize; font-weight: normal;
+    }
+  }
+}
+@include tuta-home-2 {
+  .blockquote {
+    &:before {
+      height: 31px;
+    }
+  }
+}
+.blockquote-1 {
+  border: none; @include border-radius(0); color: $color-10; padding: 0;
+  .customer-w {
+    line-height: 70px; margin-top: 18px;
+    .thumb {
+      @include border-radius(50%); border: 2px solid #c2c2c2; overflow: hidden; @include transition; width: 70px; height: 70px;
+      display: inline-block; margin-right: 6px; text-align: left; float: left;
+      img {
+        float: left;
+      }
+    }
+  }
+  .customer {
+    @include ellipsis; display: inline-block;
+  }
+  @include until($device-width-lg) {
+    .customer-w {
+      .thumb {
+        float: none; display: block; margin: 0 auto;
+      }
+    }
+    .customer {
+      display: block; margin-top: 10px;
+    }
+  }
+}
+
+/*----- Tab -----*/
+
+.tuta-tab-1 {
+  .nav {
+    border: none; margin: 0 -3px 9px; height: 49px; overflow: hidden;
+    li {
+      padding: 0 3px 7px; margin-bottom: 0; width: 16.6666%;
+      &.active, &:hover {
+        &:before {
+          border-top-color: #a1111c;
+        }
+        a {
+          border: none; @include box-shadow(0 0 0 0 rgba(0, 0, 0, 0) inset);
+        }
+      }
+      &:before {
+        @include before-bottom(7px, 7px, 7px, $bg-1); bottom: 0; left: 50%; margin-left: -7px;
+        @include transition;
+      }
+      &:after {
+        content: ''; position: absolute; top: 50%; left: -9px; width: 18px; height: 18px; border: 3px solid $border-4;
+        margin-top: -9px; @include border-radius(50%); background-color: $bg-3;
+      }
+      &:first-child {
+        &:after {
+          display: none;
+        }
+      }
+      a {
+        font: bold 13px/42px $font-heading; text-transform: uppercase; color: $color-4;
+        @include border-radius(0); padding: 0 15px; margin: 0; border: none; position: relative; text-align: center;
+        @include ellipsis;
+        @include box-shadow(0 0 100px 22px rgba(0, 0, 0, 1) inset);
+        background: $bg-3; // Old browsers
+        // IE9 SVG, needs conditional override of 'filter' to 'none' 
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI4JSIgc3RvcC1jb2xvcj0iI2Q3MTYyNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwJSIgc3RvcC1jb2xvcj0iI2Q1MDgxOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE4JSIgc3RvcC1jb2xvcj0iI2Q5MDcxOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ2JSIgc3RvcC1jb2xvcj0iI2Q4MDYxOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU5JSIgc3RvcC1jb2xvcj0iI2NjMDUxNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1jb2xvcj0iIzlmMDMwZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkyJSIgc3RvcC1jb2xvcj0iI2ExMTExYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+        background: -moz-linear-gradient(top,  rgb(215,22,38) 8%, rgb(213,8,25) 10%, rgb(217,7,25) 18%, rgb(216,6,24) 46%, rgb(204,5,22) 59%, rgb(159,3,15) 90%, rgb(161,17,28) 92%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(8%,rgb(215,22,38)), color-stop(10%,rgb(213,8,25)), color-stop(18%,rgb(217,7,25)), color-stop(46%,rgb(216,6,24)), color-stop(59%,rgb(204,5,22)), color-stop(90%,rgb(159,3,15)), color-stop(92%,rgb(161,17,28))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgb(215,22,38) 8%,rgb(213,8,25) 10%,rgb(217,7,25) 18%,rgb(216,6,24) 46%,rgb(204,5,22) 59%,rgb(159,3,15) 90%,rgb(161,17,28) 92%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgb(215,22,38) 8%,rgb(213,8,25) 10%,rgb(217,7,25) 18%,rgb(216,6,24) 46%,rgb(204,5,22) 59%,rgb(159,3,15) 90%,rgb(161,17,28) 92%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgb(215,22,38) 8%,rgb(213,8,25) 10%,rgb(217,7,25) 18%,rgb(216,6,24) 46%,rgb(204,5,22) 59%,rgb(159,3,15) 90%,rgb(161,17,28) 92%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgb(215,22,38) 8%,rgb(213,8,25) 10%,rgb(217,7,25) 18%,rgb(216,6,24) 46%,rgb(204,5,22) 59%,rgb(159,3,15) 90%,rgb(161,17,28) 92%); /* W3C */
+        //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d71626', endColorstr='#a1111c',GradientType=0 ); /* IE6-8 */
+        filter: none;
+        
+        &:focus, &:hover {
+          color: $color-4;
+        }
+      }
+    }
+  }
+  .tab-content {
+    border: 6px solid $border-2;  @include border-radius(); position: relative; color: $color-1;
+    .content-title {
+      color: $color-heading-1;
+    }
+    h4 {
+      font-size: 13px; margin-bottom: 10px;
+    }
+    .tab-pane {
+      margin-bottom: -16px; padding: 15px 20px 30px;
+    }
+    .tab-pane-o {
+      padding-right: 230px;
+      .logo {
+        position: absolute; top: 17px; right: 47px;
+      }
+      .button {
+        position: absolute; bottom: 20px; right: 47px; font-weight: bold; padding: 0 21px;
+      }
+    }
+  }
+  @include until($device-width-sm) {
+    .tab-content {
+      .tab-pane {
+        padding-right: 20px; overflow: hidden;
+        .logo {
+          position: static; float: left; margin-top: 6px;
+          img {
+            width: auto;
+          }
+        }
+        .button {
+          position: static; float: right;
+        }
+      }
+    }
+  }
+  @include until($device-width-xs) {
+    .tab-content {
+      .tab-pane {
+        .logo {
+          margin: 0 0 15px; clear: both;
+        }
+        .button {
+          clear: both; float: left;
+        }
+      }
+    }
+  }
+  @include until($device-width-lg) {
+    .nav {
+      li {
+        width: auto;
+        a {
+          padding: 0 25px;
+        }
+      }
+    }
+  }
+  @include until($device-width-md) {
+    .nav {
+      li {
+        width: 16.6666%;
+        a {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+}
+@include widget-area-1 {
+
+}
+@include widget-area-2 {
+  .tuta-tab-1 {
+    .tab-content {
+      .tab-pane-o {
+        padding-right: 20px; overflow: hidden;
+        .logo {
+          position: static; float: left; margin: 0 0 15px; clear: both;
+        }
+        .button {
+          position: static; clear: both; float: left;
+        }
+      }
+    }
+    @include until($device-width-lg) {
+      .nav {
+        li {
+          width: auto;
+          a {
+            padding: 0 25px;
+          }
+        }
+      }
+      .tab-content {
+        .tab-pane-o {
+          padding-right: 230px;
+          .logo {
+            position: absolute; top: 17px; right: 47px;
+          }
+          .button {
+            position: absolute; bottom: 20px; right: 47px; font-weight: bold; padding: 0 21px;
+          }
+        }
+      }
+    }
+    @include until($device-width-md) {
+      .nav {
+        li {
+          width: 16.6666%;
+          a {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+    @include until($device-width-sm) {
+      .tab-content {
+        .tab-pane-o {
+          padding-right: 20px; overflow: hidden;
+          .logo {
+            position: static; float: left; margin-top: 6px; clear: none;
+            img {
+              width: auto;
+            }
+          }
+          .button {
+            position: static; float: right; clear: none;
+          }
+        }
+      }
+    }
+    @include until($device-width-xs) {
+      .tab-content {
+        .tab-pane-o {
+          .logo {
+            margin: 0 0 15px; clear: both;
+          }
+          .button {
+            clear: both; float: left;
+          }
+        }
+      }
+    }
+  }
+}
+@include widget-area-3 {
+  .tuta-tab-1 {
+    @include until($device-width-lg) {
+      .nav {
+        li {
+          width: auto;
+          a {
+            padding: 0 25px;
+          }
+        }
+      }
+    }
+    @include until($device-width-md) {
+      .nav {
+        li {
+          width: 16.6666%;
+          a {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@include widget-area-4 {
+  .tuta-tab-1 {
+    @include until($device-width-lg) {
+      .nav {
+        li {
+          width: auto;
+          a {
+            padding: 0 25px;
+          }
+        }
+      }
+    }
+    @include until($device-width-md) {
+      .nav {
+        li {
+          width: 16.6666%;
+          a {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@include widget-area-5 {
+  .tuta-tab-1 {
+    .nav {
+      li {
+        width: auto;
+        a {
+          padding: 0 25px;
+        }
+      }
+    }
+    @include until($device-width-md) {
+      .nav {
+        li {
+          width: 16.6666%;
+          a {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@include widget-area-6 {
+  .tuta-tab-1 {
+    width: $width-page; margin-left: auto; margin-right: auto;
+    .nav {
+      li {
+        width: auto;
+        a {
+          padding: 0 25px;
+        }
+      }
+    }
+    @include until($device-width-lg) {
+      width: auto; margin-left: 10px; margin-right: 10px;
+    }
+    @include until($device-width-md) {
+      .nav {
+        li {
+          width: 16.6666%;
+          a {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+}
+//@include tuta-home-1 {
+//  .tuta-tab-1 {
+//    .nav li a {
+//      padding: 0 15px;
+//    }
+//  }
+//}
+//@include tuta-home-2 {
+//  .tuta-tab-1 {
+//    .nav li a {
+//      padding: 0 15px;
+//    }
+//  }
+//}
+@include tuta-style-flat {
+  .tuta-tab-1 {
+    .nav {
+      li {
+        &:before {
+          border-top-color: $bg-1;
+        }
+        &.active, &:hover {
+          &:before {
+            border-top-color: $bg-11;
+          }
+          a {
+            @include box-shadow(none); background: $bg-11;
+          }
+        }
+        a {
+          background: $bg-1; @include box-shadow(none);
+        }
+      }        
+    }
+  }
+}
+
+$width-tab-2: 240px;
+$width-tab-2-responsive: 55px;
+.tuta-tab-2 {
+  border: 6px solid $border-2; @include border-radius(); overflow: hidden; margin-bottom: 20px; position: relative;
+  .nav {
+    padding: 40px 0; float: left; width: $width-tab-2; border-bottom: none; overflow: visible;
+    &:before {
+      content: ''; background-color: $bg-5; position: absolute; top: 0; left: 0; height: 100%;
+      border-right: 1px solid #dedede; width: $width-tab-2; display: block;
+    }
+    li {
+      display: block; width: 100%; float: none; margin: 0;
+      &.active, &:hover, &:focus {        
+        a {
+          background-color: $bg-4; border: none; z-index: 1;
+          border-top: 1px solid $border-2; border-bottom: 1px solid $border-2; 
+          &:hover {
+            color: $color-5;
+          }
+          &:before {
+            @include before-right(24px, 24px, 18px, $border-2); right: -18px; top: -1px;
+          }
+          &:after {
+            @include before-right(24px, 24px, 18px, $border-4); right: -17px; top: -1px;
+          }
+        }
+      }
+      a {
+        font: bold 13px/46px $font-heading; text-transform: uppercase; color: $color-5; background-color: transparent;
+        @include border-radius(0);  border: none; padding: 0 20px; margin: -1px 0; position: relative;
+        border-top: 1px solid $border-5; border-bottom: 1px solid $border-5; @include transition(none);
+      }
+      span {
+        display: block; @include ellipsis();
+      }
+      .fa {
+        font-size: 14px; margin-right: 10px; float: left; line-height: 48px; height: 46px;
+      }
+    }
+  }
+  .tab-content {
+    padding: 15px 30px;  margin-left: $width-tab-2; //background-color: $bg-4; border-left: 1px solid $border-2;
+    h4 {
+      font-size: 13px; margin-bottom: 10px;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @include until($device-width-sm) {
+    .nav {
+      width: $width-tab-2-responsive;
+      &:before {
+        width: $width-tab-2-responsive;
+      }
+      li {
+        span {
+          display: none
+        }
+        .fa {
+          font-size: 18px; float: none; display: block;
+        }
+      }
+    }
+    .tab-content {
+      margin-left: $width-tab-2-responsive;
+    }
+  }
+}
+
+.tuta-tab-3 {
+  .nav {
+    text-align: center; margin-bottom: 35px; border: none;
+    li {
+      @include transform(skew(-45deg)); float: none; display: inline-block; padding: 0; margin: 0 0 5px 5px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &.active, &:hover {
+        a {
+          border: 1px solid $border-10; color: $color-11; background-color: transparent;
+          &:after {
+            background-color: $bg-11;
+          }
+        }
+      }
+    }
+    a {
+      color: $color-10; border: 1px solid $border-10; padding: 0 25px; font: 700 16px/38px $font-heading;
+      position: relative; display: block; @include border-radius(0); text-transform: uppercase; margin: 0;
+      &:after {
+        content: ''; position: absolute; top: -1px; bottom: -1px; right: -1px; width: 6px; background-color: transparent;
+        @include transition();
+      }
+      > span {
+        @include transform(skew(45deg)); display: block;
+      }
+    }
+  }
+  .tab-content {
+    background: #737373 url("images/background/bg-tab-h3.jpg") no-repeat 50% 100%;
+    margin-top: 90px;
+    > div {
+      position: relative; top: -50px;
+    }
+  }
+  @include until($device-width-sm) {
+    .nav {
+      a {
+        font-size: 14px; padding: 0 15px;
+      }
+    }
+  }
+}
+
+/*----- Accordion -----*/
+
+.tuta-accordion {
+  h4 {
+    font-size: 13px; line-height: 40px; background-color: $bg-5; padding: 0 20px; @include border-radius(); outline: none;
+    font-weight: normal; margin: 0 0 1px 0; position: relative; cursor: pointer; @include transition();
+    &:hover, &.ui-state-active {
+      color: $color-3;
+    }
+    &.ui-state-active {
+      cursor: default;
+      i {
+        &:before {
+          display: none;
+        }
+      }
+    }
+    i {
+      display: block; position: absolute; top: 10px; right: 0; width: 53px; height: 20px; border-left: 1px solid $border-1;
+      &:after, &:before {
+        content: ''; position: absolute;
+      }
+      &:after {
+        width: 11px; height: 1px; background-color: $bg-2; top: 50%; left: 50%; margin-left: -5px;
+      }
+      &:before {
+        width: 1px; height: 11px; background-color: $bg-2; top: 50%; left: 50%; margin-top: -5px;
+      }
+    }
+    &+div {
+      padding: 20px 0; overflow: hidden;
+      p {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      .thumbnail {
+        float: left; margin: 0 20px 0 0; padding: 0; border: none;
+        img {
+           @include border-radius();
+        }
+      }
+    }
+  }
+}
+
+.tuta-toggle {
+  @extend .tuta-accordion;
+  .active {
+    cursor: pointer; color: $color-3;
+    i {
+      height: 40px; border: none; background-color: $bg-3; @include border-radius(0 5px 5px 0); top: 0;
+      &:after {
+        background-color: $bg-4;
+      }
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+/*----- Progress bar -----*/
+
+.tuta-progress-bar {
+  .progress {
+    height: 30px; background-color: $bg-5; margin-bottom: 10px; @include box-shadow(none);
+    .progress-bar {
+      background-color: $bg-3; @include box-shadow(none); @include border-radius();
+    }
+    .label {
+      float: left; padding: 0 10px; color: $color-4; font: 700 13px/30px $font-heading;
+    }
+  }
+}
+
+/*----- Buttons -----*/
+
+$height-button-sm: 30px;
+$height-button-md: 40px;
+$height-button-lg: 50px;
+
+%template-3d {
+  position: relative; background: $bg-3; @include border-radius();
+  &:before, &:after {
+    content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 5px; background-color: $bg-9;
+    @include border-radius(0 0 4px 4px); @include transition();
+  }
+  &:after {
+    content: ''; position: absolute; left: 0; bottom: 2px; width: 100%; height: 5px; background-color: $bg-3;
+    @include border-radius(0 0 4px 4px);
+  }
+}
+
+.tuta-button-default {
+  display: inline-block; font: 400 13px/#{$height-button-md} $font-heading; height: $height-button-md; color: $color-4; 
+  padding: 0 15px; background: $bg-3; text-transform: uppercase; font-weight: 700; @include border-radius();
+  border: none; outline: none;
+  &:hover, &:focus {
+    color: $color-4;
+  }
+  .fa {
+    margin: 0 5px; font-size: 14px;
+  }
+  .smaller {
+    font-size: .8em;
+  }
+  .smaller-1 {
+    @extend .smaller; text-transform: none; font-weight: 400;
+  }
+}
+
+.button-3d {
+  @extend %template-3d;
+  height: $height-button-md + 2;
+}
+.button-gde {
+  background: $bg-3; // Old browsers
+  // IE9 SVG, needs conditional override of 'filter' to 'none' 
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2QzMDgxOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2Q5MDYxOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkMzA4MTkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #d30819 0%, #d90618 50%, #d30819 100%); // FF3.6+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d30819), color-stop(50%,#d90618), color-stop(100%,#d30819)); // Chrome,Safari4+
+  background: -webkit-linear-gradient(top,  #d30819 0%,#d90618 50%,#d30819 100%); // Chrome10+,Safari5.1+
+  background: -o-linear-gradient(top,  #d30819 0%,#d90618 50%,#d30819 100%); // Opera 11.10+
+  background: -ms-linear-gradient(top,  #d30819 0%,#d90618 50%,#d30819 100%); // IE10+
+  background: linear-gradient(to bottom,  #d30819 0%,#d90618 50%,#d30819 100%); // W3C
+  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d30819', endColorstr='#d30819',GradientType=0 ); /* IE6-8 */
+  filter: none;
+
+  @include box-shadow(0 -31px 30px -25px rgba(0, 0, 0, .4) inset);
+  &:hover {
+    @include box-shadow(0 28px 30px -25px rgba(0, 0, 0, .4) inset);
+  }
+  &.button-sm {
+    @include box-shadow(0 -36px 30px -30px rgba(0, 0, 0, .4) inset);
+    &:hover {
+      @include box-shadow(0 33px 30px -30px rgba(0, 0, 0, .4) inset);
+    }
+  }
+  &.button-lg {
+    @include box-shadow(0 -26px 30px -20px rgba(0, 0, 0, .4) inset);
+    &:hover {
+      @include box-shadow(0 23px 30px -20px rgba(0, 0, 0, .4) inset);
+    }
+  }
+}
+@include tuta-style-flat {
+  .button-gde {
+    background: $bg-11; @include box-shadow(none);
+    &:hover {
+      @include box-shadow(none);
+    }
+  }
+}
+.button-ico {
+  text-transform: none;
+}
+.button-skew {
+  background: transparent; @include border-radius(0); @include create-skew;
+  &:hover {
+    color: $color-10;
+  }
+  &.button-skew-1 {
+    border-color: $border-4; color: $color-4;
+  }
+  &.button-skew-2 {
+    border-color: $border-11; color: $color-11;
+  }
+}
+.button-half-skew {
+  $height-button: 30px;
+  height: $height-button; padding: 0 2px 0 10px; display: inline-block; text-transform: uppercase; margin-right: $height-button;
+  font: 700 13px/#{$height-button} $font-heading; position: relative; background-color: rgba(255, 255, 255, .7);
+  @include transition;
+  &:after {
+    content: ''; position: absolute; top: 0; right: -$height-button; height: 100%;
+    @include before-bottom(0, $height-button, $height-button, rgba(255, 255, 255, .7)); @include transition;
+  }
+  &:hover {
+    background-color: $color-11; color: $color-4;
+    &:after {
+      border-top-color: $color-11;
+    }
+  }
+}
+.button-sm {
+  line-height: $height-button-sm; height: $height-button-sm; font-size: 13px; font-weight: 400;
+  &.button-3d {
+    background: $bg-5; color: $color-1; height: $height-button-sm + 2;
+    &:before {
+      background: $border-2;
+    }
+    &:after {
+      background: $bg-5;
+    }
+  }
+}
+.button-lg {
+  line-height: $height-button-lg; height: $height-button-lg; font-size: 16px;
+  &.button-3d {
+    height: $height-button-lg + 2;
+  }
+}
+
+@mixin create-button($btn-color, $text-color: $color-4, $percent-darken: 16% ) {
+  background-color: $btn-color; color: $text-color;
+  &:hover {
+    color: $text-color;
+  }
+  &.button-3d {
+    background-color: $btn-color; color: $text-color;
+    &:hover {
+      color: $text-color;
+    }
+    &:after {
+      background-color: $btn-color;
+    }
+    &:before {
+      background-color: darken($btn-color, $percent-darken);
+    }
+  }
+}
+
+@mixin create-button-hover($btn-color, $text-color: $color-4, $percent-darken: 16%) {
+  &:hover {
+    background-color: $btn-color; color: $text-color;
+    &.button-3d {
+      background-color: $btn-color; color: $text-color;
+      &:hover {
+        color: $text-color;
+      }
+      &:after {
+        background-color: $btn-color;
+      }
+      &:before {
+        background-color: darken($btn-color, $percent-darken);
+      }
+    }
+  }
+}
+
+.btn-yellow {
+  @include create-button(#f2d220, $color-4);
+}
+.btn-orange {
+  @include create-button(#ff5400, $color-4);
+}
+.btn-red {
+  @include create-button($bg-3, $color-4);
+}
+.btn-red-dark {
+  @include create-button(#84020b, $color-4);
+}
+.btn-brown {
+  @include create-button(#7b5635, $color-4);
+}
+.btn-green {
+  @include create-button(#31aa3a, $color-4);
+}
+.btn-skyblue {
+  @include create-button(#00a6dc, $color-4);
+}
+.btn-darkgray {
+  @include create-button(#2d2d2d, $color-4);
+}
+.btn-black {
+  @include create-button(#000);
+}
+.btn-lightgray {
+  @include create-button($bg-5, $color-1, 25%);
+}
+.btn-white {
+  @include create-button($bg-4, $color-1, 30%);
+}
+.btn-white-hover {
+  @include create-button($bg-4, $color-1, 30%);
+  @include create-button-hover($bg-3, $color-4);
+}
+
+/*----- Alerts -----*/
+.alert {
+  padding: 10px 20px; font-size: 13px; line-height: 18px;
+  .close {
+    font-size: 16px; opacity: 1; outline: none;
+  }
+}
+.alert-success {
+  background-color: #e7f4d9; border-color: #a5d570; color: #367934;
+  .fa {
+    color: #367934;
+  }
+}
+.alert-info {
+  background-color: #cfe6fc; border-color: #a4c8f5; color: #2b72a9;
+  .fa {
+    color: #2b72a9;
+  }
+}
+.alert-warning {
+  background-color: #fff9c4; border-color: #ffd780; color: #b0751a;
+  .fa {
+    color: #b0751a;
+  }
+}
+.alert-danger {
+  background-color: #ffe3e3; border-color: #fdb6b6; color: #ab3e49;
+  .fa {
+    color: #ab3e49;
+  }
+}
+
+/*----- Divider -----*/
+.divider-1 {
+  height: 25px; background: transparent url("images/background/divider-1.png") no-repeat 50% 0;
+}
+@include tuta-home-2 {
+  .divider-1 {
+    height: 40px;
+  }
+}
+.divider-2 {
+  border-top: 1px solid #dedede; height: 1px;
+}
+
+/*----- Pane -----*/
+@mixin create-pane($btn-color, $text-color: $color-4, $percent-darken: 16%) {
+  background-color: $btn-color; color: $text-color;
+  &:after {
+    background-color: $btn-color;
+  }
+  &:before {
+    background-color: darken($btn-color, $percent-darken);
+  }
+}
+
+.tuta-pane {
+  @extend %template-3d;
+  @include create-pane($bg-5, $color-1, 25%);
+  font: 700 13px/30px $font-heading; padding: 20px 10px; margin-bottom: 20px;
+  overflow: hidden; text-transform: uppercase;
+  > * {
+    padding: 0 10px;
+  }
+  .result {
+    float: left; text-align: left; @include ellipsis;
+  }
+  .pag-wrapper {
+    float: right;
+  }
+  .sp-wrapper {
+    margin: 0; font-weight: 700; float: left;
+  }
+  .pag-o {
+    float: left; margin-left: 10px;
+  }
+  .form-control-wrap {
+    margin: 0 0 0 10px; float: right;
+  }
+  .list-payment {
+    margin-bottom: -10px;
+    > li {
+      display: inline-block; margin: 0 20px 10px 0; line-height: 35px;
+      > span {
+        width: 35px; height: 35px; line-height: 35px; font-weight: 700; font-size: 16px; padding: 0;
+        text-align: center; margin-right: 10px; cursor: default; float: left;
+        @include border-radius(50%);
+        &.button-gde:hover {
+          @include box-shadow(0 -31px 30px -25px rgba(0, 0, 0, 0.4) inset);
+        }
+      }
+    }
+    @include until($device-width-md) {
+      > li {
+        display: block;
+      }
+    }
+  }
+  @include until($device-width-lg) {
+    .pag-wrapper {
+      float: none; text-align: right;
+    }
+    .pag-o {
+      float: left; display: block; margin: 10px 0 0; width: 100%;
+    }
+    .sp-wrapper {
+      float: right;
+    }
+  }
+  @include until($device-width-sm) {
+    .pag-wrapper {
+      text-align: left;
+    }
+    .result {
+      display: block; float: none; width: auto;
+    }
+    .sp-wrapper {
+      display: block; width: auto; float: none;
+      .form-control-wrap {
+        width: 100%; display: block; margin: 0; float: none;
+      }
+    }
+  }
+}
+@include tuta-style-flat {
+  .tuta-pane {
+    padding: 0; margin: 0 -10px; background: transparent; font-size: 14px;
+    &:after, &:before {
+      display: none;
+    }
+    .pag-o {
+      overflow: visible; padding: 0 15px; margin-left: 30px;
+      .previous {
+        margin-right: 20px;
+      }
+      .next {
+        margin-left: 20px;
+      }
+      .button-sm {
+        font-size: 14px;
+      }
+      .button-skew {
+        border: 1px solid $border-10; color: $color-10; padding: 0 17px;
+        &:hover {
+          background-color: $bg-11; color: $color-4; border-color: $border-11;
+        }
+      }
+    }
+    .form-control-wrap {
+      border: 1px solid #e5e5e5; background: transparent;
+      &:after, &:before {
+        display: none;
+      }
+      .fa {
+        bottom: 0;
+        &:before {
+          width: 9px; margin-left: -4px; margin-top: -7px;
+        }
+        &:after {
+          content: ''; position: absolute; top: 50%; left: 0; margin-top: -7px; width: 1px; height: 15px;
+          background-color: #e5e5e5;
+        }
+      }
+    }
+    @include until($device-width-lg) {
+      .pag-o {
+        margin-left: 0;
+      }
+    }
+    @include until($device-width-xs) {
+      .pag-o {
+        .next {
+          margin-left: 10px;
+        }
+        .previous {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+@include bg-pattern {
+  .tuta-pane {
+    .form-control-wrap {
+      .fa {
+        color: #666; background: url("images/background/bg-h5.jpg") no-repeat 0 0;
+      }
+    }
+  }
+}
+
+/*----- Pagination -----*/
+.tuta-pagination {
+  text-align: center;
+  > * {
+    display: inline-block; margin: 0 5px; line-height: 30px;
+    color: $color-1; font-weight: 700;
+    > a {
+      border: none; color: $color-1; font-weight: 700;
+      &:hover {
+        color: $color-3;
+      }
+    }
+    &.active {
+      > a {
+        color: $color-3;
+      }
+    }
+  }
+  > span {
+    color: $color-3;
+  }
+  .previous {
+    float: left; margin: 0 10px 0 0;
+  }
+  .next {
+    float: right; margin: 0 0 0 10px;
+  }
+  @include until($device-width-sm) {
+    .previous, .next {
+      margin: 0;
+    }
+  }
+}
