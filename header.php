@@ -7,13 +7,10 @@
     <link rel="profile" href="http://gmgp.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
     <script src="js/modernizr.custom.js"></script>
-    <!--[if lt IE 9]>
-        <link rel="stylesheet" href="css/ie.css" type="text/css" media="all" />
-    <![endif]-->
     <?php wp_head();?>
 </head>
     
-<body <?php body_class(); ?> class="tuta-home-3 tuta-style-grid-1 tuta-style-flat">
+<body <?php body_class('tuta-home-3 tuta-style-grid-1 tuta-style-flat'); ?>>
 
     <header id="tuta-page-header">
         

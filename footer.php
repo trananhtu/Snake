@@ -5,7 +5,7 @@
                 <div class="col-ex-12 col-md-4">
                     <div class="logo-bottom">
                         <a href="#">
-                            <img src="placeholders/logo.png" width="259" height="58" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?> /placeholders/logo.png" title="tuta" width="259" height="58" alt="">
                         </a>
                     </div>
                     <div class="widget-area-7">
@@ -117,12 +117,6 @@
     <!-- #tuta-page-footer -->
 
     <?php wp_footer(); ?>
-
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="js/gmaps.js"></script>
-    <script src="js/custom.js" charset="utf-8"></script>
 
 </body>
 </html>

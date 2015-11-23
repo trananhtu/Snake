@@ -51,13 +51,15 @@
     }
 };
 
+var temp_path = 'wp-content/themes/snake/';
+
 /* =========================================================
 1. Main menu
 ============================================================ */
 
 Modernizr.load([
     {
-        load: 'js/superfish.js',
+        load: temp_path + '/js/superfish.js',
         complete: function () {
 
             //Main menu
@@ -77,7 +79,7 @@ Modernizr.load([
 
 Modernizr.load([
   {
-    load: 'js/jquery.navgoco.js',
+    load: temp_path + '/js/jquery.navgoco.js',
     complete: function () {
 
         jQuery("#mobile-menu").navgoco({accordion: true});
@@ -96,18 +98,18 @@ if (jQuery('#tuta-owl-top-slide').length > 0) {
 
     Modernizr.load([
         {
-            load: 'js/owl.carousel.min.js',
+            load: temp_path + '/js/owl.carousel.min.js',
             complete: function () {
 
-                var $slide = $("#tuta-owl-top-slide");
+                var $slide = jQuery("#tuta-owl-top-slide");
                 var $control_top_slide = $slide.next();
                 var $control_item = $control_top_slide.find('li');
-                var $find_cars = $(".find-cars");
+                var $find_cars = jQuery(".find-cars");
                 var $intro = $slide.find(".intro");
                 var setIndex = 0;
 
                 $control_item.each(function(index) {
-                     if($(this).hasClass('active')) {
+                     if(jQuery(this).hasClass('active')) {
                         setIndex = index;
                      }
                 });
@@ -141,7 +143,7 @@ if (jQuery('#tuta-owl-top-slide').length > 0) {
                     //position
                     var height_slide = $slide.outerHeight();
                     if($intro.length <= 0) { //slide home 1
-                        if($(window).width() > 1210) {
+                        if(jQuery(window).width() > 1210) {
                             height_slide -= 64;
                         }
                     }
@@ -151,27 +153,27 @@ if (jQuery('#tuta-owl-top-slide').length > 0) {
                     $intro.css("top", (height_slide - $intro.outerHeight())/2);
 
                     //reset height:auto
-                    //$(".tuta-top-slide").css("height", "auto");
-                    //$(".slide-wrapper-outer").css("height", "auto");
+                    //jQuery(".tuta-top-slide").css("height", "auto");
+                    //jQuery(".slide-wrapper-outer").css("height", "auto");
 
                     //show
-                    $(".tuta-home-1").find(".find-cars").fadeIn(300);
-                    $(".control-top-slide").fadeIn(300);
+                    jQuery(".tuta-home-1").find(".find-cars").fadeIn(300);
+                    jQuery(".control-top-slide").fadeIn(300);
                 }
 
                 $control_item.click(function() {
-                    owl.goTo($(this).index());
+                    owl.goTo(jQuery(this).index());
                     return false;
                 });
 
                 if($slide.parents(".tuta-home-2").length) {
                     $control_top_slide.mouseenter(function() {
-                        //$(".mask").css("opacity", 0);
-                        $(".mask").toggleClass("opacity-0");
+                        //jQuery(".mask").css("opacity", 0);
+                        jQuery(".mask").toggleClass("opacity-0");
                     });
                     $control_top_slide.mouseleave(function() {
-                        //$(".mask").css("opacity", 1);
-                        $(".mask").toggleClass("opacity-0");
+                        //jQuery(".mask").css("opacity", 1);
+                        jQuery(".mask").toggleClass("opacity-0");
                     });
                 }                
             }
@@ -183,7 +185,7 @@ if (jQuery('.owl-carosel-fd-1').length > 0) {
 
     Modernizr.load([
         {
-            load: 'js/owl.carousel.min.js',
+            load: temp_path + '/js/owl.carousel.min.js',
             complete: function () {
                 jQuery('.owl-carosel-fd-1').owlCarousel({
                     items : 1,
@@ -205,7 +207,7 @@ if (jQuery('.owl-carosel-fd-2').length > 0) {
 
     Modernizr.load([
         {
-            load: 'js/owl.carousel.min.js',
+            load: temp_path + '/js/owl.carousel.min.js',
             complete: function () {
                 jQuery('.owl-carosel-fd-2').owlCarousel({
                     items : 1,
@@ -229,7 +231,7 @@ if (jQuery('.sub-page-slide').length > 0) {
 
     Modernizr.load([
       {
-        load: 'js/owl.carousel.min.js',
+        load: temp_path + '/js/owl.carousel.min.js',
         complete: function () {
 
             var $control_sub_page_slide = $sub_page_slide.next(".control-sub-page-slide").children();
@@ -256,7 +258,7 @@ if (jQuery('.sub-page-slide').length > 0) {
             }
 
             $control_sub_page_slide.click(function() {
-                owl.goTo($(this).index());
+                owl.goTo(jQuery(this).index());
                 return false;
             });
         }
@@ -268,7 +270,7 @@ if (jQuery('.owl-carosel-la-1').length > 0) {
 
     Modernizr.load([
         {
-            load: 'js/owl.carousel.min.js',
+            load: temp_path + '/js/owl.carousel.min.js',
             complete: function () {
                 jQuery('.owl-carosel-la-1').owlCarousel({
                     items : 1,
@@ -290,7 +292,7 @@ if (jQuery('.owl-carousel-fp').length > 0) { //featured products - home3
 
      Modernizr.load([
          {
-             load: 'js/owl.carousel.min.js',
+             load: temp_path + '/js/owl.carousel.min.js',
              complete: function () {
                  jQuery('.owl-carousel-fp').owlCarousel({
                      items : 4,
@@ -306,8 +308,8 @@ if (jQuery('.owl-carousel-fp').length > 0) { //featured products - home3
                      navigationText : false
                  });
 
-                 var owl = $(".owl-carousel-fp").data('owlCarousel');
-                 var $control = $(".control-wrap");
+                 var owl = jQuery(".owl-carousel-fp").data('owlCarousel');
+                 var $control = jQuery(".control-wrap");
 
                  //create btn next. prev
                  $control.find(".next").click(function() {
@@ -327,7 +329,7 @@ if (jQuery('.owl-carousel-fp-3').length > 0) { //new products - home4
 
     Modernizr.load([
         {
-            load: 'js/owl.carousel.min.js',
+            load: temp_path + '/js/owl.carousel.min.js',
             complete: function () {
 
                 jQuery('.owl-carousel-fp-3').owlCarousel({
@@ -352,7 +354,7 @@ if (jQuery('.owl-carousel-np-1').length > 0) { //new products - home4
 
     Modernizr.load([
         {
-            load: 'js/owl.carousel.min.js',
+            load: temp_path + '/js/owl.carousel.min.js',
             complete: function () {
 
                 jQuery('.owl-carousel-np-1').owlCarousel({
@@ -377,7 +379,7 @@ if (jQuery('.owl-carousel-np-2').length > 0) { //new products - home5
 
     Modernizr.load([
         {
-            load: 'js/owl.carousel.min.js',
+            load: temp_path + '/js/owl.carousel.min.js',
             complete: function () {
 
                 jQuery('.owl-carousel-np-2').owlCarousel({
@@ -402,7 +404,7 @@ if (jQuery('.owl-carousel-pd').length > 0) { //products detail - home4
 
     Modernizr.load([
         {
-            load: 'js/owl.carousel.min.js',
+            load: temp_path + '/js/owl.carousel.min.js',
             complete: function () {
                 jQuery('.owl-carousel-pd').owlCarousel({
                     items : 1,
@@ -425,7 +427,7 @@ if (jQuery('.top-product-list').length > 0) { //products list - home4
 
     Modernizr.load([
         {
-            load: 'js/owl.carousel.min.js',
+            load: temp_path + '/js/owl.carousel.min.js',
             complete: function () {
                 jQuery('.top-product-list').owlCarousel({
                     items : 1,
@@ -448,7 +450,7 @@ if (jQuery('.owl-carousel-lb').length > 0) { //latest blogs - home5
 
     Modernizr.load([
         {
-            load: 'js/owl.carousel.min.js',
+            load: temp_path + '/js/owl.carousel.min.js',
             complete: function () {
                 jQuery('.owl-carousel-lb').owlCarousel({
                     items : 3,
@@ -471,7 +473,7 @@ if (jQuery('.owl-carousel-tma-3').length > 0) { //testimonial - home5
 
     Modernizr.load([
         {
-            load: 'js/owl.carousel.min.js',
+            load: temp_path + '/js/owl.carousel.min.js',
             complete: function () {
                 jQuery('.owl-carousel-tma-3').owlCarousel({
                     items : 1,
@@ -494,7 +496,7 @@ if (jQuery('#tuta-owl-top-slide-1').length > 0) { //top-slide - home5
 
     Modernizr.load([
         {
-            load: 'js/owl.carousel.min.js',
+            load: temp_path + '/js/owl.carousel.min.js',
             complete: function () {
                 jQuery('#tuta-owl-top-slide-1').owlCarousel({
                     items : 1,
@@ -517,10 +519,10 @@ if (jQuery('.owl-carousel-blockquote').length > 0) { //testimonial - home-3-4
 
     Modernizr.load([
         {
-            load: 'js/owl.carousel.min.js',
+            load: temp_path + '/js/owl.carousel.min.js',
             complete: function () {
 
-                var $oc_blockquote = $(".owl-carousel-blockquote");
+                var $oc_blockquote = jQuery(".owl-carousel-blockquote");
                 var $control_item = $oc_blockquote.prev().find("li");
                 //set width, height
                 setSize();
@@ -547,16 +549,16 @@ if (jQuery('.owl-carousel-blockquote').length > 0) { //testimonial - home-3-4
                 }
 
                 $control_item.click(function() {
-                    owl.goTo($(this).index());
+                    owl.goTo(jQuery(this).index());
                     return false;
                 });
 
-                $(window).resize(function() {
+                jQuery(window).resize(function() {
                     setSize();
                 });
 
-                function setSize() {//alert($(window).width());
-                    if($(window).width() >= 992) {
+                function setSize() {//alert(jQuery(window).width());
+                    if(jQuery(window).width() >= 992) {
                         $oc_blockquote.css("width", $oc_blockquote.parent().outerWidth() - $oc_blockquote.parent().find(".testimonial-box").outerWidth(true) - 1);
                         $oc_blockquote.find(".blockquote").css("height", $oc_blockquote.prev().outerHeight());
                     } else {
@@ -577,9 +579,9 @@ if (jQuery('.owl-carousel-blockquote').length > 0) { //testimonial - home-3-4
 ============================================================ */
 
 Modernizr.load([ {
-    load: 'js/jquery-ui.min.js',
+    load: temp_path + '/js/jquery-ui.min.js',
     complete: function () {
-        $(".tuta-accordion" ).accordion({
+        jQuery(".tuta-accordion" ).accordion({
             heightStyle: "content",
             icons: false
             //collapsible: true
@@ -591,8 +593,8 @@ Modernizr.load([ {
 5. Toggle
 ============================================================ */
 
-$(document).ready(function() {
-    var $lr_toggle = $(".xs-box");
+jQuery(document).ready(function() {
+    var $lr_toggle = jQuery(".xs-box");
     var $head_toggle = $lr_toggle.find("h4");
 
     //chua co active, dat mac dinh
@@ -604,9 +606,9 @@ $(document).ready(function() {
     $head_toggle.not(".active").next().hide();
 
     $head_toggle.click(function(event) {
-        var $panel = $(this).next();
+        var $panel = jQuery(this).next();
         $panel.slideToggle(300);
-        $(this).toggleClass('active');
+        jQuery(this).toggleClass('active');
     });
 });
 
@@ -652,27 +654,27 @@ if (jQuery('.sf-vertical').length > 0) {
 
     Modernizr.load([
         {
-            load: 'js/superfish.js',
+            load: temp_path + '/js/superfish.js',
             complete: function () {
 
-                var $sf_vertical = $('.sf-vertical');
+                var $sf_vertical = jQuery('.sf-vertical');
                 var device = 0; //0 desktop, 1 mobile
                 var point = 992;
 
-                if($(window).width() >= point) { //desktop
+                if(jQuery(window).width() >= point) { //desktop
                     initSf();
                 } else { //mobile
                     sfMobile();
                     device = 1;
                 }
 
-                $(window).resize(function() {
-                    console.log($(window).width() + " -- " + device);
-                    if($(window).width() >= point && !$sf_vertical.hasClass('sf-js-enabled') && device != 0) { //desktop
+                jQuery(window).resize(function() {
+                    console.log(jQuery(window).width() + " -- " + device);
+                    if(jQuery(window).width() >= point && !$sf_vertical.hasClass('sf-js-enabled') && device != 0) { //desktop
                         destroySfMobile();
                         initSf();
                         device = 0;
-                    } else if($(window).width() < point && device != 1) { //mobile
+                    } else if(jQuery(window).width() < point && device != 1) { //mobile
                         $sf_vertical.superfish('destroy');
                         sfMobile();
                         device = 1;
@@ -691,12 +693,12 @@ if (jQuery('.sf-vertical').length > 0) {
                     //them class theo sf
                     $sf_vertical.find("ul").prev().addClass("sf-with-ul");
                     $sf_vertical.children("li").click(function() {
-                        if($(this).children("ul").length) {
+                        if(jQuery(this).children("ul").length) {
                             //dong, mo LI
-                            $(this).children("ul").toggleClass('sfHover');
-                            $(this).children("ul").stop().slideToggle("slow");
+                            jQuery(this).children("ul").toggleClass('sfHover');
+                            jQuery(this).children("ul").stop().slideToggle("slow");
                             //xoa class nhung LI khac                        
-                            $(this).siblings().removeClass("sfHover").children("ul").slideUp("slow");
+                            jQuery(this).siblings().removeClass("sfHover").children("ul").slideUp("slow");
                             return false;
                         }                        
                     });
@@ -719,9 +721,9 @@ if (jQuery('.sf-vertical').length > 0) {
 
 Modernizr.load([
     {
-        load: ['js/waypoints.min.js', 'js/waypoints-sticky.min.js'],
+        load: [temp_path + '/js/waypoints.min.js', temp_path + '/js/waypoints-sticky.min.js'],
         complete: function () {
-            $(".waypoint").waypoint('sticky');            
+            jQuery(".waypoint").waypoint('sticky');            
         }            
     }
 ]);
@@ -732,7 +734,7 @@ Modernizr.load([
 
 if (jQuery('.comments-form,.contact-form').length > 0) {
     Modernizr.load([{
-        load: ['js/jquery.form.js', 'js/jquery.validate.js'],
+        load: [temp_path + '/js/jquery.form.js', temp_path + '/js/jquery.validate.js'],
         complete: function () {
             jQuery('.comments-form,.contact-form').validate({
                 // Add requirements to each of the fields
@@ -788,14 +790,14 @@ if (jQuery('.comments-form,.contact-form').length > 0) {
 /* =========================================================
  ============================================================ */
 
-$(document).ready(function() {
+jQuery(document).ready(function() {
 
-    $(".quick-link").click(function(){
-        $(this).next().stop().slideToggle("slow");
+    jQuery(".quick-link").click(function(){
+        jQuery(this).next().stop().slideToggle("slow");
     });
 
     //find-car - tuta-home-2
-    var $find_cars_wrap = $(".tuta-home-2").find(".find-cars-wrap");
+    var $find_cars_wrap = jQuery(".tuta-home-2").find(".find-cars-wrap");
 
     $find_cars_wrap.find(".head-fc").click(function() {
 
@@ -811,16 +813,16 @@ $(document).ready(function() {
     });
 
     //upload file
-    $(".upload").change(function () {
-        $(this).parent().find('.txt-file').attr("value", this.value); 
+    jQuery(".upload").change(function () {
+        jQuery(this).parent().find('.txt-file').attr("value", this.value); 
     });
 
     //slide-sell-your-car - device-width-sm
-    var $sell_your_car_slide = $(".sell-your-car-slide");
+    var $sell_your_car_slide = jQuery(".sell-your-car-slide");
     var $content = $sell_your_car_slide.find(".content");
 
     $sell_your_car_slide.find(".h3").click(function() {
-        if($(window).width() < 768) {
+        if(jQuery(window).width() < 768) {
             if($content.hasClass("active")) {
                 $content.css("height", "40px").toggleClass("active");
             } else {
@@ -829,8 +831,8 @@ $(document).ready(function() {
         }
     });
     //man hinh > device-sm thi reset
-    $(window).resize(function() {
-        if($(window).width() >= 768) {
+    jQuery(window).resize(function() {
+        if(jQuery(window).width() >= 768) {
             //$content.css("height", "auto").removeClass("active");
             $content.attr("style", "").removeClass("active");
         }
