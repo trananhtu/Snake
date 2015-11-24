@@ -218,94 +218,16 @@
 
                     <div class="blog-content">
 
-	                    <?php if(have_posts()) : 
-							while(have_posts()) : the_post();
-								get_template_part('content', get_post_format());
-							endwhile;
-							tuta_pagination();
-						else :
-							get_template_part('content', 'none');
-						endif; 
-						?>
-                        
                         <ul class="blog-list">
-
-                            <li>
-                                <article>
-                                    <h3 class="content-title">
-                                        <a href="#" title="">2013 Subaru BRZ Limited vs. Route Napoléon</a>
-                                    </h3>
-                                    <a class="thumbnail" href="#" title="">
-                                        <img src="placeholders/post-image/image-889-300-2.jpg" height="300" width="889" alt="">
-                                    </a>
-                                    <div class="info-1">
-                                        <span class="time">Aug 08, 2014, By: <a href="#">tutatheme</a>, With: 0 comments</span>
-                                        <span class="tuta-rating">
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star-o"></a>
-                                        </span>
-                                    </div>
-                                    <p>This is a story of unlikely scenarios. The first concerns the Subaru BRZ, a rear-wheel-drive sports car from the company famous for making all-wheel-drive station wagons pretending to be SUVs. It’s equally unlikely that this Japanese car finds itself on southern France’s Route Napoléon, one of  Europe’s best driving roads and the main link between swanky Cannes on the Côte d’Azur and the base of the French Alps in Grenoble</p>
-                                    <a class="more-link" href="#">View more details</a>
-                                </article>
-                            </li>
-
-                            <li>
-                                <article>
-                                    <h3 class="content-title">
-                                        <a href="#" title="">2012 BMW 328i Sedan Manual </a>
-                                    </h3>
-                                    <a class="thumbnail" href="#" title="">
-                                        <img src="placeholders/post-image/image-889-300-1.jpg" height="300" width="889" alt="">
-                                    </a>
-                                    <div class="info-1">
-                                        <span class="time">Aug 08, 2014, By: <a href="#">tutatheme</a>, With: 0 comments</span>
-                                        <span class="tuta-rating">
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star-o"></a>
-                                        </span>
-                                    </div>
-                                    <p>BMW won’t say “for competitive reasons” how many manual-transmission 3-series it sells in the United States. It’s not as many as in Europe, where 3-series sedans are sold in great numbers with small gasoline and turbo-diesel engines paired with manuals, but enough are moved here to keep a six-speed manual on the order sheet as a no-cost option. In the States, the least expensive of the new F30-generation 3-series is the 328i sedan, equipped with BMW’s new N20 turbo 2.0-liter four-cylinder and starting at $35,795. That’s a saving of $7500 compared with the 2012 turbo six-cylinder 335i sedan.</p>
-                                    <a class="more-link" href="#">View more details</a>
-                                </article>
-                            </li>
-
-                            <li>
-                                <article>
-                                    <h3 class="content-title">
-                                        <a href="#" title="">Quote Post Format Sample</a>
-                                    </h3>
-                                    <blockquote class="blockquote">
-                                        <p>
-                                            <a href="#">AutoTrader</a> team is very proffessional and has found for me the perfect car for my needs. I'll be sure to give them a call whenever I'll be needing a new set of wheels! Highly recommended
-                                        </p>
-                                        <p class="customer">Brent Jarvis, <span>Customer</span></p>
-                                    </blockquote>
-                                    <div class="info-1">
-                                        <span class="time">Aug 08, 2014, By: <a href="#">tutatheme</a>, With: 0 comments</span>
-                                        <span class="tuta-rating">
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star-o"></a>
-                                        </span>
-                                    </div>
-                                    <p>BMW won’t say “for competitive reasons” how many manual-transmission 3-series it sells in the United States. It’s not as many as in Europe, where 3-series sedans are sold in great numbers with small gasoline and turbo-diesel engines paired with manuals, but enough are moved here to keep a six-speed manual on the order sheet as a no-cost option. In the States, the least expensive of the new F30-generation 3-series is the 328i sedan, equipped with BMW’s new N20 turbo 2.0-liter four-cylinder and starting at $35,795. That’s a saving of $7500 compared with the 2012 turbo six-cylinder 335i sedan.</p>
-                                    <a class="more-link" href="#">View more details</a>
-                                </article>
-                            </li>
-
+    	                    <?php if(have_posts()) : 
+    							while(have_posts()) : the_post();
+    							    get_template_part('content', get_post_format());
+    							endwhile;
+    							tuta_pagination();
+    						else :
+    							get_template_part('content', 'none');
+    						endif; ?>
                         </ul>
-                        <!-- .blog-content -->
-
-                        
 
                     </div>
                     <!-- .blog-list -->

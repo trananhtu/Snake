@@ -10,7 +10,7 @@
     <?php wp_head();?>
 </head>
     
-<body <?php body_class('tuta-home-3 tuta-style-grid-1 tuta-style-flat'); ?>>
+<body <?php body_class('tuta-sub-page tuta-style-flat'); ?>>
 
     <header id="tuta-page-header">
         
