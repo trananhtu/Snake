@@ -1,0 +1,174 @@
+.tuta-top-slide {
+  position: relative; background-color: $bg-1; border-bottom: $border-top-slide solid $border-5;
+  //height: $height-top-slide-1 + $border-top-slide;
+  .wrapper {
+    position: absolute; top: 0; left: 50%; margin-left: -$width-page/2; height: 0;
+    @include until($device-width-lg) {
+      margin-left: 0; left: 0;
+    }
+  }
+  .slide {
+    overflow: hidden; position: relative; width: 100%; //height: $height-top-slide-1;
+  }
+  .item {
+    float: left; width: 100%; text-align: center; background: $bg-1; position: relative; //height: $height-top-slide-1;
+    img {
+      @include border-radius(0); //width: auto; max-width: none;
+      @include until($device-width-lg) {
+        width: 100%; max-width: 100%;
+      }
+    }
+    .wrapper {
+      z-index: 1;
+    }
+  }
+  .mask {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; @include transition;
+    background: transparent url("images/background/bg-3.png") repeat-y 0 0; //filter:inherit; opacity:inherit;
+    //@include box-shadow(#{250px 0 250px 0 rgba(0, 0, 0, .9) inset, -250px 0 250px 0 rgba(0, 0, 0, .9) inset});
+    > span {
+      content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; filter:inherit; opacity:inherit;
+      background: transparent url("images/background/bg-5.png") repeat-y 100% 0;
+    }
+  }
+  .intro {
+    background-color: rgba(255, 255, 255, .5); padding: 20px 20px 10px; position: absolute; top: 110px; left: 5.114%;
+    width: 495px; text-align: left;;
+    .title {
+      span {
+        color: $color-3;
+      }
+    }
+    .lead {
+      text-transform: uppercase; font-size: 13px; font-weight: 700; color: $color-5;
+    }
+
+    @include until($device-width-lg) {
+      top: 30px !important; left: 50%; margin-left: -247px; padding: 20px; text-align: center;
+      p {
+        margin-bottom: 0;
+      }
+      .title {
+        margin-bottom: 15px;
+      }
+      .lead {
+        font-size: 12px;
+      }
+      p:last-of-type {
+        display: none;
+      }
+    }
+
+    @include until($device-width-md) {
+      top: 20px !important; padding: 15px;
+      .title {
+        margin-bottom: 10px; font-size: 18px;
+      }
+    }
+
+    @include until($device-width-sm) {
+      display: none;
+      top: 20px !important; padding: 5px; width: 280px; margin-left: -140px;
+      .title {
+        margin-bottom: 0; font-size: 14px;
+      }
+      .lead {
+        display: none;
+      }
+    }
+
+    @include until($device-width-xs) {
+      display: none;
+    }
+  }
+  .control-top-slide {
+    $size-control: 62px;
+    $size-control-active: 80px;
+    $border-width: 4px;
+
+    position: absolute; top: 0; right: 4.521%; display: none; //margin-top: 74px;//90px;
+    li {
+      margin-top: 5px; text-align: center; width: $size-control-active; height: $size-control-active; position: relative;
+      &:first-child {
+        margin-top: 0;
+      }
+      &.active {
+        a {
+          width: 100%; height: 100%; margin: 0; top: 0; left: 0; border-width: $border-width+1; //padding: 5px;
+          &:after {
+            background: transparent;
+          }
+        }
+      }
+      &:hover {
+        a {
+          &:after {
+            background: transparent;
+          }
+        }
+      }
+    }
+    a {
+      display: inline-block; @include border-radius(50%); //padding: 4px; background-color: $border-4;
+      @include box-shadow(0 2px 2px #616161); width: $size-control; height: $size-control; position: absolute; border: $border-width solid $bg-4; 
+      top: 50%; left: 50%; margin: #{-$size-control/2} 0 0 #{-$size-control/2};
+      &:after {
+        content: ''; position: absolute; top: -$border-width; right: -$border-width; bottom: -$border-width; left: -$border-width; 
+        background-color: rgba(0, 0, 0, .4);
+        @include border-radius(50%); @include transition();
+      }
+      img {
+        @include border-radius(50%);
+      }
+    }
+    @include until($device-width-lg) {
+      //right: 10px; 
+      @include create-size-control(44px, 62px, 3px);
+      height: 0; position: static; overflow: visible; text-align: center;
+      li {
+        margin: 0 0 0 5px; float: none; display: inline-block; top: -80px;
+        &:first-child {
+          margin: 0;
+        }
+      }
+    }
+    @include until($device-width-md) {
+      li {
+        top: -70px;
+      }
+    }
+    @include until($device-width-sm) {
+      @include create-size-control(30px, 42px, 2px);
+      li {
+        top: -50px;
+      }
+    }
+    @include until($device-width-xs) {
+      display: none !important;
+    }
+  }
+}
+
+@include tuta-home-2 {
+  .tuta-top-slide {
+    .control-top-slide {
+      @include until($device-width-md) {
+        @include create-size-control(30px, 42px, 2px);
+        li {
+          top: -50px;
+        }
+      }
+    }
+  }
+}
+
+@include tuta-home-1 {
+  .tuta-top-slide {
+    .slide + .wrapper {
+      top: -32px;
+      @include until($device-width-lg) {
+        top: 0;
+      }
+    }
+  }
+}

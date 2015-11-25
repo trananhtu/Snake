@@ -1,0 +1,16 @@
+/**
+ * submit-vehicle-widget
+ */
+
+.tuta-submit-vehicle-widget {
+  text-align: center; padding: 50px 20px; background-color: $bg-5;
+  .h2 {
+    line-height: 28px; margin-bottom: 10px;
+  }
+  .h5 {
+    margin-bottom: 30px;
+  }
+  .tuta-button-default {
+    font-size: 16px; font-weight: bold;
+  }
+}

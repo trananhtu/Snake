@@ -1,0 +1,165 @@
+/**
+ * kp home 3
+ */
+
+.product-list-1 {
+  text-align: center; //overflow: hidden;
+  &.row {
+    margin: 0 -15px;
+    > div {
+      padding: 0 15px;
+    }
+  }
+  .item {
+    text-align: left;
+  }
+  .thumbnail {
+    @include border-radius(0); margin-bottom: 40px; position: relative; overflow: visible;
+    &:after {
+      content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 23px;
+      background: transparent url("images/background/bottom-prod-tab.png") no-repeat 50% 0;
+      background-size: 100% 100%;
+    }
+    @include until($device-width-lg) {
+      &:after {
+        background-size: 100% 100%;
+      }
+    }
+    > *:first-child { //the boc img
+      &:after, &:before {
+        content: ''; position: absolute; bottom: 7px; left: 7px; right: 7px; top: 7px; @include transition();
+      }
+      &:after {
+        top: auto; height: 16px;
+        background: transparent url("images/background/bottom-prod-tab-hover.png") no-repeat 50% 100%;
+        background-size: 100% 100%;
+      }
+      &:before {
+        bottom: 23px;
+        border: 1px solid $border-4; border-bottom: none; background-color: rgba(19, 19, 19, .3)
+      }
+    }    
+    img {
+      @include border-radius(0); 
+    }
+    .hexagon-1 {
+      z-index: 1; position: absolute; bottom: -$height-hexagon-1/2; left: 50%; margin-left: -$width-hexagon-1/2;
+    }
+    &:hover {
+      .hexagon-1 {
+        background-color: $bg-10;
+        &:after, &:before {
+          background-color: $bg-10;
+        }
+      }
+
+      > *:first-child {
+        &:after {
+          @include opacity(0);
+        }
+        &:before {
+          background: none;
+        }
+      }
+      .btn-wrap {
+        @include opacity(1);
+      }
+    }
+  }
+  .content {
+    padding: 0;
+  }
+  .flag {
+    text-transform: uppercase; position: absolute; color: $color-4; text-align: center; @include transition();
+    background-color: transparent; overflow: hidden; padding: 0 0 0 10px; height: 35px; font: 400 12px/35px $font-heading;
+    width: 45px; top: 5px; right: 5px; @include transform(rotate(-90deg));
+    &:before {
+      content: ''; position: absolute; height: 50px; width: 30px; top: 50%; left: 0; margin-top: -25px;
+      @include border-radius(50%); background-color: $bg-11; @include transition();
+    }
+    i {
+      background-color: $bg-11; display: block; font-style: normal; position: relative; padding-right: 6px; @include transition();
+    }
+  }
+  .new {
+    &:before, i {
+      background-color: $color-10;
+    }
+  }
+  .hot, .sale {
+    &:before, i {
+      background-color: $color-11;
+    }
+  }
+  .content-title {
+    font-size: 14px; @include ellipsis;
+    > a:hover {
+      color: $color-11;
+    }
+  }
+  .tuta-rating {
+    display: block;
+    a {
+      font-size: 13px; color: $color-4;
+    }
+  }
+  .tuta-button-default {
+    display: block; font-size: 12px; text-transform: uppercase; font-weight: 700; text-align: center;
+    @include border-radius(0); background-color: $silver-sand; background-color: rgba(255, 255, 255, .4);
+    &:hover {
+      background-color: $bg-11; 
+    }
+    .fa {
+      font-size: 13px; margin-right: 8px;
+    }
+  }
+  .info-1 {
+    margin-bottom: 0;
+    > span {
+      padding: 0; margin: 0 8px 0 0;
+      &:after {
+        display: none;
+      }
+      &:first-child {
+        margin: 0;
+      }
+    }
+    .price {
+      margin-bottom: 8px;
+    }
+  }
+  .more-link {
+    font-style: italic; color: $color-4; position: relative; padding: 0 57px; margin: 50px 0 15px;
+    display: inline-block; text-transform: none; font-size: 16px; overflow: hidden;
+    &:hover {
+      color: $color-11;
+    }
+    &:after, &:before {
+      content: ''; width: 50px; height: 5px; position: absolute; left: -5px; bottom: 4px;
+      @include transform(skew(-45deg)); background-color: $bg-4;
+    }
+    &:after {
+      left: auto; right: -5px;
+    }
+  }
+  .btn-wrap {
+    position: absolute; top: 50%; left: 50%; margin-top: -20px; margin-left: -42px; overflow: hidden; display: inline-block; @include opacity(0); @include transition;
+  }
+  .btn-add-cart {
+    display: inline-block; width: 40px; height: 40px; background-color: $bg-4; float: left; margin-left: 5px;
+    @include border-radius(50%); text-align: center; line-height: 40px; font-size: 16px;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:hover {
+      background-color: $bg-11; color: $color-4;
+    }
+  }
+
+  .owl-item { //dung cho box sd owl carousel
+    padding: 0 15px;
+    div[class^="col-"] {
+      padding: 0; width: 100%;
+    }
+  }
+}

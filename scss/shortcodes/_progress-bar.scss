@@ -1,0 +1,15 @@
+/**
+ * Progress bar
+ */
+
+.tuta-progress-bar {
+  .progress {
+    height: 30px; background-color: $bg-5; margin-bottom: 10px; @include box-shadow(none);
+    .progress-bar {
+      background-color: $bg-3; @include box-shadow(none); @include border-radius();
+    }
+    .label {
+      float: left; padding: 0 10px; color: $color-4; font: 700 13px/30px $font-heading;
+    }
+  }
+}

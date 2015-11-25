@@ -1,0 +1,53 @@
+/**
+ * single car
+ */
+
+.car-info {
+  margin-bottom: 10px;
+  h3 {
+    margin-bottom: 25px;
+  }
+  .info-wrap {
+    margin-bottom: 20px;
+  }
+  .textarea-status {
+    margin-bottom: 5px;
+  }
+  .price-status {
+    margin: 15px 0 25px;
+  }
+  .note {
+    margin-left: 20px;
+  }
+
+  .col-xs-2-4 {
+    position: relative; min-height: 1px; padding-right: 10px; padding-left: 10px; width: 20%;
+  }
+  @include atLeast($device-width-sm) {
+    .col-sm-2-4 {
+      width: 20%;
+    }
+  }
+  @include atLeast($device-width-md) {
+    .col-md-2-4 {
+      width: 20%;
+    }
+  }
+  @include atLeast($device-width-lg) {
+    .col-lg-2-4 {
+      width: 20%;
+    }
+  }
+  @include until($device-width-sm) {
+    .note {
+      display: block; margin: 18px 0 0;
+    }
+  }
+}
+
+.latest-adv-box {
+  @extend .tuta-latest-adv-widget; margin-bottom: 20px;
+  .widget-content {
+    overflow: visible;
+  }
+}

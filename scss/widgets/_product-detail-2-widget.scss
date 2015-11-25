@@ -1,0 +1,117 @@
+/**
+ * product-detail-2-widget
+ */
+
+.tuta-product-detail-2-widget {
+  .list-pd {
+    width: 40.3%; float: left;
+    > li {
+      margin-top: 15px; padding-left: 50px; position: relative; overflow: hidden;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  .content {
+    padding: 0 15px; width: 59.7%; float: left;
+    .thumbnail {
+      position: relative; display: none; //use carousel
+      width: 380px;
+    }
+  }
+  .item {
+    overflow: hidden;
+  }
+  .thumbnail {
+    float: left; margin: 5px 15px 0 0; @include border-radius(0);
+    img {
+      @include border-radius(0);
+    }
+    &:hover {
+      .owl-controls {
+        .owl-buttons {
+          .owl-next, .owl-prev {
+            @include opacity(1);
+          }
+        }        
+      }
+      a:after {
+        background-color: rgba(0, 0, 0, 0);
+      }
+    }
+    a {
+      &:after {
+        content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, .3);
+        @include transition;
+      }
+    }
+  }
+  .content-title {
+    color: $color-heading-1; font-size: 14px; margin-bottom: 5px;
+    a {
+      color: $color-heading-1;
+      &:hover {
+        color: $color-11;
+      }
+    }
+  }
+  .author {
+    &:after {
+      content: ';'
+    }
+  }
+  .time-o {
+    width: 45px; height: 75px; background-color: $bg-12; text-align: center; color: $color-4;
+    font: 700 12px $font-heading; position: absolute; top: 5px; left: 0; text-transform: uppercase;
+    > span {
+      line-height: 23px; display: block;
+      &:first-child {
+        height: 52px; line-height: 52px; background-color: $bg-11; font-size: 20px;
+      }
+    }
+  }
+  p {
+    margin: 13px 0; color: $color-10;
+  }
+  .more-link {
+    text-transform: none;
+  }
+  .owl-controls {
+    position: static; @include transition;
+    .owl-buttons {
+      .owl-next, .owl-prev {
+        position: absolute; top: 50%; margin-top: -15px; left: 25px; @include opacity(0);
+      }
+      .owl-next {
+        right: 25px; left: auto;
+      }
+    }
+  }
+  @include atLeastUntil($device-width-md, $device-width-lg) {
+    .content {
+      .author {
+        &:after {
+          display: none;
+        }
+      }
+      .author, .time {
+        display: block;
+      }
+    }    
+  }
+  @include until($device-width-md) {
+    .list-pd {
+      float: none; width: 100%; margin-bottom: 30px;
+    }
+    .content {
+      float: none; width: 100%;
+    }
+  }
+  @include until($device-width-sm) {
+    .content {
+      .thumbnail {
+        margin: 0 0 15px; float: none; display: block; width: 100%;
+      }
+    }    
+  }
+}

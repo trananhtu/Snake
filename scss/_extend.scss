@@ -1,0 +1,63 @@
+%transition {
+  transition:all .3s;
+  -ms-transition:all .3s;
+  -webkit-transition:all .3s;
+  -moz-transition:all .3s;
+}
+%fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// tuta-latest-adv
+%tuta-latest-adv { //chung home 4 5
+  color: $color-2;
+  .widget-content {
+    overflow: hidden; //margin-bottom: -20px;
+  }
+  .item {
+    overflow: hidden; position: relative; @include border-radius(); //margin-bottom: 20px;
+  }
+  .thumbnail {
+    position: relative; overflow: hidden; @include border-radius(0);
+    img {
+      @include border-radius(0);
+    }
+  }
+  .price {
+    position: absolute; background-color: $bg-3; padding: 0 13px;
+    bottom: 0; right: 0; margin: 0;
+  }
+  .content {
+    overflow: hidden; padding: 10px 20px 18px; background-color: $bg-1;
+    .content-title {
+      @include ellipsis;
+    }
+  }
+  .info-1 {
+    margin: 0;
+  }
+  .wrapper {
+    padding: 0; width: 100%;
+  }
+}
+
+// tuta-template-1-widget
+%tuta-template-1-widget {
+  background-color: $bg-5; padding: 20px; @include border-radius();
+}
+
+// newsletter-bg-white
+%newsletter-bg-white {
+  &:before {
+    background-color: $bg-4;
+  }
+  @include until($device-width-md) {
+    background-color: $bg-4;
+  }
+}

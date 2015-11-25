@@ -1,0 +1,13 @@
+/**
+ * latest-adv-1-widget
+ */
+
+.tuta-latest-adv-1-widget { //search-car
+  @extend .tuta-latest-adv-widget;
+  .item {
+    margin-bottom: 20px;
+  }
+  .widget-content {
+    margin-bottom: -20px;
+  }
+}

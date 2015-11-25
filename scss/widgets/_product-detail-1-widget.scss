@@ -1,0 +1,76 @@
+/**
+ * product-detail-1-widget
+ */
+
+.tuta-product-detail-1-widget {
+  text-align: center; color: $color-10;
+  .item {
+    position: relative;
+  }
+  .widget-content {
+    text-align: left; margin-top: 50px;
+  }
+  .thumbnail {
+    @include border-radius(0); margin-bottom: 13px; position: relative;
+    &:after {
+      content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, .3);
+      @include transition;
+    }
+    &:hover {
+      &:after {
+        background-color: rgba(0, 0, 0, 0);
+      }
+    }
+
+    img {
+      @include border-radius(0);
+    }
+  }
+  .content-title {
+    color: $color-10;
+    a {
+      color: $color-10;
+      &:hover {
+        color: $color-11;
+      }
+    }
+  }
+  .content-lead {
+    margin-bottom: 13px;
+  }
+  .more-link {
+    text-transform: capitalize;
+  }
+  .hexagon-2 {
+    position: absolute; top: -$height-hexagon-1/2; left: 50%; margin-left: -$width-hexagon-2/2; cursor: default;
+    .data {
+      z-index: 1; font: 700 12px/15px $font-heading; position: absolute; top: 0; left: 0; width: 100%;
+    }
+    &:after, &:before {
+      cursor: default;
+    }
+    > *, > *:after, > *:before {
+      cursor: default;
+
+    }
+  }
+  @include until($device-width-md) {
+    .row {
+      > div {
+        margin-bottom: 60px;
+        &:nth-last-child(1), &:nth-last-child(2) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  @include until($device-width-sm) {
+    .row {
+      > div {
+        &:nth-last-child(2) {
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+/**
+ * top-product-list-widget
+ */
+
+.tuta-top-product-list-widget {
+  background-color: $bg-12; padding: 40px 0;
+  .item {
+    margin-top: 0;
+  }
+  .content-title {
+    a {
+      color: $color-4;
+      &:hover {
+        color: $color-11;
+      }
+    }
+  }
+  .price, .price-1 {
+    color: $color-4;
+  }
+  .tuta-rating {
+    a {
+      color: $color-4;
+      &:hover {
+        color: $color-11;
+      }
+    }
+  }
+
+  .owl-carousel {
+    .owl-controls {
+      position: static; margin-top: 25px;
+      .owl-page {
+        > span {
+          border: none; background-color: $border-2;
+        }
+        &:first-child {
+          > span {
+            margin-left: 0;
+          }
+        }
+        &:hover, &.active {
+          > span {
+            background-color: $bg-11;
+          }
+        }
+      }
+    }
+  }
+  .owl-carousel .owl-controls .owl-page span {
+    width: 16px; height: 16px;
+  }
+
+  @include until($device-width-md) {
+    .row {
+      > div {
+        margin-bottom: 30px;
+        &:nth-last-child(1), &:nth-last-child(2) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  @include until($device-width-sm) {
+    .row {
+      > div {
+        &:nth-last-child(2) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+@include tuta-home-4 {
+  .tuta-top-product-list-widget {
+    .content-title {
+      a {
+        color: $color-4;
+        &:hover {
+          color: $color-11;
+        }
+      }
+    }
+    .price, .price-1 {
+      color: $color-4;
+    }
+    .tuta-rating {
+      a {
+        color: $color-4;
+      }
+    }
+  }
+}

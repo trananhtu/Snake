@@ -1,0 +1,35 @@
+/**
+ * purchase-box
+ */
+
+.purchase-box {
+  padding: 15px 0; color: $color-4; background-color: $bg-11;
+  .wrapper {
+    position: relative; left: auto; height: auto; margin: 0 auto; overflow: hidden; padding-right: 213px;
+  }
+  .button-skew {
+    //float: right; margin: 0 20px 0 40px;
+    position: absolute; top: 0; right: 20px;
+  }
+  p {
+    margin-bottom: 0; font-size: 15px; @include ellipsis();
+  }
+  .h5 {
+    font-size: 14px; line-height: 20px; margin-bottom: 0; color: $color-4;
+  }
+  @include until($device-width-md) {
+    text-align: center;
+    .wrapper {
+      padding-right: 0;
+    }
+    .button-skew {
+      margin-top: 15px; position: static; //float: none;
+    }
+    p {
+      text-align: left; @include no-ellipsis;
+    }
+    .h5 {
+      margin-bottom: 8px
+    }
+  }
+}

@@ -1,0 +1,158 @@
+/**
+ * featured-dealer-1-widget
+ */
+
+.tuta-featured-dealer-1-widget {
+  margin-top: -4px;
+  .featured {
+    position: relative; overflow: hidden;
+    .item {
+      background-color: $bg-1; overflow: hidden;
+      @include border-radius();
+      .thumbnail, img {
+        @include border-radius(0);
+      }
+      .content-title {
+        margin: 0 20px; height: 42px; line-height: 42px; font-size: 13px; @include ellipsis;
+      }
+    }
+  }
+  .more-link {
+    position: absolute; line-height: 86px; text-align: center; text-transform: uppercase; color: $color-4;
+    display: block; width: 66px; height: 86px; top: 50%; left: 50%;
+    margin-top: -43px; margin-left: -33px;
+    //background: transparent url("images/background/mask-1.png") no-repeat 0 0;
+    &:before {
+      @include before-left(43px, 43px, 33px, $bg-3); left: 0; top: 0;
+    }
+    &:after {
+      @include before-right(43px, 43px, 33px, $bg-3); right: 0; top: 0;
+    }
+    span {
+      position: relative; z-index: 1; display: block; width: 66px; height: 86px; font-size: 13px;
+      background: transparent url("images/background/mask-1.png") no-repeat 0 38px;
+      line-height: 20px; text-transform: capitalize; padding-top: 24px;
+    }
+  }
+  .row {
+    margin: 0;
+    > div {
+      padding: 0;
+    }
+  }
+
+  @include atLeastUntil($device-width-sm, $device-width-lg) {
+    .row {
+      margin: 0 -10px;
+      > div {
+        padding: 0 10px;
+      }
+    }
+  }
+  @include until($device-width-sm) {
+    .col-lg-6 {
+      width: 50%; float: left; margin: 0;
+    }
+  }
+  @include until($device-width-xs) {
+    .col-lg-6 {
+      width: 100%; float: none; margin-top: 10px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+@include tuta-style-flat {
+  .tuta-featured-dealer-1-widget {
+    .more-link {
+      span {
+        background: none;
+      }
+    }
+  }
+}
+@include widget-area-2 {
+  .tuta-featured-dealer-1-widget {
+    .col-lg-6 {
+      width: 100%; float: none; margin-top: 20px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    @include until($device-width-lg) {
+      .col-lg-6 {
+        width: 25%; float: left; margin-top: 0;
+      }
+    }
+    @include until($device-width-sm) {
+      .col-lg-6 {
+        width: 50%; margin: 0;
+      }
+    }
+    @include until($device-width-xs) {
+      .col-lg-6 {
+        width: 100%; float: none; margin-top: 10px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+@include widget-area-5 {
+  .tuta-featured-dealer-1-widget {
+    .col-lg-6 {
+      width: 25%; float: left;
+    }
+    .row {
+      margin: 0 -10px;
+      > div {
+        padding: 0 10px;
+      }
+    }
+    @include until($device-width-sm) {
+      .col-lg-6 {
+        width: 50%; float: left; margin: 0;
+      }
+    }
+    @include until($device-width-xs) {
+      .col-lg-6 {
+        width: 100%; float: none; margin-top: 10px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+@include widget-area-6 {
+  .tuta-featured-dealer-1-widget {
+    width: $width-page; margin-left: auto; margin-right: auto;
+    .col-lg-6 {
+      width: 25%; float: left;
+    }
+    .row {
+      margin: 0 -10px;
+      > div {
+        padding: 0 10px;
+      }
+    }
+    @include until($device-width-lg) {
+      width: auto; margin-left: 10px; margin-right: 10px;
+    }
+    @include until($device-width-sm) {
+      .col-lg-6 {
+        width: 50%; float: left; margin: 0;
+      }
+    }
+    @include until($device-width-xs) {
+      .col-lg-6 {
+        width: 100%; float: none; margin-top: 10px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

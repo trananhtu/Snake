@@ -1,0 +1,19 @@
+/**
+ * search-car-widget
+ */
+
+.tuta-search-car-widget {
+  padding: 40px 115px 20px; text-align: center;
+  .tuta-button-default {
+    font-size: 16px; margin-top: 25px; padding: 0 40px;
+  }
+  .form-control-wrap {
+    margin-bottom: 20px;
+  }
+  .row {
+    text-align: left;
+  }
+  @include until($device-width-lg) {
+    padding-left: 0; padding-right: 0;
+  }
+}

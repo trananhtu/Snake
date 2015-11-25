@@ -1,0 +1,41 @@
+/**
+ * best-seller-widget
+ */
+
+.tuta-best-seller-widget {
+  li {
+    padding-top: 15px; margin-top: 20px; border-top: 1px solid $border-2; overflow: hidden;
+    &:first-child {
+      padding-top: 0; margin-top: 0; border-top: none;
+    } 
+  }
+  .widget-content {
+    padding: 20px; border: 1px solid $border-2
+  }
+  .thumbnail {
+    float: left; margin: 5px 20px 0 0; @include border-radius(0);
+  img {
+    @include border-radius(0);
+  }
+  }
+  .content-title {
+    margin-bottom: 0; font-weight: 400; color: $color-10; font-size: 12px;
+    a {
+      color: $color-10;
+      &:hover {
+        color: $color-11;
+      }
+    }
+  }
+  .price {
+    font-weight: 400; color: $color-10; font-size: 14px; margin-top: 10px;
+  }
+  .price-1 {
+    font-weight: 400; font-size: 12px; margin-right: 5px; margin-top: 10px;
+  }
+  @include atLeastUntil($device-width-md, $device-width-lg) {
+    .thumbnail {
+      float: none; margin: 0 0 15px;
+    }
+  }
+}

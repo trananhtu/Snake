@@ -1,0 +1,102 @@
+/**
+ * product-categories-widget
+ */
+
+.tuta-product-categories-widget {
+  $height-cat: 45px;
+  .widget-content { //ul
+    overflow: visible; float: none; margin-bottom: 0;
+    li {
+      width: 100%; float: none;
+      &.active, &.sfHover {
+        > a {
+          color: $color-11;
+          &.sf-with-ul {
+            &:before {
+              background-color: $bg-13; width: $height-cat;
+            }
+            &:after {
+              color: $color-4;
+            }
+          }
+        }
+      }
+      &:first-child {
+        > a {
+          border-top: none; height: $height-cat - 1; line-height: $height-cat - 1;
+        }
+        > ul {
+          margin-top: 0;
+        }
+      }
+      &:last-child {
+        > a {
+          border-bottom: none;
+        }
+      }
+
+      a {
+        height: $height-cat; @include ellipsis; font: bold 12px/#{$height-cat} $font-heading; color: $color-10;
+        padding: 0 $height-cat 0 15px; position: relative; text-transform: uppercase; display: block;
+        background-color: #d7d7d7; border-top: 1px solid $border-2; border-bottom: 1px solid $border-4;
+        border-left: none;
+        &:before, &:after {
+          content: ''; position: absolute; top: 0; right: 0; @include transition;
+        }
+        &:before {
+          width: 8px;  height: 100%; background-color: $bg-13;
+        }
+        &:hover {
+          color: $color-11;
+        }
+        &.sf-with-ul { //class of superfish
+          &:after {
+            content: '\f105'; right: 17px; font: 400 22px/#{$height-cat} FontAwesome;
+          }
+          &:hover {
+            &:before {
+             background-color: $bg-13; width: $height-cat;
+            }
+            &:after {
+              color: $color-4;
+            }
+          }
+        }        
+      }
+    }  
+    ul {
+      top: 0; left: 100%; width: 100%; margin-left: -8px; margin-top: 1px;
+      > li {
+        a {
+          border-top: 1px solid #414141; border-bottom: none; background-color: #2d2d2d; color: $color-4;
+          &:after, &:before {
+            display: none;
+          }
+        }
+      }
+    }  
+  }
+  @include until($device-width-md) {
+    .widget-content {
+      li {
+        &:hover, &.sfHover:hover { //device-width-md => disable sf
+          ul {
+            display: none;
+          }
+        }
+        ul {
+          position: static; margin: 0;
+        }
+      }
+    }
+  }
+}
+@include widget-area-2 {
+  .tuta-product-categories-widget {
+    .sf-menu {
+      ul {
+        left: -100%; margin-left: 0;
+      }
+    }
+  }
+}

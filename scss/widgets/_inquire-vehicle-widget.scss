@@ -1,0 +1,19 @@
+/**
+ * inquire-vehicle-widget
+ */
+
+.tuta-inquire-vehicle-widget {
+  @extend %tuta-template-1-widget; background-color: $bg-6; margin-bottom: 20px;
+  .button-lg {
+    display: block; text-align: center; margin-bottom: 20px;
+  }
+  input, textarea {
+    @include placeholder($color-2);
+  }
+  input {
+    margin-bottom: 10px;
+  }
+  textarea {
+    margin-bottom: 20px;
+  }
+}

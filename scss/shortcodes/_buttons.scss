@@ -1,0 +1,276 @@
+/**
+ * Buttons
+ */
+
+%template-3d {
+  position: relative; background: $bg-3; @include border-radius();
+  &:before, &:after {
+    content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 5px; background-color: $bg-9;
+    @include border-radius(0 0 4px 4px); @include transition();
+  }
+  &:after {
+    content: ''; position: absolute; left: 0; bottom: 2px; width: 100%; height: 5px; background-color: $bg-3;
+    @include border-radius(0 0 4px 4px);
+  }
+}
+
+.tuta-button-default {
+  display: inline-block; font: 400 13px/#{$height-button-md} $font-heading; height: $height-button-md; color: $color-4; 
+  padding: 0 15px; background: $bg-3; text-transform: uppercase; font-weight: 700; @include border-radius();
+  border: none; outline: none;
+  &:hover, &:focus {
+    color: $color-4;
+  }
+  .fa {
+    margin: 0 5px; font-size: 14px;
+  }
+  .smaller {
+    font-size: .8em;
+  }
+  .smaller-1 {
+    @extend .smaller; text-transform: none; font-weight: 400;
+  }
+}
+
+.button-3d {
+  @extend %template-3d;
+  height: $height-button-md + 2;
+}
+.button-gde {
+  background: $bg-3; // Old browsers
+  // IE9 SVG, needs conditional override of 'filter' to 'none' 
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2QzMDgxOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2Q5MDYxOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkMzA4MTkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #d30819 0%, #d90618 50%, #d30819 100%); // FF3.6+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d30819), color-stop(50%,#d90618), color-stop(100%,#d30819)); // Chrome,Safari4+
+  background: -webkit-linear-gradient(top,  #d30819 0%,#d90618 50%,#d30819 100%); // Chrome10+,Safari5.1+
+  background: -o-linear-gradient(top,  #d30819 0%,#d90618 50%,#d30819 100%); // Opera 11.10+
+  background: -ms-linear-gradient(top,  #d30819 0%,#d90618 50%,#d30819 100%); // IE10+
+  background: linear-gradient(to bottom,  #d30819 0%,#d90618 50%,#d30819 100%); // W3C
+  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d30819', endColorstr='#d30819',GradientType=0 ); /* IE6-8 */
+  filter: none;
+
+  @include box-shadow(0 -31px 30px -25px rgba(0, 0, 0, .4) inset);
+  &:hover {
+    @include box-shadow(0 28px 30px -25px rgba(0, 0, 0, .4) inset);
+  }
+  &.button-sm {
+    @include box-shadow(0 -36px 30px -30px rgba(0, 0, 0, .4) inset);
+    &:hover {
+      @include box-shadow(0 33px 30px -30px rgba(0, 0, 0, .4) inset);
+    }
+  }
+  &.button-lg {
+    @include box-shadow(0 -26px 30px -20px rgba(0, 0, 0, .4) inset);
+    &:hover {
+      @include box-shadow(0 23px 30px -20px rgba(0, 0, 0, .4) inset);
+    }
+  }
+}
+@include tuta-style-flat {
+  .button-gde {
+    background: $bg-11; @include box-shadow(none);
+    &:hover {
+      @include box-shadow(none);
+    }
+  }
+}
+.button-ico {
+  text-transform: none;
+}
+.button-skew {
+  background: transparent; @include border-radius(0); @include create-skew;
+  &:hover {
+    color: $color-10;
+  }
+  &.button-skew-1 {
+    border-color: $border-4; color: $color-4;
+  }
+  &.button-skew-2 {
+    border-color: $border-11; color: $color-11;
+  }
+}
+.button-half-skew {
+  $height-button: 30px;
+  height: $height-button; padding: 0 2px 0 10px; display: inline-block; text-transform: uppercase; margin-right: $height-button;
+  font: 700 13px/#{$height-button} $font-heading; position: relative; background-color: rgba(255, 255, 255, .7);
+  @include transition;
+  &:after {
+    content: ''; position: absolute; top: 0; right: -$height-button; height: 100%;
+    @include before-bottom(0, $height-button, $height-button, rgba(255, 255, 255, .7)); @include transition;
+  }
+  &:hover {
+    background-color: $color-11; color: $color-4;
+    &:after {
+      border-top-color: $color-11;
+    }
+  }
+}
+.button-sm {
+  line-height: $height-button-sm; height: $height-button-sm; font-size: 13px; font-weight: 400;
+  &.button-3d {
+    background: $bg-5; color: $color-1; height: $height-button-sm + 2;
+    &:before {
+      background: $border-2;
+    }
+    &:after {
+      background: $bg-5;
+    }
+  }
+}
+.button-lg {
+  line-height: $height-button-lg; height: $height-button-lg; font-size: 16px;
+  &.button-3d {
+    height: $height-button-lg + 2;
+  }
+}
+
+@mixin create-button($btn-color, $text-color: $color-4, $percent-darken: 16% ) {
+  background-color: $btn-color; color: $text-color;
+  &:hover {
+    color: $text-color;
+  }
+  &.button-3d {
+    background-color: $btn-color; color: $text-color;
+    &:hover {
+      color: $text-color;
+    }
+    &:after {
+      background-color: $btn-color;
+    }
+    &:before {
+      background-color: darken($btn-color, $percent-darken);
+    }
+  }
+}
+
+@mixin create-button-hover($btn-color, $text-color: $color-4, $percent-darken: 16%) {
+  &:hover {
+    background-color: $btn-color; color: $text-color;
+    &.button-3d {
+      background-color: $btn-color; color: $text-color;
+      &:hover {
+        color: $text-color;
+      }
+      &:after {
+        background-color: $btn-color;
+      }
+      &:before {
+        background-color: darken($btn-color, $percent-darken);
+      }
+    }
+  }
+}
+
+.btn-yellow {
+  @include create-button(#f2d220, $color-4);
+}
+.btn-orange {
+  @include create-button(#ff5400, $color-4);
+}
+.btn-red {
+  @include create-button($bg-3, $color-4);
+}
+.btn-red-dark {
+  @include create-button(#84020b, $color-4);
+}
+.btn-brown {
+  @include create-button(#7b5635, $color-4);
+}
+.btn-green {
+  @include create-button(#31aa3a, $color-4);
+}
+.btn-skyblue {
+  @include create-button(#00a6dc, $color-4);
+}
+.btn-darkgray {
+  @include create-button(#2d2d2d, $color-4);
+}
+.btn-black {
+  @include create-button(#000);
+}
+.btn-lightgray {
+  @include create-button($bg-5, $color-1, 25%);
+}
+.btn-white {
+  @include create-button($bg-4, $color-1, 30%);
+}
+.btn-white-hover {
+  @include create-button($bg-4, $color-1, 30%);
+  @include create-button-hover($bg-3, $color-4);
+}
+
+/*element buttons*/
+
+.buttons-box {
+  $height-btn-wrap: $height-button-lg; //50px
+  $margin-btn-wrap: 20px;
+  .tuta-button-default {
+    font-weight: 400; font-size: 13px; text-align: center; padding: 0; display: block;
+    vertical-align: middle;
+  }
+  .row {
+    margin-top: $margin-btn-wrap;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  > .row {
+    position: relative; margin-top: 30px;
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+  .col-lg-8 {
+    position: absolute; top: 50%; right: 0;
+    &.expand { //2 row
+      height: $height-btn-wrap*2 + $margin-btn-wrap; margin-top: - ($height-btn-wrap*2 + $margin-btn-wrap)/2; 
+    }
+    &.narrow { //1 row
+      height: $height-btn-wrap; margin-top: - $height-btn-wrap/2; 
+    }
+    &.btn-color-wrap { //btn available corlor
+      height: $height-button-md*2 + $margin-btn-wrap/2; margin-top: - ($height-button-md*2 + $margin-btn-wrap/2)/2;
+      .tuta-button-default {
+        width: 94px; display: inline-block; float: left; margin: 0 $margin-btn-wrap/2 $margin-btn-wrap/2 0;
+      }
+    }
+    .tuta-button-default {
+      margin-top: ($height-btn-wrap - $height-button-md)/2;
+    }
+    .button-sm {
+      margin-top: ($height-btn-wrap - $height-button-sm)/2;
+    }
+    .button-lg {
+      margin-top: ($height-btn-wrap - $height-button-lg)/2;
+    }
+  }
+  .box-wrap-1 {
+    @extend %tuta-template-1-widget; 
+    p {
+      margin: 10px 0 0 0;
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+  @include until($device-width-lg) {
+    .col-lg-8 {
+      &.expand, &.narrow, &.btn-color-wrap {
+        position: static; margin-top: 0;
+      }
+    }
+    .box-wrap-1 {
+      margin-bottom: 20px; padding: 0; background-color: transparent;
+    }
+  }
+  @include until($device-width-sm) {
+    .col-lg-8 {
+      &.expand, &.narrow, &.btn-color-wrap {
+        height: auto;
+        .tuta-button-default {
+          margin-top: 0;  margin-bottom: 10px; display: inline-block; padding: 0 20px;
+        }
+      }
+    }
+  }
+}

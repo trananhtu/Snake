@@ -59,3 +59,36 @@ $bg-10: $cod-gray-4;
 $bg-11: $monza-2;
 $bg-12: $cod-gray-5;
 $bg-13: $mine-shaft;
+
+// responsive
+$device-width-xs: 480px;
+$device-width-sm: 768px;
+$device-width-md: 992px;
+$device-width-lg: $width-page; //1210px;
+
+// header
+$width-logo-page-1: 300px;
+$width-logo-page-2: 322px;
+$height-main-menu: 42px;
+$height-main-menu-2: $height-main-menu + 8;
+$padding-bot-logo: 20px;
+
+// top-slide
+$height-top-slide-1: 533px;
+$height-top-slide-2: 430px;
+$height-top-slide-3: 500px;
+$border-top-slide: 5px;
+
+// buttons
+$height-button-sm: 30px;
+$height-button-md: 40px;
+$height-button-lg: 50px;
+
+// tab-2
+$width-tab-2: 240px;
+$width-tab-2-responsive: 55px;
+
+// hexagon-1
+$width-hexagon-1: 52px;
+$height-hexagon-1: round(58.620 * $width-hexagon-1 / 100); //tinh % height theo width
+

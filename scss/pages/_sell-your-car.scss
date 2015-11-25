@@ -1,0 +1,121 @@
+/**
+ * sell your car
+ */
+
+.sell-your-car-slide {
+  .sub-page-slide {
+    width: 74.6%;
+    .item {
+      padding-top: 42%;
+    }
+    .content {
+      width: 270px; padding: 20px;
+    }
+  }
+  .control-sub-page-slide {
+    width: 25.4%;
+    li {
+      padding-top: 43.1111%;
+      &:after {
+        display: none;
+      }
+    }
+    .item {
+      position: absolute; top: 5px; left: 0; bottom: 5px; right: 0;
+    }
+  }
+  @include until($device-width-lg) {
+    .sub-page-slide {
+      width: 100%;
+      .content {
+        top: 20px; left: 20px; bottom: 20px; width: 270px;
+      }
+      p {
+        display: block;
+      }
+    }
+    .control-sub-page-slide {
+      width: 100%; margin: 10px 0 0; padding: 0;
+      li {
+        width: 33.3333%; padding: 0 5px; float: left;
+      }
+      .item {
+        position: relative; top: auto; bottom: auto; left: auto; right: auto;
+      }
+    }
+  }
+  @include until($device-width-md) {
+    .sub-page-slide {
+      .content {
+        top: 0; left: 0; bottom: 0; @include border-radius(4px 0 0 4px);
+      }
+      .thumbnail {
+        img {
+          @include border-radius(4px 4px 0 0);
+        }
+      }
+    }
+  }
+  @include atLeastUntil($device-width-xs, $device-width-sm) {
+    .sub-page-slide {
+      .item {
+        padding-top: 0;
+      }
+      .content {
+        width: 100%; height: 40px; right: 0; padding: 10px 20px; @include transition;
+        &.active {
+          height: auto;
+          .h3 {
+            &:after {
+              content: " \f106 ";
+            }
+          }
+        }
+        .h3 {
+          font-size: 13px; cursor: pointer; margin-bottom: 10px;
+          &:after {
+            content: " \f107 "; font-family: FontAwesome; margin-right: 5px;
+          }
+        }
+        .h5 {
+          margin-bottom: 10px;
+        }
+        li {
+          width: 50%; float: left; margin-bottom: 5px;
+        }
+        .tuta-button-default {
+          margin-top: 5px;
+        }
+      }
+    }
+    .control-sub-page-slide {
+      .item {
+        padding: 10px 13px 15px;
+      }
+      .content-title {
+        font-size: 12px;
+      }
+      .price {
+        font-size: 12px; top: 10px; right: 13px;
+      }
+    }
+  }
+  @include until($device-width-xs) {
+    .sub-page-slide {
+      .item {
+        padding-top: 0;
+      }
+      .content {
+        display: none;
+      }
+    }
+    .control-sub-page-slide {
+      li {
+        width: 100%; float: none; margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

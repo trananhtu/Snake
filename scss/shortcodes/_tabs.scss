@@ -1,0 +1,445 @@
+/**
+ * Tabs
+ */
+
+.tuta-tab-1 {
+  .nav {
+    border: none; margin: 0 -3px 9px; height: 49px; overflow: hidden;
+    li {
+      padding: 0 3px 7px; margin-bottom: 0; width: 16.6666%;
+      &.active, &:hover {
+        &:before {
+          border-top-color: #a1111c;
+        }
+        a {
+          border: none; @include box-shadow(0 0 0 0 rgba(0, 0, 0, 0) inset);
+        }
+      }
+      &:before {
+        @include before-bottom(7px, 7px, 7px, $bg-1); bottom: 0; left: 50%; margin-left: -7px;
+        @include transition;
+      }
+      &:after {
+        content: ''; position: absolute; top: 50%; left: -9px; width: 18px; height: 18px; border: 3px solid $border-4;
+        margin-top: -9px; @include border-radius(50%); background-color: $bg-3;
+      }
+      &:first-child {
+        &:after {
+          display: none;
+        }
+      }
+      a {
+        font: bold 13px/42px $font-heading; text-transform: uppercase; color: $color-4;
+        @include border-radius(0); padding: 0 15px; margin: 0; border: none; position: relative; text-align: center;
+        @include ellipsis;
+        @include box-shadow(0 0 100px 22px rgba(0, 0, 0, 1) inset);
+        background: $bg-3; // Old browsers
+        // IE9 SVG, needs conditional override of 'filter' to 'none' 
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI4JSIgc3RvcC1jb2xvcj0iI2Q3MTYyNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwJSIgc3RvcC1jb2xvcj0iI2Q1MDgxOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE4JSIgc3RvcC1jb2xvcj0iI2Q5MDcxOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ2JSIgc3RvcC1jb2xvcj0iI2Q4MDYxOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU5JSIgc3RvcC1jb2xvcj0iI2NjMDUxNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1jb2xvcj0iIzlmMDMwZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkyJSIgc3RvcC1jb2xvcj0iI2ExMTExYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+        background: -moz-linear-gradient(top,  rgb(215,22,38) 8%, rgb(213,8,25) 10%, rgb(217,7,25) 18%, rgb(216,6,24) 46%, rgb(204,5,22) 59%, rgb(159,3,15) 90%, rgb(161,17,28) 92%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(8%,rgb(215,22,38)), color-stop(10%,rgb(213,8,25)), color-stop(18%,rgb(217,7,25)), color-stop(46%,rgb(216,6,24)), color-stop(59%,rgb(204,5,22)), color-stop(90%,rgb(159,3,15)), color-stop(92%,rgb(161,17,28))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgb(215,22,38) 8%,rgb(213,8,25) 10%,rgb(217,7,25) 18%,rgb(216,6,24) 46%,rgb(204,5,22) 59%,rgb(159,3,15) 90%,rgb(161,17,28) 92%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgb(215,22,38) 8%,rgb(213,8,25) 10%,rgb(217,7,25) 18%,rgb(216,6,24) 46%,rgb(204,5,22) 59%,rgb(159,3,15) 90%,rgb(161,17,28) 92%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgb(215,22,38) 8%,rgb(213,8,25) 10%,rgb(217,7,25) 18%,rgb(216,6,24) 46%,rgb(204,5,22) 59%,rgb(159,3,15) 90%,rgb(161,17,28) 92%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgb(215,22,38) 8%,rgb(213,8,25) 10%,rgb(217,7,25) 18%,rgb(216,6,24) 46%,rgb(204,5,22) 59%,rgb(159,3,15) 90%,rgb(161,17,28) 92%); /* W3C */
+        //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d71626', endColorstr='#a1111c',GradientType=0 ); /* IE6-8 */
+        filter: none;
+        
+        &:focus, &:hover {
+          color: $color-4;
+        }
+      }
+    }
+  }
+  .tab-content {
+    border: 6px solid $border-2;  @include border-radius(); position: relative; color: $color-1;
+    .content-title {
+      color: $color-heading-1;
+    }
+    h4 {
+      font-size: 13px; margin-bottom: 10px;
+    }
+    .tab-pane {
+      margin-bottom: -16px; padding: 15px 20px 30px;
+    }
+    .tab-pane-o {
+      padding-right: 230px;
+      .logo {
+        position: absolute; top: 17px; right: 47px;
+      }
+      .button {
+        position: absolute; bottom: 20px; right: 47px; font-weight: bold; padding: 0 21px;
+      }
+    }
+  }
+  @include until($device-width-sm) {
+    .tab-content {
+      .tab-pane {
+        padding-right: 20px; overflow: hidden;
+        .logo {
+          position: static; float: left; margin-top: 6px;
+          img {
+            width: auto;
+          }
+        }
+        .button {
+          position: static; float: right;
+        }
+      }
+    }
+  }
+  @include until($device-width-xs) {
+    .tab-content {
+      .tab-pane {
+        .logo {
+          margin: 0 0 15px; clear: both;
+        }
+        .button {
+          clear: both; float: left;
+        }
+      }
+    }
+  }
+  @include until($device-width-lg) {
+    .nav {
+      li {
+        width: auto;
+        a {
+          padding: 0 25px;
+        }
+      }
+    }
+  }
+  @include until($device-width-md) {
+    .nav {
+      li {
+        width: 16.6666%;
+        a {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+}
+@include widget-area-1 {
+
+}
+@include widget-area-2 {
+  .tuta-tab-1 {
+    .tab-content {
+      .tab-pane-o {
+        padding-right: 20px; overflow: hidden;
+        .logo {
+          position: static; float: left; margin: 0 0 15px; clear: both;
+        }
+        .button {
+          position: static; clear: both; float: left;
+        }
+      }
+    }
+    @include until($device-width-lg) {
+      .nav {
+        li {
+          width: auto;
+          a {
+            padding: 0 25px;
+          }
+        }
+      }
+      .tab-content {
+        .tab-pane-o {
+          padding-right: 230px;
+          .logo {
+            position: absolute; top: 17px; right: 47px;
+          }
+          .button {
+            position: absolute; bottom: 20px; right: 47px; font-weight: bold; padding: 0 21px;
+          }
+        }
+      }
+    }
+    @include until($device-width-md) {
+      .nav {
+        li {
+          width: 16.6666%;
+          a {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+    @include until($device-width-sm) {
+      .tab-content {
+        .tab-pane-o {
+          padding-right: 20px; overflow: hidden;
+          .logo {
+            position: static; float: left; margin-top: 6px; clear: none;
+            img {
+              width: auto;
+            }
+          }
+          .button {
+            position: static; float: right; clear: none;
+          }
+        }
+      }
+    }
+    @include until($device-width-xs) {
+      .tab-content {
+        .tab-pane-o {
+          .logo {
+            margin: 0 0 15px; clear: both;
+          }
+          .button {
+            clear: both; float: left;
+          }
+        }
+      }
+    }
+  }
+}
+@include widget-area-3 {
+  .tuta-tab-1 {
+    @include until($device-width-lg) {
+      .nav {
+        li {
+          width: auto;
+          a {
+            padding: 0 25px;
+          }
+        }
+      }
+    }
+    @include until($device-width-md) {
+      .nav {
+        li {
+          width: 16.6666%;
+          a {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@include widget-area-4 {
+  .tuta-tab-1 {
+    @include until($device-width-lg) {
+      .nav {
+        li {
+          width: auto;
+          a {
+            padding: 0 25px;
+          }
+        }
+      }
+    }
+    @include until($device-width-md) {
+      .nav {
+        li {
+          width: 16.6666%;
+          a {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@include widget-area-5 {
+  .tuta-tab-1 {
+    .nav {
+      li {
+        width: auto;
+        a {
+          padding: 0 25px;
+        }
+      }
+    }
+    @include until($device-width-md) {
+      .nav {
+        li {
+          width: 16.6666%;
+          a {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@include widget-area-6 {
+  .tuta-tab-1 {
+    width: $width-page; margin-left: auto; margin-right: auto;
+    .nav {
+      li {
+        width: auto;
+        a {
+          padding: 0 25px;
+        }
+      }
+    }
+    @include until($device-width-lg) {
+      width: auto; margin-left: 10px; margin-right: 10px;
+    }
+    @include until($device-width-md) {
+      .nav {
+        li {
+          width: 16.6666%;
+          a {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+}
+//@include tuta-home-1 {
+//  .tuta-tab-1 {
+//    .nav li a {
+//      padding: 0 15px;
+//    }
+//  }
+//}
+//@include tuta-home-2 {
+//  .tuta-tab-1 {
+//    .nav li a {
+//      padding: 0 15px;
+//    }
+//  }
+//}
+@include tuta-style-flat {
+  .tuta-tab-1 {
+    .nav {
+      li {
+        &:before {
+          border-top-color: $bg-1;
+        }
+        &.active, &:hover {
+          &:before {
+            border-top-color: $bg-11;
+          }
+          a {
+            @include box-shadow(none); background: $bg-11;
+          }
+        }
+        a {
+          background: $bg-1; @include box-shadow(none);
+        }
+      }        
+    }
+  }
+}
+
+.tuta-tab-2 {
+  border: 6px solid $border-2; @include border-radius(); overflow: hidden; margin-bottom: 20px; position: relative;
+  .nav {
+    padding: 40px 0; float: left; width: $width-tab-2; border-bottom: none; overflow: visible;
+    &:before {
+      content: ''; background-color: $bg-5; position: absolute; top: 0; left: 0; height: 100%;
+      border-right: 1px solid #dedede; width: $width-tab-2; display: block;
+    }
+    li {
+      display: block; width: 100%; float: none; margin: 0;
+      &.active, &:hover, &:focus {        
+        a {
+          background-color: $bg-4; border: none; z-index: 1;
+          border-top: 1px solid $border-2; border-bottom: 1px solid $border-2; 
+          &:hover {
+            color: $color-5;
+          }
+          &:before {
+            @include before-right(24px, 24px, 18px, $border-2); right: -18px; top: -1px;
+          }
+          &:after {
+            @include before-right(24px, 24px, 18px, $border-4); right: -17px; top: -1px;
+          }
+        }
+      }
+      a {
+        font: bold 13px/46px $font-heading; text-transform: uppercase; color: $color-5; background-color: transparent;
+        @include border-radius(0);  border: none; padding: 0 20px; margin: -1px 0; position: relative;
+        border-top: 1px solid $border-5; border-bottom: 1px solid $border-5; @include transition(none);
+      }
+      span {
+        display: block; @include ellipsis();
+      }
+      .fa {
+        font-size: 14px; margin-right: 10px; float: left; line-height: 48px; height: 46px;
+      }
+    }
+  }
+  .tab-content {
+    padding: 15px 30px;  margin-left: $width-tab-2; //background-color: $bg-4; border-left: 1px solid $border-2;
+    h4 {
+      font-size: 13px; margin-bottom: 10px;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @include until($device-width-sm) {
+    .nav {
+      width: $width-tab-2-responsive;
+      &:before {
+        width: $width-tab-2-responsive;
+      }
+      li {
+        span {
+          display: none
+        }
+        .fa {
+          font-size: 18px; float: none; display: block;
+        }
+      }
+    }
+    .tab-content {
+      margin-left: $width-tab-2-responsive;
+    }
+  }
+}
+
+.tuta-tab-3 {
+  .nav {
+    text-align: center; margin-bottom: 35px; border: none;
+    li {
+      @include transform(skew(-45deg)); float: none; display: inline-block; padding: 0; margin: 0 0 5px 5px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &.active, &:hover {
+        a {
+          border: 1px solid $border-10; color: $color-11; background-color: transparent;
+          &:after {
+            background-color: $bg-11;
+          }
+        }
+      }
+    }
+    a {
+      color: $color-10; border: 1px solid $border-10; padding: 0 25px; font: 700 16px/38px $font-heading;
+      position: relative; display: block; @include border-radius(0); text-transform: uppercase; margin: 0;
+      &:after {
+        content: ''; position: absolute; top: -1px; bottom: -1px; right: -1px; width: 6px; background-color: transparent;
+        @include transition();
+      }
+      > span {
+        @include transform(skew(45deg)); display: block;
+      }
+    }
+  }
+  .tab-content {
+    background: #737373 url("images/background/bg-tab-h3.jpg") no-repeat 50% 100%;
+    margin-top: 90px;
+    > div {
+      position: relative; top: -50px;
+    }
+  }
+  @include until($device-width-sm) {
+    .nav {
+      a {
+        font-size: 14px; padding: 0 15px;
+      }
+    }
+  }
+}

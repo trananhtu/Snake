@@ -121,11 +121,6 @@
   }
 }
 
-$device-width-xs: 480px;
-$device-width-sm: 768px;
-$device-width-md: 992px;
-$device-width-lg: $width-page;//1210px;
-
 @mixin atLeast($device-width) {
   @media screen and (min-width: $device-width) {@content;}
 }

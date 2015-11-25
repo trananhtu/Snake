@@ -1,0 +1,187 @@
+/**
+ * blogs
+ */
+
+.sub-page-slide-wrap {
+  margin: 0 -5px 20px; overflow: hidden;
+}
+.sub-page-slide, .control-sub-page-slide {
+  padding: 0 5px; min-height: 1px; float: left;
+}
+.sub-page-slide {
+  width: 82.2%;
+  .item {
+    position: relative; overflow: hidden; color: $color-4; padding-top: 53.5616%;
+    @include border-radius();
+    .info-1 {
+      color: $color-2;
+    }
+  }
+  .content {
+    position: absolute; top: 20px; left: 20px; bottom: 20px; background-color: rgba(0, 0, 0, .6);
+    overflow: hidden; width: 240px; @include border-radius(); z-index: 1;
+    .h5, .h3 {
+      color: $color-4;
+    }
+    > ul > li {
+      position: relative; padding-left: 12px; margin-bottom: 15px;
+      &:after {
+        content: '\f111'; font-family: FontAwesome; position: absolute; top: 1px; left: 0; font-size: 6px;
+      }
+    }
+  }
+//  .content-1 {
+//    width: 270px; padding: 20px;
+//  }
+  .thumbnail {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: transparent; z-index: 1;
+  }
+  .content-lead {
+    text-transform: none; line-height: 40px; height: 50px; padding: 10px 10px 0; margin: 0;
+    background-color: $bg-6; float: left; width: 100%; position: absolute; bottom: 0; left: 0;
+    @include ellipsis();
+  }
+  @include until($device-width-lg) {
+    .content {
+      top: auto; bottom: 0; left: 0; width: 100%;
+      .content-title {
+        margin-bottom: 0;
+      }
+      p, .more-link, .info-1 {
+        display: none;
+      }
+    }
+    .thumbnail {
+      z-index: 0;
+    }
+    .content-lead {
+      z-index: 1; padding-top: 0; height: 40px;
+    }
+  }
+  @include until($device-width-sm) {
+    width: 100%;
+    .item {
+      padding-top: 0;
+      .thumbnail {
+        position: static;
+      }
+    }
+  }
+}
+.control-sub-page-slide {
+  width: 17.8%; float: right; margin: -5px 0; display: none;
+  li {
+    position: relative; cursor: pointer; padding-top: percentage(100px / 150px);
+    &:first-child {
+      margin-top: 0;
+    }
+    &:after {
+      content: ''; position: absolute; top: 5px; bottom: 5px; left: 0; right: 0;
+      background-color: rgba(0, 0, 0, .6); @include transition(); @include border-radius();
+    }
+    &.active, &:hover {
+      &:after {
+        background-color: rgba(0, 0, 0, 0);
+      }
+    }
+    img {
+      position: absolute; top: 5px; left: 0; right: 0; bottom: 5px;
+    }
+    &:hover, &.active {
+      .item {
+        background-color: $bg-6; color: $color-4;
+        &:before {
+          background-color: $border-2;
+        }
+        &:after {
+          background-color: $bg-6;
+        }
+        .content-title {
+          color: $color-4;
+        }
+        .price {
+          color: $color-4;
+        }
+      }
+    }
+  }
+  .item {
+    display: block; height: auto; padding: 15px 20px 20px; margin-top: 10px; @include border-radius();
+    @include transition(); position: relative;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:after {
+      @include transition();
+    }
+    .content-title {
+      color: $color-5; @include transition(); margin-bottom: 0; @include border-radius(0 0 4px 4px);
+    }
+    p {
+      margin-bottom: 14px;
+    }
+    .price {
+      position: absolute; top: 15px; right: 20px; line-height: 20px; font-size: 13px; color: $color-5; margin: 0;
+      @include transition(); 
+    }
+  }
+  @include until($device-width-lg) {
+    li {
+      padding-top: 67.6667%;
+    }
+  }
+  @include until($device-width-md) {
+    li {
+      padding-top: 67.5667%;
+    }
+  }
+  @include until($device-width-sm) {
+    width: 100%; padding: 0; margin: 10px 0 0 0;
+    li {
+      padding: 0 5px; width: 25%; float: left;
+      &:after {
+        top: 0; bottom: 0; left: 5px; right: 5px;
+      }
+      img {
+        position: static;
+      }
+    }
+  }
+}
+
+.blog-content {
+  color: $color-1;
+  .blog-list {
+    margin-bottom: 40px;
+    > li {
+      margin-top: 20px; padding-top: 20px; border-top: 1px solid #dedede;
+      &:first-child {
+        border-top: none; margin-top: 0; padding-top: 0;
+      }
+    }
+    p {
+      margin-bottom: 10px; word-wrap: break-word;
+    }
+  }
+  .content-title {
+    font-size: 16px; line-height: 24px; margin-bottom: 15px; color: $color-5; word-wrap: break-word;
+    a {
+      color: $color-5;
+      &:hover {
+        color: $color-3;
+      }
+    }
+  }
+  .thumbnail, .blockquote {
+    margin-bottom: 15px;
+  }
+  .thumbnail {
+    max-height: 300px; 
+  }
+  .info-1 {
+    color: $color-2;
+  }
+  @include until($device-width-md) {
+
+  }
+}

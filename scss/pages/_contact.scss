@@ -1,0 +1,41 @@
+/**
+ * contact box
+ */
+
+.contact-box {
+  margin-bottom: 20px; 
+  .form-control-wrap {
+    margin-bottom: 20px;
+  }
+  textarea {
+    height: 120px;
+  }
+  textarea, input {
+    padding-left: 20px; padding-right: 20px;
+  }
+  .tuta-button-default {
+    border: none; outline: none;
+  }
+}
+.kp-map-wrapper {
+  position: relative;
+  .popup-map {
+    padding: 20px; background-color: $bg-8; color: $color-4; display: inline-block; vertical-align: middle; line-height: normal;
+    @include border-radius(); width: 320px; position: absolute; top: 100px; left: 50%; margin-left: -160px;
+    p {
+      margin: 10px 0 0 0; color: $color-4;
+      &:first-child {
+        margin-top: 0;
+      }
+      a {
+        color: $color-4;
+        &:hover {
+          color: $color-4;
+        }
+      }
+    }
+  }
+}
+#kp-map {
+  height: 475px; margin-bottom: 20px;
+}

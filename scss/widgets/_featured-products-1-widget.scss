@@ -1,0 +1,24 @@
+/**
+ * featured-products-1-widget
+ */
+
+.tuta-featured-products-1-widget {
+  text-align: center;
+  .product-list-2 {
+    @include opacity(0);
+  }
+  .product-list-wrapper {
+    margin: 0 -15px;
+    .col-md-3 {
+      padding: 0 15px 30px;
+    }
+  }
+  .owl-item {
+    padding: 0 15px;
+    .col-md-3 {
+      padding: 0; width: 100%;
+    }
+  }
+}
+
+.tuta-featured-products-2-widget {}

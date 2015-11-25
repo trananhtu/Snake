@@ -1,0 +1,50 @@
+/**
+ * newsletter widget
+ */
+
+.tuta-newsletter-widget {
+  background-color: $bg-3; color: $color-4; padding: 18px 20px 20px; position: relative; @include border-radius();
+  p {
+    margin-bottom: 25px;
+  }
+  input {
+    height: 30px; background-color: $bg-1; color: $color-2; font-size: 13px; outline: none; border: none;
+    @include placeholder($color-2);
+  }
+  .input-group-btn {
+    .btn {
+      font-size: 13px; background-color: $bg-4; outline: none; height: 30px; border: none; margin-left: 0;
+    }
+  }
+
+  @include until($device-width-lg) {
+    p {
+      margin-bottom: 10px;
+    }
+    .input-group {
+      width: 50%;
+    }
+  }
+  @include until($device-width-sm) {
+    .input-group {
+      width: 100%;
+    }
+  }
+  @include atLeastUntil($device-width-sm, $device-width-lg) {
+    text-align: center; //@include border-radius(0); margin: 0 -10px;
+    .widget-title {
+      font-size: 16px;
+    }
+    .input-group {
+      width: 300px; margin: 0 auto;
+    }
+  }
+}
+@include widget-area-6 {
+  .tuta-newsletter-widget {
+    width: $width-page; margin-left: auto; margin-right: auto;
+    @include until($device-width-lg) {
+      width: auto; margin-left: 10px; margin-right: 10px;
+    }
+  }
+}

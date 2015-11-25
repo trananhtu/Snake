@@ -1,0 +1,106 @@
+.product-list-2 { //tuta-home-3 //sd cung product-list-1
+  margin-top: 25px; //height: 308px;
+  .thumbnail {
+    margin: 0;
+    &:after {
+      background: transparent url("images/background/bottom-prod-fea.png") no-repeat 50% 0;
+      background-size: 100% 100%;
+    }
+    > a {
+      &:before {
+        background-color: rgba(19, 19, 19, 0)
+      }
+      &:after {
+        display: none;
+      }
+    }
+    > *:first-child {// remove bg thumbnail
+      &:before, &:after {
+        background: none;
+      }
+    }
+    &:hover {
+      > *:first-child {
+        &:before, &:after {
+          background: none;
+        }
+      }
+    }
+  }
+  $h-content-collapse: 60px;
+  .content {
+    position: absolute; top: 0; left: 0; right: 0;
+    padding: 25px 20px; text-align: center; height: 94px; @include transition();
+    &:after {
+      content: ''; position: absolute; bottom: 8px; left: 8px; right: 8px; height: 16px; 
+      background: url("images/background/bottom-prod-fea-hover.png") no-repeat 50% 0; background-size: 100% 100%;
+      @include transition(); @include opacity(0);
+    }
+    &:before {
+      content: ''; position: absolute; top: 8px; left: 8px; right: 8px; bottom: 24px; background-color: rgba(19, 19, 19, .8);
+    }
+  }
+  .flag {
+    //left: 50%; right: auto; top: $h-content-collapse; margin-left: -25px; width: 50px; padding: 0;
+    top: 75px; right: 10px;
+  }
+  .content-title {
+    border-bottom: 1px solid rgba(255, 255, 255, 0); padding-bottom: 25px; margin-bottom: 15px; position: relative;
+    @include transition();
+    &:after {
+      content: ''; position: absolute; bottom: 15px; left: 50%; margin-left: -5px;
+      @include before-bottom(5px, 5px, 5px, $border-4); @include transition();
+    }
+  }
+  .info-1, .tuta-button-default {
+    @include opacity(0); @include transition();
+  }
+  .info-1, .price {
+    text-align: left;
+  }
+  .info-1 {
+    .tuta-rating {
+      display: block;
+    }
+  }
+  .price {
+    margin-bottom: 15px; display: inline-block;
+  }
+  .tuta-button-default {
+    display: inline-block; background-color: $bg-11; position: relative;
+  }
+  .item {
+    position: relative; margin-bottom: 30px;
+    &:hover {
+      .content {
+        height: 100%; //247px; bottom: 23px;
+        &:after {
+          @include opacity(1);
+        }
+      }
+      .flag {
+        top:-30px; @include opacity(0);
+      }
+      .content-title {
+        border-bottom-color: #5c5c5c; //ie8 
+        border-bottom-color: rgba(255, 255, 255, .3); //#5c5c5c
+      }
+      .info-1, .tuta-button-default {
+        @include opacity(1);
+      }
+      .hexagon-1 {
+        background-color: $bg-10;
+        &:after, &:before {
+          background-color: $bg-10;
+        }
+      }
+    }
+  }
+}
+
+.product-list-wrapper { //dung cho box sd owl carousel
+  margin: 0 -15px;
+  .col-md-3 {
+    padding: 0 15px 30px;
+  }
+}

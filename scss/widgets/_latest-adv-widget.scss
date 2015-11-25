@@ -1,0 +1,114 @@
+/**
+ * tuta-latest-adv-widget
+ */
+
+.tuta-latest-adv-widget { //home-4
+  @extend %tuta-latest-adv;
+  .widget-content {
+    margin-bottom: -20px;
+  }
+  .col-md-4 {
+    margin-bottom: 20px;
+  }
+  @include until($device-width-sm) {
+    .widget-content {
+      margin-bottom: -10px;
+    }
+    .col-md-4 {
+      width: 100%; float: none; margin-bottom: 10px;
+    }
+  }
+}
+@include widget-area-2 {
+  .tuta-latest-adv-widget {
+    .widget-content {
+      margin-bottom: -20px;
+    }
+    .col-md-4 {
+      width: 100%; margin-bottom: 20px;
+    }
+    @include until($device-width-lg) {
+      .col-md-4 {
+        width: 33.3333%; float: left;
+      }
+    }
+    @include until($device-width-sm) {
+      .widget-content {
+        margin-bottom: -10px;
+      }
+      .col-md-4 {
+        width: 100%; float: none; margin-bottom: 10px;
+      }
+    }
+  }
+}
+@include widget-area-3 {
+  .tuta-latest-adv-widget {
+    .widget-content {
+      margin-bottom: -20px;
+    }
+    .col-md-4 {
+      width: 50%; margin-bottom: 20px;
+    }
+    @include until($device-width-lg) {
+      .col-md-4 {
+        width: 33.3333%; float: left;
+      }
+    }
+    @include until($device-width-sm) {
+      .widget-content {
+        margin-bottom: -10px;
+      }
+      .col-md-4 {
+        width: 100%; float: none; margin-bottom: 10px;
+      }
+    }
+  }
+}
+@include widget-area-4 {
+  .tuta-latest-adv-widget {
+    .widget-content {
+      margin-bottom: -20px;
+    }
+    .col-md-4 {
+      width: 50%; margin-bottom: 20px;
+    }
+    @include until($device-width-lg) {
+      .col-md-4 {
+        width: 33.3333%; float: left;
+      }
+    }
+    @include until($device-width-sm) {
+      .widget-content {
+        margin-bottom: -10px;
+      }
+      .col-md-4 {
+        width: 100%; float: none; margin-bottom: 10px;
+      }
+    }
+  }
+}
+@include widget-area-5 {
+  .tuta-latest-adv-widget {
+    .wrapper {
+      width: $width-page; margin: 0 auto;
+    }
+    @include until($device-width-lg) {
+      .wrapper {
+        width: 100%;
+      }
+    }
+  }
+}
+@include widget-area-6 {
+  .tuta-latest-adv-widget {
+    .wrapper {
+      width: $width-page; margin: 0 auto;
+    }
+    @include until($device-width-lg) {
+      .wrapper {
+        width: 100%;
+      }
+    }
+  }
+}

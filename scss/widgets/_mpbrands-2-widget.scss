@@ -1,0 +1,81 @@
+/**
+ * mpbrands-2-widget
+ */
+
+.tuta-mpbrands-2-widget {
+  background: url("images/background/brand.jpg") repeat-y 50% 0; min-height: 222px;
+  .col-aside {
+    float: right; width: 34.12%;
+  }
+  .col-main {
+    float: left; width: 65.88%;
+  }
+  .widget-title-9 {
+    //display: block;
+  }
+  .wrapper {
+    position: relative; min-height: 222px; padding-right: 393px;
+  }
+  .mpbrands-box {
+    background-color: $bg-12; color: $color-4; text-align: center; width: 393px; min-height: 222px;
+    padding: 50px; float: right; position: absolute; top: 0; right: 0; bottom: 0;
+    p {
+      text-align: left; margin: -10px 0 0;
+    }
+  }
+  .brand-list {
+    padding: 77px 0 55px;
+    img {
+      width: auto;
+    }
+    > li {
+      margin-bottom: 20px; height: 70px;
+    }
+  }
+  @include until($device-width-lg) {
+    .wrapper {
+      padding-left: 0;
+    }
+    .brand-list {
+      margin-left: 0; margin-right: 0;
+      > li {
+        text-align: center;
+        &:last-child, &:first-child {
+          text-align: center;
+        }
+      }
+    }
+  }
+  @include until($device-width-md) {
+    background: none; height: auto;
+    .wrapper {
+      padding: 0;
+    }
+    .mpbrands-box {
+      float: none; height: auto; width: 100%; padding-left: 10px; padding-right: 10px; position: static;
+      p {
+        padding: 0 20px;
+      }
+    }
+    .brand-list {
+      background: url("images/background/brand.jpg") repeat-y 50% 0; min-height: 222px;
+    }
+  }
+  @include until($device-width-sm) {
+    .brand-list {
+      padding: 30px 0 10px;
+    }
+  }
+}
+@include tuta-home-4 {
+  .tuta-mpbrands-2-widget {
+    .widget-title {
+      margin-left: -50px; margin-right: -50px;
+    }
+    @include until($device-width-md) {
+      .widget-title {
+        margin-left: -10px; margin-right: -10px;
+      }
+    }
+  }   
+}

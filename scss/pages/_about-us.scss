@@ -1,0 +1,23 @@
+/**
+ * about us
+ */
+
+.tuta-article  {
+  margin-bottom: 20px; overflow: hidden;
+  .img-right {
+    width: auto; margin: 0 0 20px 20px; float: right;
+  }
+  .img-left {
+    width: auto; margin: 0 20px 20px 0; float: left;
+  }
+  .img-right, .img-left {
+    img {
+      width: auto;
+    }
+  }
+  @include until($device-width-sm) {
+    .img-right, .img-left {
+      display: block; float: none; margin-left: 0; text-align: center;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+/**
+ * tab-1 widget
+ */
+
+.tuta-tab-1-widget {
+  .nav {
+    li {
+      width: 25%;
+      a {
+        padding: 0 15px;
+      }
+    }
+  }
+  @include until($device-width-lg) {
+    .nav {
+      li {
+        width: auto;
+        a {
+          padding: 0 25px;
+        }
+      }
+    }
+  }
+  @include until($device-width-md) {
+    .nav {
+      li {
+        width: 25%;
+        a {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+}
+@include widget-area-2 {
+  .tuta-tab-1-widget {
+    @include until($device-width-md) {
+      .nav {
+        li {
+          width: 25%;
+          a {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@include widget-area-3 {
+  .tuta-tab-1-widget {
+    @include until($device-width-md) {
+      .nav {
+        li {
+          width: 25%;
+          a {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@include widget-area-4 {
+  .tuta-tab-1-widget {
+    @include until($device-width-md) {
+      .nav {
+        li {
+          width: 25%;
+          a {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@include widget-area-5 {
+  .tuta-tab-1-widget {
+    @include until($device-width-md) {
+      .nav {
+        li {
+          width: 25%;
+          a {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@include widget-area-6 {
+  .tuta-tab-1-widget {
+    @include until($device-width-md) {
+      .nav {
+        li {
+          width: 25%;
+          a {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+}

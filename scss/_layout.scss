@@ -1,0 +1,41 @@
+#main-content {
+  padding-top: 20px; margin-bottom: -20px; overflow: hidden; //position: relative; z-index: 1;
+}
+@include tuta-home-1 {
+  #main-content {
+    margin-top: -84px;
+    @include until($device-width-lg) {
+      margin-top: 0;
+    }
+  }
+}
+@include tuta-home-2 {
+  #main-content {
+    padding-top: 40px;
+  }
+}
+@include tuta-home-3 {
+  #main-content {
+    padding-top: 60px;
+  }
+}
+@include tuta-home-4 {
+  #main-content {
+    padding-top: 0;
+  }
+}
+@include tuta-style-grid-1 {
+  #main-content {
+    margin-bottom: -60px;
+  }
+}
+@include tuta-style-grid-2 {
+  #main-content {
+    margin-bottom: -30px; padding-top: 30px;
+  }
+}
+@include tuta-home-2 {
+  #main-content {
+    margin-bottom: -40px;
+  }
+}

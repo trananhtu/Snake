@@ -1,0 +1,101 @@
+.tuta-sub-page {
+  #main-content {
+    padding-top: 0;
+  }
+}
+
+$height-main-head: 109px;
+
+.main-head {
+  background: transparent url("images/background/bg-sub-page-1.jpg") no-repeat 50% 0; overflow: hidden; height: $height-main-head;
+  .page-title {
+    font-size: 16px; color: $color-4; line-height: $height-main-head; float: left; margin: 0;
+  }
+  .breadcrumb {
+    float: right; color: $color-4; line-height: $height-main-head; background-color: transparent; padding: 0; margin: 0;
+    li {
+      &:before {
+        content: '\f105'; font: 400 12px/1 FontAwesome; color: $color-4;
+      }
+      &:first-child {
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+    a {
+      color: $color-4;
+      &:hover {
+        color: $color-3;
+      }
+    }
+  }
+  @include until($device-width-sm) {
+    padding: 24px 0; min-height: $height-main-head; height: auto; background-repeat: repeat-y;
+    .page-title, .breadcrumb {
+      line-height: 30px; float: none;
+    }
+  }
+}
+
+.tool-box {
+  background-color: $bg-5; padding: 20px 0; overflow: hidden; margin-bottom: 25px; text-align: right;
+  .tuta-button-default {
+    margin-left: 20px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  .pull-right {
+    float: none !important;
+  }
+  .add-cart-box {
+    float: right; margin-left: 20px;
+    span {
+      color: $color-3; word-wrap: break-word; margin: 0; line-height: 32px; float: left;
+    }
+    .tuta-button-default {
+      text-transform: none; float: left;
+    }    
+  }
+  @include until($device-width-md) {
+    .add-cart-box {
+      margin-top: 10px;
+      .tuta-button-default {
+        width: auto; margin-left: 20px;
+      }
+    }
+  }      
+  @include until($device-width-sm) {
+    .tuta-button-default {
+      float: left; width: 48.5%; margin: 0; @include ellipsis; text-align: center;
+      &:nth-child(2n) {
+        float: right !important;
+      }
+      &:nth-child(n + 3) {
+        margin-top: 10px;
+      }
+    }
+    .add-cart-box {
+      .tuta-button-default {
+        width: auto; margin-left: 10px;
+      }
+    }
+  }
+  @include until($device-width-xs) {
+    .tuta-button-default {
+      width: 48%; padding: 0 5px;
+    }
+    .add-cart-box {
+      .tuta-button-default {
+        width: auto; padding: 0 20px;
+      }
+    }
+  }
+  // @include until($device-width-sm) {
+  //   .tuta-button-default {
+  //     width: 45%;
+  //   }
+  // }
+}

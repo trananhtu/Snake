@@ -1,0 +1,161 @@
+/**
+ * single blog
+ */
+
+.tuta-pane-1 {
+  padding: 10px 20px; font-size: 16px;
+}
+
+.box-wrap {
+  border-top: 1px solid #dedede; padding: 15px 0; font: 700 13px/30px $font-heading; text-transform: uppercase;
+}
+.tag-box {
+  padding-left: 23px; position: relative;
+  &:before {
+    content: '\f02c'; font-family: FontAwesome; position: absolute; top: 1px; left: 0
+  }
+  a {
+    color: $color-5;
+    &:hover {
+      color: $color-3;
+      &:before {
+        color: $color-5;
+      }
+    }
+    &:before {
+      content: ' , '; font-family: FontAwesome;
+    }
+    &:first-child {
+      &:before {
+        display: none;
+      }
+    }
+  }
+  @include until($device-width-sm) {
+    float: none !important;
+  }
+}
+.page-links-wrap {
+  float: right;
+  .page-links {
+    float: right;
+    > a, > span {
+      margin-left: 10px;
+    }
+    > a {
+      color: $color-5;
+      &:hover {
+        color: $color-3;
+      }
+    }
+    > span {
+      color: $color-3;
+    }
+  }
+  @include until($device-width-sm) {
+    float: none;
+    .page-links {
+      float: none; display: inline-block;
+    }
+  }
+}
+
+.other-article {
+  h3, h4 {
+    font-size: 13px; margin-bottom: 0;
+  }
+  a {
+    display: inline-block;
+  }
+  @include until($device-width-sm) {
+    &.text-right {
+      margin-top: 15px; padding-top: 15px; text-align: left; border-top: 1px solid #dedede;
+    }
+  }
+}
+
+.comment-box {
+  margin-bottom: 20px; overflow: hidden;
+  p {
+    margin-bottom: 15px;
+  }
+  .thumbnail {
+    float: left; margin-right: 10px; 
+  }
+  .comments-list {
+    border-bottom: 1px solid #dedede; 
+  }
+  .comment-body {
+    overflow: hidden;
+  }
+  .comment-header {
+    border-bottom: 1px solid #dedede; margin-bottom: 15px;
+  }
+  h5 {
+    margin-bottom: 5px;
+  }
+  .info-1 {
+    margin-bottom: 7px; color: $color-2;
+    a {
+      color: $color-5;
+      &:hover {
+        color: $color-3;
+      }
+    }
+    i {
+      color: $color-5;
+    }
+  }
+  .children {
+    margin-left: 60px;
+  }
+  .tuta-pagination {
+    text-align: right; padding: 10px 0; border-bottom: 1px solid #dedede;
+    .previous, .next {
+      float: none; text-transform: uppercase;
+    }
+  }
+  @include until($device-width-sm) {
+    .children {
+      margin-left: 0;
+    }
+  }
+}
+
+.related-article {
+  margin-bottom: 20px;
+  .thumbnail {
+    margin-bottom: 10px;
+  }
+  .content-title {
+    margin-bottom: 5px;
+    a {
+      color: $color-5;
+      &:hover {
+        color: $color-3;
+      }
+    }
+  }
+  .info-1 {
+    color: $color-2; margin-bottom: 0;
+  }
+}
+
+.post-comment {
+  margin-bottom: 20px;
+  .tuta-pane {
+    margin-bottom: 15px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  .form-control-wrap {
+    margin-bottom: 20px;
+  }
+  textarea {
+    height: 131px; padding-top: 7px; padding-bottom: 7px;
+  }
+  input, textarea {
+    padding-right: 20px; padding-left: 20px;
+  }
+}

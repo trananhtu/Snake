@@ -1,0 +1,26 @@
+/**
+ * widget-area
+ */
+
+.widget-area-7 {
+  padding-right: 10px;
+}
+.widget-area-13 {
+  width: 40%; float: left;
+  @include until($device-width-lg) {
+    width: 48%;
+  }
+  @include until($device-width-md) {
+    width: 100%;
+  }
+}
+
+.widget-area-14 {
+  width: 59.5%; float: right; position: absolute; top: 0; right: 0; bottom: 0;
+  @include until($device-width-lg) {
+    width: 51.3%;
+  }
+  @include until($device-width-md) {
+    width: 100%; position: static;
+  }
+}

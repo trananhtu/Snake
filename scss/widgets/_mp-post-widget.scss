@@ -1,0 +1,35 @@
+/**
+ * mp-post-widget
+ */
+
+.tuta-mp-post-widget {
+  @extend %tuta-template-1-widget;
+  li {
+    padding-left: 27px; position: relative;
+    &:after {
+      content: '\f0e6'; position: absolute; top: 18px; left: 0; font: 400 17px/1 FontAwesome; color: $color-5;
+    }
+    &:first-child {
+      &:after {
+        top: 3px;
+      }
+    }
+  }
+  .widget-content {
+    padding-top: 1px;
+    .content-title {
+      line-height: 19px;
+    }
+  }
+}
+.widget-area-12 {
+  .tuta-mp-post-widget {
+    @include atLeastUntil($device-width-md, $device-width-lg) {
+      .widget-content {
+        li:nth-child(n+4) {
+          display: none;
+        }
+      }
+    }
+  }
+}

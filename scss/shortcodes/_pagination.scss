@@ -1,0 +1,36 @@
+/**
+ * Pagination
+ */
+
+.tuta-pagination {
+  text-align: center;
+  > * {
+    display: inline-block; margin: 0 5px; line-height: 30px;
+    color: $color-1; font-weight: 700;
+    > a {
+      border: none; color: $color-1; font-weight: 700;
+      &:hover {
+        color: $color-3;
+      }
+    }
+    &.active {
+      > a {
+        color: $color-3;
+      }
+    }
+  }
+  > span {
+    color: $color-3;
+  }
+  .previous {
+    float: left; margin: 0 10px 0 0;
+  }
+  .next {
+    float: right; margin: 0 0 0 10px;
+  }
+  @include until($device-width-sm) {
+    .previous, .next {
+      margin: 0;
+    }
+  }
+}

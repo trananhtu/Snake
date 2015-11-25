@@ -1,0 +1,104 @@
+.tuta-top-slide-2 { //tuta-home-3-4-5
+  $size-control: 95px;
+  $size-control-active: 126px;
+
+  overflow: hidden; background-color: $bg-11; height: auto; border-bottom: none;
+  .slide-wrapper-outer {
+    display: block; @include border-radius(0 0 50% 50%); width: 200%; margin-left: -50%;
+    padding-bottom: 12px; background-color: $bg-6; text-align: center; overflow: hidden; //height: $height-top-slide-3 + 12;
+    @include box-shadow(0 0 3px 1px rgba(255, 255, 255, .3) inset);
+    &:hover {
+      .mask {
+        @include opacity(0.4);
+        //background: rgba(0, 0, 0, .4);
+      }
+    }
+    .slide-wrapper-inner {
+      display: block; @include border-radius(0 0 50% 50%); width: 80%; margin: 0 auto;
+      background: $bg-6; overflow: hidden;
+      @include transform(translate3d(0, 0, 0));
+    }
+  }
+  .slide {
+    width: 62.5%; margin: 0 auto;
+    &:hover {
+      .mask {
+        //background: rgba(0, 0, 0, .4) !important;
+        @include opacity(0.4);
+      }
+    }
+  }
+  .intro {
+    width: 620px; background: none; text-align: center; top: 100px; left: 50%;
+    margin-left: -310px; color: $color-4; font-style: italic; font-size: 16px;
+    .title {
+      color: $color-4; font-size: 70px; display: inline-block; font-style: normal; line-height: 56px;
+      span {
+        display: block; font-size: 20px; color: $color-4; line-height: 40px; font-weight: 400; letter-spacing: 10px; margin: 0 5px;
+        background-color: $bg-11; background-color: rgba(229, 9, 28, .7);
+      }
+    }
+    .lead {
+      display: none;
+    }
+    p {
+      line-height: 22px;
+    }
+  }
+  .mask {
+    //background: rgba(0, 0, 0, .2);
+    background: $bg-6; @include opacity(0.2);
+    > span {
+      display: none;
+    }
+  }
+  .control-top-slide {
+    position: static; display: block; text-align: center; height: 0; overflow: visible;
+    li {
+      width: $size-control-active; height: $size-control-active; position: relative; top: -$size-control-active; display: inline-block;
+      &.active {
+        a {
+          border-width: 6px; width: 100%; height: 100%; top: auto;
+        }
+      }
+    }
+    a {
+      @include box-shadow(none); width: $size-control; height: $size-control; border: 5px solid rgba(0, 0, 0, .4);
+      margin: 0 0 0 #{-$size-control/2}; top: auto; bottom: 0;
+      &:after {
+        border: 1px solid $border-5; top: 0; left: 0; right: auto; bottom: auto; width: 100%; height: 100%;
+      }
+    }
+  }
+  @mixin create-size-control-2($size-control, $size-control-active, $border-width) {
+    li {
+      width: $size-control-active; height: $size-control-active; top: -($size-control-active - $border-width);
+      &.active {
+        a {
+          border-width: $border-width + 1;
+        }
+      }
+    }
+    a {
+      width: $size-control; height: $size-control; margin: 0 0 0 #{-$size-control/2}; border-width: $border-width;
+    }
+  }
+  @include until($device-width-lg) {
+    .control-top-slide {
+      @include create-size-control-2(44px, 62px, 3px);
+    }
+  }
+  @include until($device-width-sm) {
+    .control-top-slide {
+      @include create-size-control-2(30px, 42px, 2px);
+    }
+  }
+}
+@include tuta-home-4 {
+  .tuta-top-slide-2 {
+    background-color: $bg-12; border-bottom: 1px solid #1b1b1b; padding-bottom: 10px;
+    .slide-wrapper-outer {
+      padding-bottom: 10px; border-bottom: none; background-color: $bg-11;
+    }
+  }
+}

@@ -268,13 +268,18 @@ echo the_posts_pagination() . ' <br>';
 if(!function_exists('tuta_thumbnail')) {
 	function tuta_thumbnail($size) {
 		// chỉ hiển thị thumbnail với post không có mật khẩu
-		if(!is_single() && has_post_thumbnail() && !post_password_required() || has_post_format('image')) : ?>
-			<a class="thumbnail" href="<?php echo get_permalink(get_the_ID()); ?>" title="">
-				<figure class="post-thumbnail">
+		if(has_post_thumbnail() && !post_password_required() || has_post_format('image')) : 
+			if(!is_single()) : ?>
+				<figure class="thumbnail">
+					<a href="<?php echo get_permalink(get_the_ID()); ?>" title="<?php the_title(); ?>">
+						<?php the_post_thumbnail($size); ?>
+					</a>
+				</figure><?php
+			else : ?>
+				<figure class="thumbnail">
 					<?php the_post_thumbnail($size); ?>
-				</figure>
-			</a>
-			<?php
+				</figure><?php
+			endif;
 		endif;
 	}
 }
@@ -289,9 +294,7 @@ if(!function_exists('tuta_entry_header')) {
 	function tuta_entry_header() {
 		if(is_single()) : ?>
 			<h1 class="content-title">
-				<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-					<?php the_title(); ?> 
-				</a>
+				<?php the_title(); ?>
 			</h1>
 		<?php else : ?>
 			<h3 class="content-title">
@@ -309,7 +312,7 @@ if(!function_exists('tuta_entry_header')) {
  */
 if(!function_exists('tuta_entry_meta')) {
 	function tuta_entry_meta() {
-		if(!is_single()) :
+		//if(!is_single()) :
 			echo '<div class="info-1">';
 				// hiển thị tên tác giả, tên category và ngày tháng đăng bài
 				printf(__('<span class="time">%1$s, By: %2$s, In: %3$s</span>', 'tuta'),
@@ -330,7 +333,7 @@ if(!function_exists('tuta_entry_meta')) {
 					echo '</span>';
 				endif;
 			echo '</div>';
-		endif;
+		//endif;
 	}
 }
 
@@ -349,7 +352,7 @@ add_filter('excerpt_more', 'tuta_readmore');
  * @tuta_entry_content()
  */
 if(!function_exists('tuta_entry_content')) {
-	function tuta_entry_content() {
+	function tuta_entry_content() {the_excerpt();
 		if(!is_single()) :
 			the_excerpt();
 		else :
@@ -374,9 +377,11 @@ if(!function_exists('tuta_entry_content')) {
 if(!function_exists('tuta_entry_tag')) {
 	function tuta_entry_tag() {
 		if(has_tag()) :
-			echo '<div class="entry-tag">';
+			//echo '<div class="entry-tag">';
 			printf(__('Tagged in %1$s', 'tuta'), get_the_tag_list('', ', '));
-			echo '</div>';
+			//echo '</div>';
+		else :
+			echo 'No Tag';
 		endif;
 	}
 }

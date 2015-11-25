@@ -1,0 +1,83 @@
+/**
+ * tuta-mpbrands-widget
+ */
+
+.tuta-mpbrands-widget {
+  border: 6px solid $border-2; padding: 15px 20px 20px; @include border-radius();
+  .widget-content {
+    > li {
+      width: 20%; text-align: center; float: left; position: relative; min-height: 1px;
+      padding-right: 10px; padding-left: 10px; margin-bottom: 20px; height: 70px;
+      &:nth-child(5n+1) {
+        text-align: left;
+      }
+      &:nth-child(5n) {
+        text-align: right;
+      }
+      img {
+        width: auto;
+      }
+    }
+  }
+  @include until($device-width-sm) {
+    padding-bottom: 0;
+    .widget-content {
+      > li {
+        width: 33.3333%;
+        &:nth-child(5n+1), &:nth-child(5n) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@include widget-area-2 {
+  .tuta-mpbrands-widget {
+    .widget-content {
+      > li {
+        width: 33.3333%; height: 70px; margin-bottom: 20px;
+        &:nth-child(3n+1) {
+          text-align: left;
+        }
+        &:nth-child(3n) {
+          text-align: right;
+        }
+      }
+    }
+    @include until($device-width-lg) {
+      .widget-content {
+        > li {
+          width: 20%; text-align: center;
+          &:nth-child(3n+1), &:nth-child(3n) {
+            text-align: center;
+          }
+          &:nth-child(5n+1) {
+            text-align: left;
+          }
+          &:nth-child(5n) {
+            text-align: right;
+          }
+        }
+      }
+    }
+    @include until($device-width-sm) {
+      padding-bottom: 0;
+      .widget-content {
+        > li {
+          width: 33.3333%;
+          &:nth-child(5n+1), &:nth-child(5n) {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+@include widget-area-6 {
+  .tuta-mpbrands-widget {
+    width: $width-page; margin-left: auto; margin-right: auto;
+    @include until($device-width-lg) {
+      width: auto; margin-left: 10px; margin-right: 10px;
+    }
+  }
+}

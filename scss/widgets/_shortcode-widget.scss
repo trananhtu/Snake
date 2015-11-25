@@ -1,0 +1,26 @@
+/**
+ * shortcode-widget
+ */
+
+.tuta-shortcode-widget {
+  @extend %tuta-template-1-widget;
+  .list-style-1 {
+    li {
+      border-top: none; padding-top: 0; margin-top: 10px;
+      &.active {
+        a {
+          color: $color-3;
+        }
+      }
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    a {
+      color: $color-1; font-weight: 700; font-family: $font-heading;
+      &:hover {
+        color: $color-3;
+      }
+    }
+  }
+}

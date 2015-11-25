@@ -1,0 +1,214 @@
+/**
+ * tuta-featured-dealer-2-widget
+ */
+
+.tuta-featured-dealer-2-widget { //home-5
+  color: $color-2;
+  .item {
+    overflow: hidden; background-color: $bg-1; position: relative; @include border-radius();
+  }
+  .thumbnail {
+    position: relative;
+  }
+  .content {
+    overflow: hidden; padding: 15px 20px; position: absolute; top: 0; left: 0; height: 100%; width: 100%;
+    background: transparent url("images/background/bg-3.png") repeat-y 0 0;
+    h4 {
+      color: $color-4; font-size: 13px; @include ellipsis;
+    }
+    a {
+      color: $color-4;
+      &:hover {
+        color: $color-3;
+      }
+    }
+    > p {
+      margin: 0; color: $color-4; text-transform: uppercase;
+      > span {
+        display: inline-block;
+        &:first-child {
+          width: 108px;
+        }
+      }
+    }
+    .price {
+      color: $color-4; margin: 10px 0 0 0;
+    }
+  }
+  .widget-content {
+    margin-bottom: -20px;
+  }
+  .col-md-4 {
+    margin-bottom: 20px;
+  }
+  @include until($device-width-lg) {
+    .content {
+      padding: 7px 20px;
+      .content-title {
+        margin-bottom: 5px;
+      }
+      .price {
+        font-size: 14px; line-height: 24px; margin: 0;
+      }
+      p {
+        font-size: 11px;
+      }
+    }
+  }
+  @include until($device-width-md) {
+    .col-md-4 {
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+  @include until($device-width-sm) {
+    .widget-content {
+      margin-bottom: -10px;
+    }
+    .col-md-4 {
+      margin-bottom: 10px;
+      &:last-child {
+        display: block;
+      }
+    }
+  }
+}
+@include widget-area-1 {
+  .tuta-featured-dealer-2-widget {
+    .col-md-4 {
+      width: 50%;
+    }
+    @include until($device-width-lg) {
+      .col-md-4 {
+        width: 33.3333%;
+      }
+    }
+    @include until($device-width-md) {
+      .col-md-4 {
+        width: 50%;
+      }
+    }
+    @include until($device-width-sm) {
+      .col-md-4 {
+        width: 100%;
+      }
+    }
+  }
+}
+@include widget-area-2 {
+  .tuta-featured-dealer-2-widget {
+    .col-md-4 {
+      width: 100%;
+    }
+    .content {
+      padding: 7px 20px;
+      .content-title {
+        margin-bottom: 5px;
+      }
+      .price {
+        font-size: 14px; line-height: 24px; margin: 0;
+      }
+      p {
+        font-size: 11px;
+      }
+    }
+    @include until($device-width-lg) {
+      .col-md-4 {
+        width: 33.3333%;
+      }
+    }
+    @include until($device-width-md) {
+      .col-md-4 {
+        width: 50%;
+      }
+    }
+    @include until($device-width-sm) {
+      .col-md-4 {
+        width: 100%;
+      }
+    }
+  }
+}
+@include widget-area-3 {
+  .tuta-featured-dealer-2-widget {
+    .col-md-4 {
+      width: 50%;
+    }
+    .content {
+      padding: 5px 20px;
+      .content-title {
+        margin-bottom: 5px;
+      }
+      .price {
+        font-size: 14px; line-height: 24px; margin: 0;
+      }
+      p {
+        font-size: 11px;
+      }
+    }
+    @include until($device-width-lg) {
+      .col-md-4 {
+        width: 33.3333%;
+      }
+      .content {
+        padding: 7px 20px;
+      }
+    }
+    @include until($device-width-md) {
+      .col-md-4 {
+        width: 50%;
+      }
+    }
+    @include until($device-width-sm) {
+      .col-md-4 {
+        width: 100%;
+      }
+    }
+  }
+}
+@include widget-area-4 {
+  .tuta-featured-dealer-2-widget {
+    .col-md-4 {
+      width: 50%;
+    }
+    .content {
+      padding: 5px 20px;
+      .content-title {
+        margin-bottom: 5px;
+      }
+      .price {
+        font-size: 14px; line-height: 24px; margin: 0;
+      }
+      p {
+        font-size: 11px;
+      }
+    }
+    @include until($device-width-lg) {
+      .col-md-4 {
+        width: 33.3333%;
+      }
+      .content {
+        padding: 7px 20px;
+      }
+    }
+    @include until($device-width-md) {
+      .col-md-4 {
+        width: 50%;
+      }
+    }
+    @include until($device-width-sm) {
+      .col-md-4 {
+        width: 100%;
+      }
+    }
+  }
+}
+@include widget-area-6 {
+  .tuta-featured-dealer-2-widget {
+    width: $width-page; margin-left: auto; margin-right: auto;
+    @include until($device-width-lg) {
+      width: auto; margin-left: 10px; margin-right: 10p;
+    }
+  }
+}

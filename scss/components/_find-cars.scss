@@ -1,0 +1,134 @@
+/**
+ * find-car
+ */
+
+.head-fc {
+  font-size: 26px; line-height: 30px; color: $color-heading-2;
+}
+.find-cars {
+  width: 386px; border: 8px solid $border-2; padding: 18px 20px 40px;
+  background-color: rgba(0, 0, 0, .6); display: none; position: absolute; top: 0; left: 5.16%;
+  @include border-radius();
+  .btn-fc {
+    font-size: 16px; font-weight: 700; display: block; text-align: center;
+    span {
+      font-size: 13px; font-weight: 400; text-transform: capitalize;
+    }
+  }
+  .row {
+    margin-left: -5px; margin-right: -5px;
+    > div {
+      padding-left: 5px; padding-right: 5px;
+    }
+  }
+  .btn-fc {
+    padding: 0 10px; @include ellipsis;
+    &:after, &:before {
+      @include transition;
+    }
+    &:hover {
+      @include box-shadow(0 -26px 30px -20px rgba(0, 0, 0, .6) inset);
+      &:after, &:before {
+        @include opacity(0);
+      }
+    }
+  }
+  @include until($device-width-lg) {
+    //left: 10px;
+    position: static; width: 100%; border: none; padding: 15px 10px 10px;
+    background: $bg-2 url("images/background/bg-2.png") repeat 0 0;
+    .row {
+      margin: 0 -10px;
+      > div {
+        padding: 0 10px;
+      }
+    }
+    .btn-fc {
+      height: 32px; line-height: 30px; font-size: 13px;
+    }
+    .head-fc {
+      font-size: 16px; line-height: 20px;
+    }
+
+  }
+}
+
+@include tuta-home-2 {
+  .tuta-top-slide {
+    //height: $height-top-slide-2 + $border-top-slide;
+    .slide:hover {
+      .mask {
+        @include opacity(0);
+        //opacity: 0 !important;
+      }
+    }
+    .control-top-slide {
+      top: 52px; //70px;
+    }
+    .find-cars-wrap {
+      position: relative; width: 100%; margin: 0; left: 0; height: auto; overflow: visible !important;
+      background: $bg-2 url("images/background/bg-2.png") repeat 0 0; @include transition();
+    }
+    .head-fc {
+      font-size: 13px; color: $color-4; display: inline-block; margin: 0 auto; background-color: $bg-3;
+      line-height: 34px; height: 34px; width: 220px; text-align: center; position: absolute; top: 0; left: 50%;
+      margin-left: -100px; cursor: pointer; z-index: 2; @include border-radius(0 0 4px 4px); @include transition;
+      &:after {
+        content: '\f077'; position: absolute; top: 50%; right: 10px; height: 14px; margin-top: -7px;
+        font: 300 11px/14px FontAwesome;
+      }
+    }
+    .find-cars {
+      border: none; width: $width-page; margin: 0 auto; padding: 60px 0 20px; background: transparent;
+      @include border-radius(0); display: none; position: static;
+      @include until($device-width-lg) {
+        width: 100%;    
+      }
+      .row {
+        margin-left: -10px; margin-right: -10px;
+        > div {
+          padding-left: 10px; padding-right: 10px;
+        }
+      }
+      .btn-fc {
+        background-color: $bg-3; color: $color-4; 
+        font-size: 13px;
+        &:before {
+          background-color: $bg-9;
+        }
+        &:after {
+          background-color: $bg-3;
+        }
+      }
+      .form-control-wrap {
+        margin-bottom: 20px; 
+      }
+    }
+    .fc-active {
+      .head-fc {
+        &:after {
+          content: '\f078';
+        }
+      }
+    }
+  }
+}
+
+@include tuta-style-flat {
+  .find-cars {
+    .btn-fc {
+      &:hover {
+        background-color: $bg-8; @include box-shadow(none);
+        &:after, &:before {
+          @include opacity(1);
+        }
+        &:before {
+          background-color: $bg-11;
+        }
+        &:after {
+          background-color: $bg-8;
+        }
+      }
+    }
+  }  
+}

@@ -1,0 +1,23 @@
+/**
+ * testimonial-3-widget
+ */
+
+.tuta-testimonial-3-widget {
+  .widget-content {
+    border: 1px solid $border-2; padding: 19px; 
+    .blockquote-1 {
+      color: $color-1;
+    }
+  }
+  .owl-controls {
+    position: static; display: block;
+  }
+}
+
+@include tuta-style-flat {
+  .tuta-ads-1-widget {
+    img {
+      @include border-radius(0);
+    }
+  }
+}

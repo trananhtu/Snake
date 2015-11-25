@@ -1,0 +1,36 @@
+/**
+ * shop
+ */
+.shop-box {
+  .product-list-1-o {
+    margin-top: 0;
+    .item  {
+      margin: 0;
+    }
+    .row {
+      > div {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .tuta-pane {
+    margin-bottom: 28px;
+  }
+  .product-list-2 {
+    .row {
+      > div {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  
+  @include until($device-width-xs) {
+    .col-xs-6 {
+      width: 100%;
+    }
+  }
+}
+
+.bg-pattern {
+  background: url("images/background/bg-h5.jpg") repeat 0 0;
+}

@@ -1,0 +1,14 @@
+/**
+ * Divider
+ */
+.divider-1 {
+  height: 25px; background: transparent url("images/background/divider-1.png") no-repeat 50% 0;
+}
+@include tuta-home-2 {
+  .divider-1 {
+    height: 40px;
+  }
+}
+.divider-2 {
+  border-top: 1px solid #dedede; height: 1px;
+}

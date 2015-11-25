@@ -1,0 +1,56 @@
+/**
+ * Blockquote
+ */
+
+.blockquote {
+  border: 6px solid $border-2; padding: 20px; @include border-radius();
+  &:before {
+    content: '\f10d'; display: block; text-align: center; height: 28px;
+    color: $color-2; font: 300 20px/20px FontAwesome;
+  }
+  p {
+    font-size: 16px; font-style: italic; font-weight: normal; word-wrap: break-word; line-height: 23px; margin: 18px 0 0 0;
+    &:first-child {
+      margin: 0;
+    }
+  }
+  .customer {
+    text-align: center; font: bold 13px $font-heading; color: $color-3; text-transform: uppercase; display: block;
+    span {
+      text-transform: capitalize; font-weight: normal;
+    }
+  }
+}
+@include tuta-home-2 {
+  .blockquote {
+    &:before {
+      height: 31px;
+    }
+  }
+}
+.blockquote-1 {
+  border: none; @include border-radius(0); color: $color-10; padding: 0;
+  .customer-w {
+    line-height: 70px; margin-top: 18px;
+    .thumb {
+      @include border-radius(50%); border: 2px solid #c2c2c2; overflow: hidden; @include transition; width: 70px; height: 70px;
+      display: inline-block; margin-right: 6px; text-align: left; float: left;
+      img {
+        float: left;
+      }
+    }
+  }
+  .customer {
+    @include ellipsis; display: inline-block;
+  }
+  @include until($device-width-lg) {
+    .customer-w {
+      .thumb {
+        float: none; display: block; margin: 0 auto;
+      }
+    }
+    .customer {
+      display: block; margin-top: 10px;
+    }
+  }
+}

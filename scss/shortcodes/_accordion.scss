@@ -1,0 +1,63 @@
+/**
+ * Accordion
+ */
+
+.tuta-accordion {
+  h4 {
+    font-size: 13px; line-height: 40px; background-color: $bg-5; padding: 0 20px; @include border-radius(); outline: none;
+    font-weight: normal; margin: 0 0 1px 0; position: relative; cursor: pointer; @include transition();
+    &:hover, &.ui-state-active {
+      color: $color-3;
+    }
+    &.ui-state-active {
+      cursor: default;
+      i {
+        &:before {
+          display: none;
+        }
+      }
+    }
+    i {
+      display: block; position: absolute; top: 10px; right: 0; width: 53px; height: 20px; border-left: 1px solid $border-1;
+      &:after, &:before {
+        content: ''; position: absolute;
+      }
+      &:after {
+        width: 11px; height: 1px; background-color: $bg-2; top: 50%; left: 50%; margin-left: -5px;
+      }
+      &:before {
+        width: 1px; height: 11px; background-color: $bg-2; top: 50%; left: 50%; margin-top: -5px;
+      }
+    }
+    &+div {
+      padding: 20px 0; overflow: hidden;
+      p {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      .thumbnail {
+        float: left; margin: 0 20px 0 0; padding: 0; border: none;
+        img {
+           @include border-radius();
+        }
+      }
+    }
+  }
+}
+
+.tuta-toggle {
+  @extend .tuta-accordion;
+  .active {
+    cursor: pointer; color: $color-3;
+    i {
+      height: 40px; border: none; background-color: $bg-3; @include border-radius(0 5px 5px 0); top: 0;
+      &:after {
+        background-color: $bg-4;
+      }
+      &:before {
+        display: none;
+      }
+    }
+  }
+}

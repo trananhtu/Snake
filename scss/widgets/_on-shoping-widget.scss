@@ -1,0 +1,43 @@
+/**
+ * on-shoping-widget
+ */
+
+.tuta-on-shoping-widget {
+  .on-shoping-box {
+    margin: 0; color: $color-10;
+    .item {
+      padding: 0; text-align: center; width: 100%; float: none;
+      &:before {
+        background: transparent; position: static; display: block; color: $color-11;
+        font-size: 46px; margin: 0 0 30px; float: none; width: auto; height: auto;
+      }
+      .h6, h6 {
+        color: $color-10; font-weight: 700; margin-bottom: 12px; font-size: 14px;
+      }
+      p {
+        @include no-ellipsis(); line-height: 20px;
+      }
+      &.fa-calendar-o {
+        &:before {
+          font-size: 39px;
+        }
+      }
+      &.fa-gift {
+        &:before {
+          font-size: 49px;
+        }
+      }
+    }
+  }
+  .row {
+    margin-bottom: -30px;
+    > div {
+      margin-bottom: 30px
+    }
+  }
+}
+@include tuta-home-4 {
+  .tuta-on-shoping-widget {
+    margin: -60px 0 0; padding: 60px 0; background-color: rgba(255, 255, 255, .7);
+  }
+}

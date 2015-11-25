@@ -1,0 +1,71 @@
+.product-list-1-o { //tuta-home-4-5 //sd cung product-list-1
+  margin-top: -30px;
+  .item {
+    margin-top: 30px; position: relative;
+  }
+  .thumbnail {
+    margin-bottom: 15px;
+    &:after {
+      display: none;
+    }
+    &:before {
+      content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      display: block; background: none; @include transition;
+    }
+    &:hover {
+      &:before {
+        background-color: rgba(0, 0, 0, .3);
+      }
+    }
+    > *:first-child { //the boc img
+      &:after, &:before {
+        display: none;
+      }
+    }
+  }
+  .content-title {
+    margin-bottom: 12px; color: $color-10;
+    a {
+      color: $color-10;
+      &:hover {
+        color: $color-11;
+      }
+    }
+  }
+  .tuta-rating {
+    display: inline-block;
+    a {
+      color: $color-10;
+    }
+  }
+  .info-1 {
+    > span {
+      margin: 0 0 0 8px;
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+  .price {
+    color: $color-10; line-height: 20px; float: right;
+  }
+  .price-1 {
+    float: right;
+  }
+  .tuta-button-default {
+    background-color: $bg-5; color: $color-10;
+  }
+  .owl-controls {
+    top: -45px; right: 40px;
+  }
+}
+@include tuta-home-5 {
+  .product-list-1-o {
+    .owl-controls {
+      top: -25px;
+      @include until($device-width-xs) {
+        position: static; margin-top: 20px;
+      }
+    }
+  }
+}
