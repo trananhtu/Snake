@@ -929,7 +929,7 @@ $height-button-lg: 50px;
 }
 @include tuta-style-flat {
   .tuta-pane {
-    padding: 0; margin: 0 -10px; background: transparent; font-size: 14px;
+    //padding: 0; margin: 0 -10px; background: transparent; font-size: 14px;
     &:after, &:before {
       display: none;
     }

@@ -153,12 +153,12 @@ padding: 10px 20px;
 .info-2 {
   > p {
     margin: 0; color: $color-4; text-transform: uppercase; font-size: 12px;
-  	> span {
-  	  display: inline-block;
-  	  &:first-child {
-  		  width: 108px;
-  	  }
-  	}
+    > span {
+      display: inline-block;
+      &:first-child {
+        width: 108px;
+      }
+    }
   }
 }
 .time, .author {
@@ -4868,9 +4868,9 @@ $border-top-slide: 5px;
   }
   .thumbnail {
     float: left; margin: 5px 20px 0 0; @include border-radius(0);
-	img {
-	  @include border-radius(0);
-	}
+  img {
+    @include border-radius(0);
+  }
   }
   .content-title {
     margin-bottom: 0; font-weight: 400; color: $color-10; font-size: 12px;
@@ -5333,7 +5333,10 @@ $height-main-head: 109px;
   }
   .thumbnail, .blockquote {
     margin-bottom: 15px;
-  }  
+  }
+  .thumbnail {
+    max-height: 300px; 
+  }
   .info-1 {
     color: $color-2;
   }

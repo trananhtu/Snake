@@ -206,10 +206,18 @@ if(!function_exists('tuta_pagination')) {
 
 		global $wp_query;
 		$total = $wp_query->max_num_pages;
-		echo 'num pages' . $total;
+		echo 'num pages ' . $total . ' <br>';;
 		if ( $total < 2 )  {
 			return '';
-		}
+		} 
+		echo get_next_posts_link() . ' <br>';
+		echo next_posts_link() . ' <br>';
+		echo next_post_link() . ' <br>';
+
+		$prev = get_previous_posts_link();
+		echo $prev . ' <br>';
+
+echo the_posts_pagination() . ' <br>';
 		?>
 
 		<nav class="tuta-pane">
@@ -217,7 +225,8 @@ if(!function_exists('tuta_pagination')) {
             	<?php if(get_previous_post_link()) : ?>
                 	<li class="previous">
 	                	<span class="tuta-button-default button-3d button-sm btn-white-hover">
-	                		<?php previous_posts_link(__('Older Post', 'tuta')); ?>
+	                		<!-- <?php previous_posts_link(__('Older Post', 'tuta')); ?> -->
+	                		<?php get_next_posts_link(); ?>
 	                	</span>
                 	</li>
             	<?php endif?>
@@ -329,7 +338,7 @@ if(!function_exists('tuta_entry_meta')) {
  * Thêm chữ Read More vào excerpt
  */
 function tuta_readmore() {
-	return '...<a class="more-link" href="' . get_permalink(get_the_ID()) . '">' . __('View more details', 'tuta') . '</a>';
+	return '<p><a class="more-link" href="' . get_permalink(get_the_ID()) . '">' . __('View more details', 'tuta') . '</a></p>';
 }
 add_filter('excerpt_more', 'tuta_readmore');
 
