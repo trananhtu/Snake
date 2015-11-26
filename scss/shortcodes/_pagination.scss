@@ -13,20 +13,27 @@
         color: $color-3;
       }
     }
-    &.active {
+    &.active, &.current {
+      color: $color-3;
       > a {
-        color: $color-3;
+        color: inherit;
       }
     }
   }
   > span {
-    color: $color-3;
+    //color: $color-3;
   }
-  .previous {
+  .previous, .prev {
     float: left; margin: 0 10px 0 0;
+    > span {
+      font-weight: 700;
+    }
   }
-  .next {
+  .next, .next {
     float: right; margin: 0 0 0 10px;
+    > span {
+      font-weight: 700;
+    }
   }
   @include until($device-width-sm) {
     .previous, .next {
