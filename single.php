@@ -40,35 +40,26 @@
 
                     <article class="blog-content">
 
-
-        
-
-                        <?php tuta_entry_header(); ?>
-                        
-                        <?php tuta_thumbnail('large'); ?>
-
-                        <?php tuta_entry_meta(); ?>
-
-                        <?php tuta_entry_content(); ?>
+                        <?php if(have_posts()) :
+                            while(have_posts()) : the_post();
+                                get_template_part('content', get_post_format());
+                            endwhile;
+                        else :
+                            get_template_part('content', 'none');
+                        endif; ?>
 
                         <footer>
+
+                            <?php get_template_part('author-bio'); ?>
 
                             <div class="box-wrap clearfix">
 
                                 <div class="page-links-wrap">
-                                    <span>Pages: </span>
-                                    <div class="page-links">
-                                        <span>1</span>
-                                        <a href="#"><span>2</span></a>
-                                        <a href="#"><span>3</span></a>
-                                    </div>
+                                    <?php tuta_link_pages(); ?>
                                 </div>
 
                                 <div class="tag-box pull-left">
-                                	<?php (is_single()? tuta_entry_tag() : '')?>
-                                    <!-- <a href="#">Kopatheme news</a>
-                                    <a href="#">Cars</a>
-                                    <a href="#">Vehicle</a> -->
+                                	<?php tuta_entry_tag(); ?>
                                 </div>
 
                             </div>
@@ -99,10 +90,12 @@
                     </article>
                     <!-- article -->
 
-                    <section class="comment-box">
+                    <?php comments_template(); ?>
 
-                        <h3 class="kopa-pane kopa-pane-1">2 Comments</h3>
-
+                    <!-- <section class="comment-box">
+                    
+                        <h3 class="tuta-pane tuta-pane-1">2 Comments</h3>
+                    
                         <ol class="comments-list">
                             <li>
                                 <article>
@@ -114,7 +107,7 @@
                                             <h5>Jolie Angelina</h5>
                                             <div class="info-1 clearfix">
                                                 <span class="time">10 September, 2013 at 5:26 pm</span>
-
+                    
                                                 <div class="pull-right">
                                                     <a href="#">Edit</a>
                                                     <i>/</i>
@@ -127,26 +120,26 @@
                                     </div>
                                 </article>
                             </li>
-
+                    
                             <ul class="children">
                                 <li>
                                     <article>
                                         <div class="thumbnail">
                                             <img src="placeholders/post-image/image-50-50-1.jpg" height="50" width="50" alt="">
                                         </div>
-
+                    
                                         <div class="comment-body">
                                             <header class="comment-header clearfix">
                                                 <h5>Jolie Angelina</h5>
                                                 <div class="info-1 clearfix">
                                                     <span class="time">10 September, 2013 at 5:26 pm</span>
-
+                    
                                                     <div class="pull-right">
                                                         <a href="#">Edit</a>
                                                         <i>/</i>
                                                         <a href="#">Reply</a>
                                                     </div>
-
+                    
                                                 </div>
                                             </header>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce adipiscing neque ornare orci ullamcorper accumsan. Sed malesuada pharetra erat, eu viverra eros rutrum sit amet. Sed malesuada pharetra erat, eu viverra eros rutrum sit amet. Aliquam commodo auctor facilisis.</p>
@@ -158,19 +151,19 @@
                                         <div class="thumbnail">
                                             <img src="placeholders/post-image/image-50-50-1.jpg" height="50" width="50" alt="">
                                         </div>
-
+                    
                                         <div class="comment-body">
                                             <header class="comment-header clearfix">
                                                 <h5>Jolie Angelina</h5>
                                                 <div class="info-1 clearfix">
                                                     <span class="time">10 September, 2013 at 5:26 pm</span>
-
+                    
                                                     <div class="pull-right">
                                                         <a href="#">Edit</a>
                                                         <i>/</i>
                                                         <a href="#">Reply</a>
                                                     </div>
-
+                    
                                                 </div>
                                             </header>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce adipiscing neque ornare orci ullamcorper accumsan. Sed malesuada pharetra erat, eu viverra eros rutrum sit amet. Sed malesuada pharetra erat, eu viverra eros rutrum sit amet. Aliquam commodo auctor facilisis.</p>
@@ -178,11 +171,11 @@
                                     </article>
                                 </li>
                             </ul>
-
+                    
                         </ol>
-                        <!-- .comments-list -->
-
-                        <div class="kopa-pagination">
+                        .comments-list
+                    
+                        <div class="tuta-pagination">
                             <a class="previous" href="#">&laquo; Previous</a>
                             <span>1</span>
                             <a href="#">2</a>
@@ -190,14 +183,14 @@
                             <a href="#">4</a>
                             <a class="next" href="#">Next &raquo;</a>
                         </div>
-                        <!-- .kopa-pagination -->
-
+                        .tuta-pagination
+                    
                     </section>
-                    <!-- .comment-box -->
+                    .comment-box -->
 
                     <section class="related-article">
 
-                        <h3 class="kopa-pane kopa-pane-1">Related Post</h3>
+                        <h3 class="tuta-pane tuta-pane-1">Related Post</h3>
 
                         <div class="row">
 
@@ -211,7 +204,7 @@
                                     </h4>
                                     <div class="info-1">
                                         <span class="time">Aug 08, 2014</span>
-                                        <span class="kopa-rating">
+                                        <span class="tuta-rating">
                                             <a href="#" class="fa fa-star"></a>
                                             <a href="#" class="fa fa-star"></a>
                                             <a href="#" class="fa fa-star"></a>
@@ -232,7 +225,7 @@
                                     </h4>
                                     <div class="info-1">
                                         <span class="time">Aug 08, 2014</span>
-                                        <span class="kopa-rating">
+                                        <span class="tuta-rating">
                                             <a href="#" class="fa fa-star"></a>
                                             <a href="#" class="fa fa-star"></a>
                                             <a href="#" class="fa fa-star"></a>
@@ -253,7 +246,7 @@
                                     </h4>
                                     <div class="info-1">
                                         <span class="time">Aug 08, 2014</span>
-                                        <span class="kopa-rating">
+                                        <span class="tuta-rating">
                                             <a href="#" class="fa fa-star"></a>
                                             <a href="#" class="fa fa-star"></a>
                                             <a href="#" class="fa fa-star"></a>
@@ -272,7 +265,7 @@
 
                     <section class="post-comment">
 
-                        <h3 class="kopa-pane kopa-pane-1">Leave a Reply</h3>
+                        <h3 class="tuta-pane tuta-pane-1">Leave a Reply</h3>
                         <p>Your email address will not be published. Required fields are marked *</p>
 
                         <form class="comments-form">
@@ -299,7 +292,7 @@
                                 </div>
 
                                 <div class="col-md-12">
-                                    <input type="submit" value="Post Comment" id="submit-comment" class="kopa-button-default button-gde">
+                                    <input type="submit" value="Post Comment" id="submit-comment" class="tuta-button-default button-gde">
                                 </div>
 
                             </div>

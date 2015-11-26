@@ -218,15 +218,15 @@
 
                     <div class="blog-content">
 
-                        <ul class="blog-list">
-    	                    <?php if(have_posts()) : 
+                        <div class="blog-list">
+    	                    <?php if(have_posts()) :
     							while(have_posts()) : the_post();
     							    get_template_part('content', get_post_format());
     							endwhile;
     						else :
     							get_template_part('content', 'none');
     						endif; ?>
-                        </ul>
+                        </div>
 
                         <?php tuta_pagination(); ?>
 

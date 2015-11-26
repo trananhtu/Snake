@@ -206,56 +206,21 @@ if(!function_exists('tuta_pagination')) {
 
 		global $wp_query;
 		$total = $wp_query->max_num_pages;
-		echo 'num pages ' . $total . ' <br>';;
 		if ( $total < 2 )  {
 			return '';
 		} 
-		echo get_next_posts_link() . ' <br>';
-		echo next_posts_link() . ' <br>';
-		echo next_post_link() . ' <br>';
 
-		$prev = get_previous_posts_link();
-		echo $prev . ' <br>';
-
-echo the_posts_pagination() . ' <br>';
 		?>
-
 		<nav class="tuta-pane">
-            <ul class="tuta-pagination">
-            	<?php if(get_previous_post_link()) : ?>
-                	<li class="previous">
-	                	<span class="tuta-button-default button-3d button-sm btn-white-hover">
-	                		<!-- <?php previous_posts_link(__('Older Post', 'tuta')); ?> -->
-	                		<?php get_next_posts_link(); ?>
-	                	</span>
-                	</li>
-            	<?php endif?>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li class="active"><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
-                <li><a href="#">7</a></li>
-                <li><a href="#">8</a></li>
-                <li><a href="#">9</a></li>
-                <li>...</li>
-                <li><a href="#">14</a></li>
-                <li><a href="#">15</a></li>
-                <?php if(get_next_post_link()) : ?>
-                	<li class="next">
-	                	<span class="tuta-button-default button-3d button-sm btn-white-hover">
-	                		<?php next_posts_link(__('Newer Post', 'tuta')); ?>
-	                	</span>
-                	</li>
-            	<?php endif?>
-            </ul>
-            <!-- .pagination -->
+            <div class="tuta-pagination">
+                <?php echo paginate_links(array(
+                	'end_size' => 2,
+                	'prev_text' => __('<span class="tuta-button-default button-3d button-sm btn-white-hover">Prev</span>', 'tuta'),
+                	'next_text' => __('<span class="tuta-button-default button-3d button-sm btn-white-hover">Next</span>', 'tuta')
+                )); ?>
+            </div>
         </nav>
-        <!-- .tuta-pane -->
-
-        <?php 
-
+        <?php
 	}
 }
 
@@ -314,24 +279,25 @@ if(!function_exists('tuta_entry_meta')) {
 	function tuta_entry_meta() {
 		//if(!is_single()) :
 			echo '<div class="info-1">';
-				// hiển thị tên tác giả, tên category và ngày tháng đăng bài
-				printf(__('<span class="time">%1$s, By: %2$s, In: %3$s</span>', 'tuta'),
-					get_the_date(),
-					get_the_author(),
-					get_the_category_list(', ')
-				);
+			// hiển thị tên tác giả, tên category và ngày tháng đăng bài
+			printf(__('<span class="time">%1$s, By: <a href="%4$s">%2$s</a>, In: %3$s', 'tuta'),
+				get_the_date(),
+				get_the_author(),
+				get_the_category_list(', '),
+				get_author_posts_url(get_the_author_meta("ID"))
+			);
 
-				// Hiển thị số đếm lượt bình luận
-				if(comments_open()) :
-					echo '<span class="meta-reply">';
-						comments_popup_link(
-							__('Leave a comment', 'tuta'),
-							__('One comment', 'tuta'),
-							__('% comments', 'tuta'),
-							__('Read all comments', 'tuta')
-						);
-					echo '</span>';
-				endif;
+			// Hiển thị số đếm lượt bình luận
+			if(comments_open()) :
+				echo ', Comment: ';
+					comments_popup_link(
+						__('Leave a comment', 'tuta'),
+						__('One comment', 'tuta'),
+						__('% comments', 'tuta'),
+						__('Read all comments', 'tuta')
+					);					
+			endif;
+			echo '</span>';
 			echo '</div>';
 		//endif;
 	}
@@ -352,16 +318,25 @@ add_filter('excerpt_more', 'tuta_readmore');
  * @tuta_entry_content()
  */
 if(!function_exists('tuta_entry_content')) {
-	function tuta_entry_content() {the_excerpt();
-		if(!is_single()) :
+	function tuta_entry_content() {
+		if(!is_single() && !is_page()) :
 			the_excerpt();
 		else :
 			the_content();
+		endif;
+	}
+}
 
+if(!function_exists('tuta_link_pages')) {
+	function tuta_link_pages() {
+		if(is_single()) :
 			// Hiển thị phân trang trong post type
 			$link_pages = array(
-				'before' => __('<p>Page:', 'tuta'),
-				'after' => '</p>',
+				'before' => __('<span>Pages: </span>
+								<div class="page-links">', 'tuta'),
+				'after' => '</div>',
+				'link_before' => '<span>',
+				'link_after' => '</span>',
 				'nextpagelink' => __('Next Page', 'tuta'),
 				'previouspagelink' => __('Previous Page', 'tuta')
 			);
@@ -378,7 +353,7 @@ if(!function_exists('tuta_entry_tag')) {
 	function tuta_entry_tag() {
 		if(has_tag()) :
 			//echo '<div class="entry-tag">';
-			printf(__('Tagged in %1$s', 'tuta'), get_the_tag_list('', ', '));
+			printf(__('%1$s', 'tuta'), get_the_tag_list('', ', '));
 			//echo '</div>';
 		else :
 			echo 'No Tag';
@@ -386,7 +361,15 @@ if(!function_exists('tuta_entry_tag')) {
 	}
 }
 
-
+/**
+ * Hàm hiển thị các bài trước, tiếp theo
+ * @tuta_entry_next_prev()
+ */
+if(!function_exists('tuta_entry_next_prev')) {
+	function tuta_entry_next_prev() {
+		
+	}
+}
 
 
 
