@@ -15,6 +15,7 @@
 }
 
 .tuta-button-default {
+  @include transition($transition);
   display: inline-block; font: 400 13px/#{$height-button-md} $font-heading; height: $height-button-md; color: $color-4; 
   padding: 0 15px; background: $bg-3; text-transform: uppercase; font-weight: 700; @include border-radius();
   border: none; outline: none;
