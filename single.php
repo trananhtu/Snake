@@ -64,25 +64,7 @@
 
                             </div>
 
-                            <div class="box-wrap">
-                                <div class="row">
-
-                                    <div class="col-sm-6 col-md-6">
-                                        <div class="other-article">
-                                            <a class="h3" href="#">&laquo; Previous Article</a>
-                                            <h4><a href="#">How to Add Custom Links to Gallery Images in WordPress?</a></h4>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-6 col-md-6">
-                                        <div class="other-article text-right">
-                                            <a class="h3" href="#">Next Article &raquo;</a>
-                                            <h4><a href="#">US labour market shows strong rise: Q236,000 new jobs </a></h4>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
+                            <?php tuta_entry_next_prev(); ?>
 
                         </footer>
                         <!-- footer -->
@@ -263,7 +245,7 @@
                     </section>
                     <!-- .related-article -->
 
-                    <section class="post-comment">
+                    <!-- <section class="post-comment">
 
                         <h3 class="tuta-pane tuta-pane-1">Leave a Reply</h3>
                         <p>Your email address will not be published. Required fields are marked *</p>
@@ -297,7 +279,7 @@
 
                             </div>
                         </form>
-                    </section>
+                    </section> -->
                     <!-- .post-comment -->
                     
                 </div>

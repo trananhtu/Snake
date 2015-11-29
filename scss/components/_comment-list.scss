@@ -1,0 +1,48 @@
+/**
+ * comments list
+ */
+
+#comments {
+	border-top: 1px solid #dedede; padding-top: 15px; word-wrap: break-word;
+}
+
+#respond {
+	border-top: 1px solid #dedede; padding-top: 15px;
+}
+
+//comment list - default wp
+.commentlist {
+	margin-bottom: 20px;
+	> li {
+		@include clearfix;
+		& + li {
+			margin-top: 15px; padding-top: 15px; border-top: 1px solid #ddd;
+		}
+	}
+	p {
+		margin-bottom: 10px; word-wrap: break-word;
+		// &:last-of-type {
+		// 	margin-bottom: 0;
+		// }
+	}
+	.comment-author {
+		padding-right: 15px; float: left; width: 80px; margin-bottom: 15px;
+		.fn, .says {
+			display: none;
+		}
+	}
+	.comment-body {
+		@include clearfix;
+	}
+	.children {
+		margin-top: 20px; margin-left: 80px; margin-bottom: 0;
+		> li {
+			margin-bottom: 15px;
+		}
+	}
+
+	// define typo
+	ul, ol {
+		margin-bottom: 15px;
+	}
+}

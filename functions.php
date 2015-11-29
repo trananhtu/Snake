@@ -367,7 +367,37 @@ if(!function_exists('tuta_entry_tag')) {
  */
 if(!function_exists('tuta_entry_next_prev')) {
 	function tuta_entry_next_prev() {
-		
+		?>
+		<div class="box-wrap">
+		    <div class="row">
+
+		        <div class="col-sm-6 col-md-6">
+		        	<?php $next_post_term = get_next_post();
+		        	if(!empty($next_post_term)) : ?>
+			            <div class="other-article">
+			                <a class="h3" href="#"><?php echo __('&laquo; Previous Article', 'tuta') ?></a>
+			                <h4>
+			                	<a href="<?php echo get_permalink($next_post_term->ID); ?>"><?php echo $next_post_term->post_title; ?></a>
+		                	</h4>
+			            </div> <?php
+		            endif; ?>
+		        </div>
+
+		        <div class="col-sm-6 col-md-6">
+	        		<?php $prev_post_term = get_previous_post();
+	        		if(!empty($prev_post_term)) : ?>
+			            <div class="other-article text-right">
+			                <a class="h3" href="#"><?php echo __('Next Article &raquo;', 'tuta')?></a>
+			                <h4>
+			                	<a href="<?php echo get_permalink($prev_post_term->ID); ?>"><?php echo $prev_post_term->post_title; ?></a>
+			                </h4>
+			            </div> <?php
+		            endif; ?>
+		        </div>
+
+		    </div>
+		</div>
+		<?php
 	}
 }
 

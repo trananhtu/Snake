@@ -7,7 +7,7 @@
 $height-main-head: 109px;
 
 .main-head {
-  background: transparent url("images/background/bg-sub-page-1.jpg") no-repeat 50% 0; overflow: hidden; height: $height-main-head;
+  background: #1C1C1C url("images/background/bg-sub-page-1.jpg") no-repeat 50% 0; overflow: hidden; height: $height-main-head;
   .page-title {
     font-size: 16px; color: $color-4; line-height: $height-main-head; float: left; margin: 0;
   }
