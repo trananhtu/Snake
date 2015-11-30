@@ -75,9 +75,9 @@
                     <?php comments_template(); ?>
 
                     <!-- <section class="comment-box">
-                    
+
                         <h3 class="tuta-pane tuta-pane-1">2 Comments</h3>
-                    
+
                         <ol class="comments-list">
                             <li>
                                 <article>
@@ -89,39 +89,39 @@
                                             <h5>Jolie Angelina</h5>
                                             <div class="info-1 clearfix">
                                                 <span class="time">10 September, 2013 at 5:26 pm</span>
-                    
+
                                                 <div class="pull-right">
                                                     <a href="#">Edit</a>
                                                     <i>/</i>
                                                     <a href="#">Reply</a>
                                                 </div>
-                                                
+
                                             </div>
                                         </header>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce adipiscing neque ornare orci ullamcorper accumsan. Sed malesuada pharetra erat, eu viverra eros rutrum sit amet. Sed malesuada pharetra erat, eu viverra eros rutrum sit amet. Aliquam commodo auctor facilisis.</p>
                                     </div>
                                 </article>
                             </li>
-                    
+
                             <ul class="children">
                                 <li>
                                     <article>
                                         <div class="thumbnail">
                                             <img src="placeholders/post-image/image-50-50-1.jpg" height="50" width="50" alt="">
                                         </div>
-                    
+
                                         <div class="comment-body">
                                             <header class="comment-header clearfix">
                                                 <h5>Jolie Angelina</h5>
                                                 <div class="info-1 clearfix">
                                                     <span class="time">10 September, 2013 at 5:26 pm</span>
-                    
+
                                                     <div class="pull-right">
                                                         <a href="#">Edit</a>
                                                         <i>/</i>
                                                         <a href="#">Reply</a>
                                                     </div>
-                    
+
                                                 </div>
                                             </header>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce adipiscing neque ornare orci ullamcorper accumsan. Sed malesuada pharetra erat, eu viverra eros rutrum sit amet. Sed malesuada pharetra erat, eu viverra eros rutrum sit amet. Aliquam commodo auctor facilisis.</p>
@@ -133,19 +133,19 @@
                                         <div class="thumbnail">
                                             <img src="placeholders/post-image/image-50-50-1.jpg" height="50" width="50" alt="">
                                         </div>
-                    
+
                                         <div class="comment-body">
                                             <header class="comment-header clearfix">
                                                 <h5>Jolie Angelina</h5>
                                                 <div class="info-1 clearfix">
                                                     <span class="time">10 September, 2013 at 5:26 pm</span>
-                    
+
                                                     <div class="pull-right">
                                                         <a href="#">Edit</a>
                                                         <i>/</i>
                                                         <a href="#">Reply</a>
                                                     </div>
-                    
+
                                                 </div>
                                             </header>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce adipiscing neque ornare orci ullamcorper accumsan. Sed malesuada pharetra erat, eu viverra eros rutrum sit amet. Sed malesuada pharetra erat, eu viverra eros rutrum sit amet. Aliquam commodo auctor facilisis.</p>
@@ -153,10 +153,10 @@
                                     </article>
                                 </li>
                             </ul>
-                    
+
                         </ol>
                         .comments-list
-                    
+
                         <div class="tuta-pagination">
                             <a class="previous" href="#">&laquo; Previous</a>
                             <span>1</span>
@@ -166,84 +166,11 @@
                             <a class="next" href="#">Next &raquo;</a>
                         </div>
                         .tuta-pagination
-                    
+
                     </section>
                     .comment-box -->
 
-                    <section class="related-article">
-
-                        <h3 class="tuta-pane tuta-pane-1">Related Post</h3>
-
-                        <div class="row">
-
-                            <div class="col-sm-6 col-md-4">
-                                <article class="item">
-                                    <a class="thumbnail" href="#" title="Lamborghini AventadorJ">
-                                        <img src="placeholders/post-image/image-283-174-5.jpg" width="283" height="174" alt="">
-                                    </a>
-                                    <h4 class="content-title">
-                                        <a href="#" title="Lamborghini AventadorJ">Lamborghini AventadorJ</a>
-                                    </h4>
-                                    <div class="info-1">
-                                        <span class="time">Aug 08, 2014</span>
-                                        <span class="tuta-rating">
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star-o"></a>
-                                        </span>
-                                    </div>
-                                </article>
-                            </div>
-
-                            <div class="col-sm-6 col-md-4">
-                                <article class="item">
-                                    <a class="thumbnail" href="#" title="Lamborghini AventadorJ">
-                                        <img src="placeholders/post-image/image-283-174-4.jpg" width="283" height="174" alt="">
-                                    </a>
-                                    <h4 class="content-title">
-                                        <a href="#" title="Lamborghini AventadorJ">Lamborghini AventadorJ</a>
-                                    </h4>
-                                    <div class="info-1">
-                                        <span class="time">Aug 08, 2014</span>
-                                        <span class="tuta-rating">
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star-o"></a>
-                                        </span>
-                                    </div>
-                                </article>
-                            </div>
-
-                            <div class="col-sm-6 col-md-4">
-                                <article class="item">
-                                    <a class="thumbnail" href="#" title="Lamborghini AventadorJ">
-                                        <img src="placeholders/post-image/image-283-174-2.jpg" width="283" height="174" alt="">
-                                    </a>
-                                    <h4 class="content-title">
-                                        <a href="#" title="Lamborghini AventadorJ">Lamborghini AventadorJ</a>
-                                    </h4>
-                                    <div class="info-1">
-                                        <span class="time">Aug 08, 2014</span>
-                                        <span class="tuta-rating">
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star"></a>
-                                            <a href="#" class="fa fa-star-o"></a>
-                                        </span>
-                                    </div>
-                                </article>
-                            </div>
-
-                        </div>
-                        <!--.row-->
-
-                    </section>
-                    <!-- .related-article -->
+                    <?php include (TEMPLATEPATH . '/inc/related-posts.php'); ?>
 
                     <!-- <section class="post-comment">
 
@@ -281,7 +208,7 @@
                         </form>
                     </section> -->
                     <!-- .post-comment -->
-                    
+
                 </div>
                 <!-- .col-main -->
 
@@ -289,95 +216,9 @@
 
                     <div class="widget-area-2">
 
-                        <div class="widget tuta-featured-list-widget">
+                        <?php include (TEMPLATEPATH . '/inc/random-posts.php'); ?>
 
-                            <h3 class="widget-title">Featured Listings</h3>
-
-                            <ul class="widget-content list-style-1">
-                                <li>
-                                    <article>
-                                        <a class="thumbnail pull-left" href="#" title="">
-                                            <img src="placeholders/post-image/image-90-60-1.jpg" height="60" width="90" alt="">
-                                        </a>
-                                        <h4 class="content-title content-title-1">
-                                            <a href="#" title="">New 2015 Dodge Charger SRT Hellcat is the quickest</a>
-                                        </h4>
-                                    </article>
-                                </li>
-
-                                <li>
-                                    <article>
-                                        <a class="thumbnail pull-left" href="#" title="">
-                                            <img src="placeholders/post-image/image-90-60-1.jpg" height="60" width="90" alt="">
-                                        </a>
-                                        <h4 class="content-title content-title-1">
-                                            <a href="#" title="">New 2015 Dodge Charger SRT Hellcat is the quickest</a>
-                                        </h4>
-                                    </article>
-                                </li>
-
-                                <li>
-                                    <article>
-                                        <a class="thumbnail pull-left" href="#" title="">
-                                            <img src="placeholders/post-image/image-90-60-1.jpg" height="60" width="90" alt="">
-                                        </a>
-                                        <h4 class="content-title content-title-1">
-                                            <a href="#" title="">New 2015 Dodge Charger SRT Hellcat is the quickest</a>
-                                        </h4>
-                                    </article>
-                                </li>
-
-                                <li>
-                                    <article>
-                                        <a class="thumbnail pull-left" href="#" title="">
-                                            <img src="placeholders/post-image/image-90-60-1.jpg" height="60" width="90" alt="">
-                                        </a>
-                                        <h4 class="content-title content-title-1">
-                                            <a href="#" title="">New 2015 Dodge Charger SRT Hellcat is the quickest</a>
-                                        </h4>
-                                    </article>
-                                </li>
-                            </ul>
-
-                        </div>
-                        <!-- .tuta-featured-list-widget -->
-
-                        <div class="widget tuta-blog-category-widget">
-
-                            <h3 class="widget-title">Blog Categories</h3>
-
-                            <ul class="widget-content list-style-1">
-                                <li>
-                                    <a href="#" title="">About Our Services (32)</a>
-                                </li>
-
-                                <li>
-                                    <a href="#" title="">Auto News (47)</a>
-                                </li>
-
-                                <li>
-                                    <a href="#" title="">New Cars in Showroom (18)</a>
-                                </li>
-
-                                <li class="active">
-                                    <a href="#" title="">Service Announcements (49)</a>
-                                </li>
-
-                                <li>
-                                    <a href="#" title="">Formula 1 (23)</a>
-                                </li>
-
-                                <li>
-                                    <a href="#" title="">Motorbike Races (10)</a>
-                                </li>
-
-                                <li>
-                                    <a href="#" title="">Holiday Caravaning</a>
-                                </li>
-                            </ul>
-
-                        </div>
-                        <!-- .tuta-blog-category-widget -->
+                        <?php include (TEMPLATEPATH . '/inc/category.php'); ?>
 
                         <div class="widget tuta-testimonial-1-widget">
                             <blockquote class="blockquote">
@@ -389,11 +230,11 @@
                         </div>
                         <!-- .widget-area-2 -->
 
-                        <div class="widget tuta-ads-1-widget">
+                        <!-- <div class="widget tuta-ads-1-widget">
                             <a href="#" title="">
                                 <img src="placeholders/post-image/image-ads-1.jpg" height="251" width="300" alt="">
                             </a>
-                        </div>
+                        </div> -->
                         <!-- .widget tuta-ads-1-widget -->
 
                     </div>
@@ -403,7 +244,7 @@
                 <!-- .col-aside -->
 
             </div>
-            <!-- .row -->           
+            <!-- .row -->
 
         </div>
         <!-- .wrapper -->

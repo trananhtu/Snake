@@ -1,0 +1,61 @@
+/**
+ * blog content default
+ */
+
+.blog-content {
+  ul, ol {
+    margin-bottom: 18px;
+    > li {
+      > ol, ul {
+        margin-left: 30px; margin-bottom: 0;
+      }
+    }
+  }
+
+  p {
+    word-wrap: break-word;
+  }
+
+  table {
+    margin-bottom: 15px;
+    th, td {
+      padding: 8px 10px; border: 1px solid #ddd;
+    }
+  }
+
+  img {
+    width: auto; max-width: 100%;
+  }
+
+  .thumbnail {
+    img {
+      width: 100%; max-width: none;
+    }
+  }
+
+  .alignleft {
+    margin-right: 15px; float: left;
+  }
+  .alignright {
+    margin-left: 15px; float: right;
+  }
+
+  .aligncenter {
+    margin: 0 auto 15px; text-align: center;
+    .size-full {
+      width: 100%; max-width: none;
+    }
+  }
+
+  .wp-caption-text {
+    margin-top: 10px;
+  }
+
+  .wp-caption {
+    text-align: center; font-style: italic;
+  }
+
+  .alignnone {
+    max-width: 100%;
+  }
+}

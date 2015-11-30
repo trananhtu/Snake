@@ -15,6 +15,12 @@
     @include border-radius();
     .info-1 {
       color: $color-2;
+      a {
+        color: $color-2;
+        &:hover {
+          color: $color-hover;
+        }
+      }
     }
   }
   .content {
@@ -200,22 +206,9 @@
     margin-top: 20px;
   }
 
-  // style content-detail
-
-  ul, ol {
-    margin-bottom: 18px;
-    > li {
-      > ol, ul {
-        margin-left: 30px; margin-bottom: 0;
-      }
-    }
-  }
-
-  p {
-    word-wrap: break-word;
-  }
-
   @include until($device-width-md) {
 
   }
 }
+
+@import 'blog-content-default';

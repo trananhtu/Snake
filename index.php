@@ -88,42 +88,7 @@
 
                         <?php include (TEMPLATEPATH . '/inc/random-posts.php'); ?>
 
-                        <div class="widget tuta-blog-category-widget">
-
-                            <h3 class="widget-title">Blog Categories</h3>
-
-                            <ul class="widget-content list-style-1">
-                                <li>
-                                    <a href="#" title="">About Our Services (32)</a>
-                                </li>
-
-                                <li>
-                                    <a href="#" title="">Auto News (47)</a>
-                                </li>
-
-                                <li>
-                                    <a href="#" title="">New Cars in Showroom (18)</a>
-                                </li>
-
-                                <li class="active">
-                                    <a href="#" title="">Service Announcements (49)</a>
-                                </li>
-
-                                <li>
-                                    <a href="#" title="">Formula 1 (23)</a>
-                                </li>
-
-                                <li>
-                                    <a href="#" title="">Motorbike Races (10)</a>
-                                </li>
-
-                                <li>
-                                    <a href="#" title="">Holiday Caravaning</a>
-                                </li>
-                            </ul>
-
-                        </div>
-                        <!-- .tuta-blog-category-widget -->
+                        <?php include (TEMPLATEPATH . '/inc/category.php'); ?>
 
                         <div class="widget tuta-testimonial-1-widget">
                             <blockquote class="blockquote">
@@ -135,11 +100,11 @@
                         </div>
                         <!-- .widget-area-2 -->
 
-                        <div class="widget tuta-ads-1-widget">
+                        <!-- <div class="widget tuta-ads-1-widget">
                             <a href="#" title="">
                                 <img src="placeholders/post-image/image-ads-1.jpg" height="251" width="300" alt="">
                             </a>
-                        </div>
+                        </div> -->
                         <!-- .widget tuta-ads-1-widget -->
 
                     </div>

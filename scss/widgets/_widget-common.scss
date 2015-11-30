@@ -36,6 +36,7 @@
 }
 .content-title {
   font-size: 13px; line-height: 20px; color: $color-4; margin-bottom: 10px;
+  @include word-wrap;
   a {
     color: $color-4;
     &:hover {
@@ -127,7 +128,7 @@
   }
 }
 
-@mixin create-hexagon-1($width, $height, $bg) { //use 
+@mixin create-hexagon-1($width, $height, $bg) { //use
   width: $width; height: $height; background-color: $bg; cursor: pointer; display: inline-block; position: relative;
   line-height: $height; color: $color-4; font-size: 16px; text-align: center; @include transition();
   &:before, &:after {
@@ -149,7 +150,7 @@
   @include create-hexagon-1($width, $height, $bg-out);
 
   > * {
-    @include create-hexagon-1($width-hexagon-sm, $height-hexagon-sm, $bg-in); 
+    @include create-hexagon-1($width-hexagon-sm, $height-hexagon-sm, $bg-in);
     display: inline-block; position: absolute; top: 50%; left: 50%; margin-top: -#{round($height-hexagon-sm/2)};
     margin-left: -#{round($width-hexagon-sm/2)}; z-index: 1;
     border-left: 1px solid $border-4; border-right: 1px solid $border-4;

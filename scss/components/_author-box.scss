@@ -9,6 +9,9 @@
     width: auto;
 	}
 	.author-body {
-		padding: 0 10px; overflow: hidden;
+		padding: 0 15px; overflow: hidden;
+    P:last-of-type {
+      margin-bottom: 0;
+    }
 	}
 }

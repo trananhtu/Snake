@@ -127,7 +127,7 @@ if (!function_exists('tuta_logo')) {
 				'<div class="logo-image">
 		            <span>
 		               <a href="%1$s" title="%2$s">
-		                   <img src="%4$s/splaceholders/logo.png" width="259" height="58" alt="%3$s">
+		                   <img src="%4$s/placeholders/logo.png" width="259" height="58" alt="%3$s">
 		                   <span class="sr-only">%3$s</span>
 		               </a>
 		            </span>
@@ -234,17 +234,17 @@ if(!function_exists('tuta_thumbnail')) {
 	function tuta_thumbnail($size) {
 		// chỉ hiển thị thumbnail với post không có mật khẩu
 		if(has_post_thumbnail() && !post_password_required() || has_post_format('image')) :
-			if(!is_single()) : ?>
+			//if(!is_single()) : ?>
 				<figure class="thumbnail">
 					<a href="<?php echo get_permalink(get_the_ID()); ?>" title="<?php the_title(); ?>">
 						<?php the_post_thumbnail($size); ?>
 					</a>
 				</figure><?php
-			else : ?>
+			/*else : ?>
 				<figure class="thumbnail">
 					<?php the_post_thumbnail($size); ?>
 				</figure><?php
-			endif;
+			endif;*/
 		endif;
 	}
 }
@@ -353,7 +353,7 @@ if(!function_exists('tuta_entry_tag')) {
 	function tuta_entry_tag() {
 		if(has_tag()) :
 			//echo '<div class="entry-tag">';
-			printf(__('%1$s', 'tuta'), get_the_tag_list('', ', '));
+			printf(__('%1$s', 'tuta'), get_the_tag_list()); // '', ', '
 			//echo '</div>';
 		else :
 			echo 'No Tag';
@@ -375,9 +375,13 @@ if(!function_exists('tuta_entry_next_prev')) {
 		        	<?php $next_post_term = get_next_post();
 		        	if(!empty($next_post_term)) : ?>
 			            <div class="other-article">
-			                <a class="h3" href="#"><?php echo __('&laquo; Previous Article', 'tuta') ?></a>
+			                <a class="h3" href="<?php echo get_permalink($next_post_term->ID); ?>" title="<?php echo $next_post_term->post_title; ?>">
+			                	<?php echo __('&laquo; Previous Article', 'tuta') ?>
+		                	</a>
 			                <h4>
-			                	<a href="<?php echo get_permalink($next_post_term->ID); ?>"><?php echo $next_post_term->post_title; ?></a>
+			                	<a href="<?php echo get_permalink($next_post_term->ID); ?>" title="<?php echo $next_post_term->post_title; ?>">
+			                		<?php echo $next_post_term->post_title; ?>
+			                	</a>
 		                	</h4>
 			            </div> <?php
 		            endif; ?>
@@ -387,9 +391,13 @@ if(!function_exists('tuta_entry_next_prev')) {
 	        		<?php $prev_post_term = get_previous_post();
 	        		if(!empty($prev_post_term)) : ?>
 			            <div class="other-article text-right">
-			                <a class="h3" href="#"><?php echo __('Next Article &raquo;', 'tuta')?></a>
+			                <a class="h3" href="<?php echo get_permalink($prev_post_term->ID); ?>" title="<?php echo $prev_post_term->post_title; ?>">
+			                	<?php echo __('Next Article &raquo;', 'tuta')?>
+		                	</a>
 			                <h4>
-			                	<a href="<?php echo get_permalink($prev_post_term->ID); ?>"><?php echo $prev_post_term->post_title; ?></a>
+			                	<a href="<?php echo get_permalink($prev_post_term->ID); ?>" title="<?php echo $prev_post_term->post_title; ?>">
+			                		<?php echo $prev_post_term->post_title; ?>
+		                		</a>
 			                </h4>
 			            </div> <?php
 		            endif; ?>

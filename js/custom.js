@@ -53,7 +53,7 @@
         }
     };
 
-    var temp_path = '/wp/wp-content/themes/snake/';
+    var temp_path = '/wp-content/themes/snake/';
 
     /* =========================================================
     1. Main menu
