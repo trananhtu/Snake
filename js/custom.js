@@ -53,7 +53,7 @@
         }
     };
 
-    var temp_path = '/wp-content/themes/snake/';
+    var temp_path = '/wp/wp-content/themes/snake/';
 
     /* =========================================================
     1. Main menu
@@ -149,7 +149,7 @@
                                 height_slide -= 64;
                             }
                         }
-                        
+
                         $control_top_slide.css("top",  (height_slide - $control_top_slide.outerHeight())/2);
                         $find_cars.css("top", (height_slide - $find_cars.outerHeight())/2);
                         $intro.css("top", (height_slide - $intro.outerHeight())/2);
@@ -177,7 +177,7 @@
                             //jQuery(".mask").css("opacity", 1);
                             jQuery(".mask").toggleClass("opacity-0");
                         });
-                    }                
+                    }
                 }
             }
         ]);
@@ -528,7 +528,7 @@
                     var $control_item = $oc_blockquote.prev().find("li");
                     //set width, height
                     setSize();
-                    
+
                     $oc_blockquote.owlCarousel({
                         items : 1,
                         itemsDesktop : [1210,1],
@@ -603,7 +603,7 @@
         if($lr_toggle.find(".active").length <= 0) {
             $head_toggle.eq(0).addClass('active');
         }
-        
+
         //an tat ca panel, tru panel active
         $head_toggle.not(".active").next().hide();
 
@@ -699,12 +699,12 @@
                                 //dong, mo LI
                                 jQuery(this).children("ul").toggleClass('sfHover');
                                 jQuery(this).children("ul").stop().slideToggle("slow");
-                                //xoa class nhung LI khac                        
+                                //xoa class nhung LI khac
                                 jQuery(this).siblings().removeClass("sfHover").children("ul").slideUp("slow");
                                 return false;
-                            }                        
+                            }
                         });
-                        
+
                     }
 
                     function destroySfMobile() {
@@ -712,7 +712,7 @@
                         $sf_vertical.find(".sf-with-ul").removeClass("sf-with-ul");
                         $sf_vertical.find(".sfHover").removeClass(".sfHover");
                     }
-                }            
+                }
             }
         ]);
     }
@@ -725,8 +725,8 @@
         {
             load: [temp_path + '/js/waypoints.min.js', temp_path + '/js/waypoints-sticky.min.js'],
             complete: function () {
-                jQuery(".waypoint").waypoint('sticky');            
-            }            
+                jQuery(".waypoint").waypoint('sticky');
+            }
         }
     ]);
 
@@ -815,7 +815,7 @@
 
     //upload file
     jQuery(".upload").change(function () {
-        jQuery(this).parent().find('.txt-file').attr("value", this.value); 
+        jQuery(this).parent().find('.txt-file').attr("value", this.value);
     });
 
     //slide-sell-your-car - device-width-sm

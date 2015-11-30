@@ -37,7 +37,7 @@
             <div class="row">
 
                 <div class="col-main">
-                    
+
                     <?php include (TEMPLATEPATH . '/inc/featured.php')?>
 
                 </div>
@@ -45,44 +45,9 @@
 
                 <div class="col-aside">
                     <div class="widget-area-12">
-                        <div class="widget tuta-mp-post-widget">
 
-                            <h3 class="widget-title">Most Popular Posts</h3>
+                        <?php include (TEMPLATEPATH . '/inc/most-popular-posts.php'); ?>
 
-                            <ul class="widget-content list-style-1">
-                                <li>
-                                    <h4 class="content-title content-title-1">
-                                        <a href="#" title="">As we have come to expect from the Porsche design</a>
-                                    </h4>
-                                </li>
-
-                                <li>
-                                    <h4 class="content-title content-title-1">
-                                        <a href="#" title="">As we have come to expect from the Porsche design</a>
-                                    </h4>
-                                </li>
-
-                                <li>
-                                    <h4 class="content-title content-title-1">
-                                        <a href="#" title="">As we have come to expect from the Porsche design</a>
-                                    </h4>
-                                </li>
-
-                                <li>
-                                    <h4 class="content-title content-title-1">
-                                        <a href="#" title="">As we have come to expect from the</a>
-                                    </h4>
-                                </li>
-
-                                <li>
-                                    <h4 class="content-title content-title-1">
-                                        <a href="#" title="">As we have come to expect from the</a>
-                                    </h4>
-                                </li>
-                            </ul>
-
-                        </div>
-                        <!-- .widget tuta-mp-post-widget -->
                     </div>
                     <!-- .widget-area-2 -->
                 </div>
@@ -90,7 +55,7 @@
 
             </div>
             <!-- .row -->
-            
+
             <div class="divider-1"></div>
 
             <div class="row clearfix">
@@ -113,7 +78,7 @@
 
                     </div>
                     <!-- .blog-list -->
-                    
+
                 </div>
                 <!-- .col-main -->
 
@@ -121,58 +86,7 @@
 
                     <div class="widget-area-2">
 
-                        <div class="widget tuta-featured-list-widget">
-
-                            <h3 class="widget-title">Featured Listings</h3>
-
-                            <ul class="widget-content list-style-1">
-                                <li>
-                                    <article>
-                                        <a class="thumbnail pull-left" href="#" title="">
-                                            <img src="placeholders/post-image/image-90-60-1.jpg" height="60" width="90" alt="">
-                                        </a>
-                                        <h4 class="content-title content-title-1">
-                                            <a href="#" title="">New 2015 Dodge Charger SRT Hellcat is the quickest</a>
-                                        </h4>
-                                    </article>
-                                </li>
-
-                                <li>
-                                    <article>
-                                        <a class="thumbnail pull-left" href="#" title="">
-                                            <img src="placeholders/post-image/image-90-60-1.jpg" height="60" width="90" alt="">
-                                        </a>
-                                        <h4 class="content-title content-title-1">
-                                            <a href="#" title="">New 2015 Dodge Charger SRT Hellcat is the quickest</a>
-                                        </h4>
-                                    </article>
-                                </li>
-
-                                <li>
-                                    <article>
-                                        <a class="thumbnail pull-left" href="#" title="">
-                                            <img src="placeholders/post-image/image-90-60-1.jpg" height="60" width="90" alt="">
-                                        </a>
-                                        <h4 class="content-title content-title-1">
-                                            <a href="#" title="">New 2015 Dodge Charger SRT Hellcat is the quickest</a>
-                                        </h4>
-                                    </article>
-                                </li>
-
-                                <li>
-                                    <article>
-                                        <a class="thumbnail pull-left" href="#" title="">
-                                            <img src="placeholders/post-image/image-90-60-1.jpg" height="60" width="90" alt="">
-                                        </a>
-                                        <h4 class="content-title content-title-1">
-                                            <a href="#" title="">New 2015 Dodge Charger SRT Hellcat is the quickest</a>
-                                        </h4>
-                                    </article>
-                                </li>
-                            </ul>
-
-                        </div>
-                        <!-- .tuta-featured-list-widget -->
+                        <?php include (TEMPLATEPATH . '/inc/random-posts.php'); ?>
 
                         <div class="widget tuta-blog-category-widget">
 
@@ -235,7 +149,7 @@
                 <!-- .col-aside -->
 
             </div>
-            <!-- .row -->           
+            <!-- .row -->
 
         </div>
         <!-- .wrapper -->

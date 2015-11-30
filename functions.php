@@ -60,14 +60,14 @@ if (!function_exists('tuta_theme_setup')) {
 		/**
 		 * Thêm chức năng post-format
 		 */
-		add_theme_support('post-formats', 
+		add_theme_support('post-formats',
 			array(
 				'video',
 				'image',
 				'audio',
 				'gallery'
 			)
-		); 
+		);
 
 		/**
 		 * Thêm chức năng custom background
@@ -93,7 +93,7 @@ if (!function_exists('tuta_theme_setup')) {
 			'before_title'  => '<h3 class="widgettitle">',
 			'after_title'   => '</h3>'
 		);
-	
+
 		register_sidebar( $sidebar );
 	}
 
@@ -138,7 +138,7 @@ if (!function_exists('tuta_logo')) {
 		        get_template_directory_uri()
 			);
 		}
-		
+
 	}
 }
 
@@ -166,7 +166,7 @@ function tuta_style() {
 	 * Hàm get_stylesheet_uri() sẽ trả về giá trị dẫn đến file style.css của theme
 	 * Nếu sử dụng child theme, thì file style.css này vẫn load ra từ parent theme
 	 */
-	
+
 	// Chèn file style.css chứa CSS của theme
 	wp_register_style('main-style', get_template_directory_uri() . '/style.css', 'all');
 	wp_enqueue_style('main-style');
@@ -187,8 +187,8 @@ function tuta_style() {
 
   	wp_register_script( 'custom-js', get_template_directory_uri() . '/js/custom.js', array('jquery') );
   	wp_enqueue_script( 'custom-js' );
-  	
-	
+
+
 }
 add_action('wp_enqueue_scripts', 'tuta_style');
 
@@ -208,7 +208,7 @@ if(!function_exists('tuta_pagination')) {
 		$total = $wp_query->max_num_pages;
 		if ( $total < 2 )  {
 			return '';
-		} 
+		}
 
 		?>
 		<nav class="tuta-pane">
@@ -233,7 +233,7 @@ if(!function_exists('tuta_pagination')) {
 if(!function_exists('tuta_thumbnail')) {
 	function tuta_thumbnail($size) {
 		// chỉ hiển thị thumbnail với post không có mật khẩu
-		if(has_post_thumbnail() && !post_password_required() || has_post_format('image')) : 
+		if(has_post_thumbnail() && !post_password_required() || has_post_format('image')) :
 			if(!is_single()) : ?>
 				<figure class="thumbnail">
 					<a href="<?php echo get_permalink(get_the_ID()); ?>" title="<?php the_title(); ?>">
@@ -266,7 +266,7 @@ if(!function_exists('tuta_entry_header')) {
 				<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 					<?php the_title(); ?>
 				</a>
-			</h3> <?php 
+			</h3> <?php
 		endif;
 	}
 }
@@ -295,7 +295,7 @@ if(!function_exists('tuta_entry_meta')) {
 						__('One comment', 'tuta'),
 						__('% comments', 'tuta'),
 						__('Read all comments', 'tuta')
-					);					
+					);
 			endif;
 			echo '</span>';
 			echo '</div>';

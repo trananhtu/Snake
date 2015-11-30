@@ -8,7 +8,7 @@
   border: 1px solid $border;
 }
 @mixin opacity($opacity) {
-  opacity:$opacity;  
+  opacity:$opacity;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity = " + $opacity*100 + ")";
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = #{$opacity*100});
   filter:Alpha(Opacity = $opacity*100); zoom:1;
@@ -85,7 +85,7 @@
   hyphens: auto;
 }
 @mixin placeholder($val) {
-  &::-webkit-input-placeholder { // WebKit browsers 
+  &::-webkit-input-placeholder { // WebKit browsers
     color: $val;
   }
   &:-moz-placeholder { // Mozilla Firefox 4 to 18
@@ -109,7 +109,7 @@
 // tinh kich thuoc control-top-slide khi responsive
 @mixin create-size-control($size-control, $size-control-active, $border-width) {
   li {
-    width: $size-control-active; height: $size-control-active; 
+    width: $size-control-active; height: $size-control-active;
     &.active {
       a {
         border-width: $border-width+1;
@@ -217,4 +217,8 @@
 }
 @mixin widget-area-15 {
   .widget-area-15 {@content;}
+}
+
+@mixin word-wrap {
+    word-wrap: break-word;
 }

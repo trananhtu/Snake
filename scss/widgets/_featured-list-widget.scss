@@ -5,7 +5,7 @@
 .tuta-featured-list-widget {
   @extend %tuta-template-1-widget; padding-bottom: 15px;
   .thumbnail {
-    margin: 5px 10px 5px 0;
+    margin: 5px 10px 5px 0; width: 90px; height: 60px;
   }
   .list-style-1 {
     li:first-child {

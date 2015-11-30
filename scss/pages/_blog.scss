@@ -23,6 +23,9 @@
     .h5, .h3 {
       color: $color-4;
     }
+    .content-title {
+      @include word-wrap;
+    }
     > ul > li {
       position: relative; padding-left: 12px; margin-bottom: 15px;
       &:after {
@@ -104,7 +107,18 @@
         }
       }
     }
+
+    .thumbnail {
+        position: absolute; top: 5px; left: 0; right: 0; bottom: 5px;
+        > a {
+          position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+          > img {
+            top: 0;
+          }
+        }
+    }
   }
+
   .item {
     display: block; height: auto; padding: 15px 20px 20px; margin-top: 10px; @include border-radius();
     @include transition(); position: relative;
@@ -122,7 +136,7 @@
     }
     .price {
       position: absolute; top: 15px; right: 20px; line-height: 20px; font-size: 13px; color: $color-5; margin: 0;
-      @include transition(); 
+      @include transition();
     }
   }
   @include until($device-width-lg) {
@@ -176,7 +190,7 @@
     margin-bottom: 15px;
   }
   .thumbnail {
-    max-height: 300px; 
+    max-height: 300px;
   }
   .info-1 {
     color: $color-2;
