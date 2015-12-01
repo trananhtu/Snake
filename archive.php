@@ -20,9 +20,10 @@
                             printf(__('Yearly Archives: %1$s', 'tuta'), the_time('Y'));
                         endif;
 
-                    if(is_tag() && is_category()) : ?>
-                        <p><?php echo term_description(); ?></p>
-                    <?php endif; ?>
+                        // if(is_tag() || is_category()) :
+                        //     echo term_description();
+                        // endif;
+                    ?>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index-1.html">Home</a></li>
