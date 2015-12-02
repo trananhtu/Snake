@@ -1,4 +1,4 @@
-<div class="author-box">
+<div class="tuta-pane author-box">
 	<div class="author-avatar">
 		<a href="<?php echo get_author_posts_url(get_the_author_meta("ID")); ?>"><?php echo get_avatar(get_the_author_meta("ID")); ?></a>
 	</div>

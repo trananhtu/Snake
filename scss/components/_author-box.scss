@@ -5,13 +5,15 @@
 .author-box {
 	@include clearfix; margin-bottom: 20px;
 	.author-avatar {
-    float: left;
-    width: auto;
+    float: left; width: auto;
 	}
 	.author-body {
 		padding: 0 15px; overflow: hidden;
-    P:last-of-type {
-      margin-bottom: 0;
-    }
+      P {
+        text-transform: none; font-weight: 400; line-height: 1.5;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
 	}
 }

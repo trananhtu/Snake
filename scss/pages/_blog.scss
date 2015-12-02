@@ -191,6 +191,9 @@
         color: $color-3;
       }
     }
+    & + .info-1 {
+      margin-top: -8px;
+    }
   }
   .thumbnail, .blockquote {
     margin-bottom: 15px;

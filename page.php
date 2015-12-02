@@ -2,35 +2,7 @@
 
     <section id="main-content">
 
-        <div class="main-head">
-            <div class="wrapper">
-                <h1 class="page-title">Blogs</h1>
-                <ol class="breadcrumb">
-                    <li><a href="index-1.html">Home</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="blog.html">Category Title</a></li>
-                </ol>
-            </div>
-        </div>
-        <!-- .main-head -->
-
-        <div class="tool-box">
-            <div class="wrapper">
-                <a href="#" class="tuta-button-default button-3d button-ico button-sm btn-white-hover pull-left">
-                    <i class="fa fa-print"></i> Print This Page
-                </a>
-                <a href="#" class="tuta-button-default button-3d button-ico button-sm btn-white-hover pull-left">
-                    <i class="fa fa-star"></i> Add To Favorites
-                </a>
-                <a href="#" class="tuta-button-default button-3d button-ico button-sm btn-white-hover pull-left">
-                    <i class="fa fa-share-alt"></i> Share Vehicle
-                </a>
-                <a href="#" class="tuta-button-default button-3d button-ico button-sm btn-white-hover pull-right">
-                    Back to Previous Page
-                </a>
-            </div>
-        </div>
-        <!-- .tool-box -->
+        <?php include '/inc/head-main.php'; ?>
 
         <div class="wrapper">
 
@@ -83,14 +55,7 @@
         </div>
         <!-- .wrapper -->
 
-        <div class="widget-area-6">
-            <div class="widget tuta-submit-vehicle-widget">
-                <p class="h2">Start Selling With Autotrader Now!</p>
-                <p class="h5">No hidden fees or costs, you pay what you need.</p>
-                <a class="tuta-button-default button-gde button-lg" href="#">Call to action button</a>
-            </div>
-        </div>
-        <!-- .widget-area-6 -->
+        <?php include '/inc/call-to-action.php'; ?>
 
     </section>
     <!-- #main-content -->

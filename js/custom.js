@@ -20,7 +20,7 @@
 
  jQuery(document).ready(function() {
 
-    var temp_path = '/wp/wp-content/themes/snake/';
+    var temp_path = '/wp-content/themes/snake/';
     var tuta_variable = {
         "contact": {
             "address": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
