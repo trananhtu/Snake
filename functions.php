@@ -409,5 +409,46 @@ if(!function_exists('tuta_entry_next_prev')) {
 	}
 }
 
+/**
+ * Breadcrumbs
+ */
+if(!function_exists('tua_breadcrumbs')) {
+    function tuta_breadcrumbs() {
+        $delimiter = '';
+        $name = 'Home'; // text for home link
+        $currentBefore = '<span class="current">';
+        $currentAfter = '</span>';
+
+        if(!is_home() && !is_front_page() && !is_paged() && !is_search() && !is_tag() && !is_author()) {
+            echo '<ol class="breadcrumb">';
+            global $post;
+            $home = get_bloginfo('url');
+            echo '<li class="sao van vao dc"><a href="' . $home . '">' . $name . '</a>' . $delimiter . '</li>';
+            if(is_category()) {
+                global $wp_query;
+                $cat_obj = $wp_query->get_queried_object();
+                $this_cat = $cat_obj->term_id;
+                $this_cat = get_category($this_cat);
+                $parent_cat = get_category($this_cat->parent);
+
+                if($this_cat->parent != 0) {
+                    $parent_cat_str = trim(get_category_parents($parent_cat, TRUE, ','));
+                    $parent_cat_arr = explode(",", $parent_cat_str);
+                    foreach ($parent_cat_arr as $catparent ) {
+                        if($catparent != '')
+                            echo '<li class="1">' . $catparent . '</li>';
+                    }
+                }
+                echo '<li>';
+                single_cat_title();
+                echo '</li>';
+            }
+            echo '</ol>';
+        }
+    }
+}
+
+
+
 
 

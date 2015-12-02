@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <!-- .widget-area-11 -->
-                </div>                                
+                </div>
 
             </div>
         </div>
@@ -110,7 +110,7 @@
                     </nav>
                     <!-- .page-top -->
                 </div>
-                
+
             </div>
         </div>
     </footer>
