@@ -13,6 +13,8 @@
                     printf(__('Author: %1$s', 'tuta'), get_the_author());
                 elseif(is_search()) :
                     printf(__('Search', 'tuta'));
+                elseif(is_single()) :
+                    printf(__('Blogs', 'tuta'));
                 elseif(is_day()) :
                     printf(__('Dayly Archives: %1$s', 'tuta'), the_time('l, F j, Y'));
                 elseif(is_month()) :
@@ -27,10 +29,7 @@
             ?>
         </h1>
 
-        <?php
-            //if(!is_search() || !is_tag())
-                tuta_breadcrumbs();
-        ?>
+        <?php tuta_breadcrumbs(); ?>
 
     </div>
 </div> <!-- .main-head -->

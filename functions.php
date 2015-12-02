@@ -414,37 +414,43 @@ if(!function_exists('tuta_entry_next_prev')) {
  */
 if(!function_exists('tua_breadcrumbs')) {
     function tuta_breadcrumbs() {
-        $delimiter = '';
+        //$delimiter = '';
         $name = 'Home'; // text for home link
-        $currentBefore = '<span class="current">';
-        $currentAfter = '</span>';
+        //$currentBefore = '<span class="current">';
+        //$currentAfter = '</span>';
 
-        if(!is_home() && !is_front_page() && !is_paged() && !is_search() && !is_tag() && !is_author()) {
-            echo '<ol class="breadcrumb">';
-            global $post;
-            $home = get_bloginfo('url');
-            echo '<li class="sao van vao dc"><a href="' . $home . '">' . $name . '</a>' . $delimiter . '</li>';
-            if(is_category()) {
+        //if(!is_home() && !is_front_page() && !is_paged() && !is_search() && !is_tag() && !is_author()) {
+
+            if(is_category() || is_single()) {
+                echo '<ol class="breadcrumb">';
+                global $post;
+                $home = get_bloginfo('url');
+                echo '<li><a href="' . $home . '">' . $name . '</a></li>';
                 global $wp_query;
                 $cat_obj = $wp_query->get_queried_object();
+                //var_dump($cat_obj->term_id . 'tuta');
                 $this_cat = $cat_obj->term_id;
-                $this_cat = get_category($this_cat);
-                $parent_cat = get_category($this_cat->parent);
+                if(!empty($this_cat)) {
+                    $this_cat = get_category($this_cat);
+                    $parent_cat = get_category($this_cat->parent);
 
-                if($this_cat->parent != 0) {
-                    $parent_cat_str = trim(get_category_parents($parent_cat, TRUE, ','));
-                    $parent_cat_arr = explode(",", $parent_cat_str);
-                    foreach ($parent_cat_arr as $catparent ) {
-                        if($catparent != '')
-                            echo '<li class="1">' . $catparent . '</li>';
+                    if($this_cat->parent != 0) {
+                        $parent_cat_str = trim(get_category_parents($parent_cat, TRUE, ','));
+                        $parent_cat_arr = explode(",", $parent_cat_str);
+                        foreach ($parent_cat_arr as $catparent ) {
+                            if($catparent != '')
+                                echo '<li class="1">' . $catparent . '</li>';
+                        }
                     }
+                    echo '<li>';
+                    single_cat_title();
+                    echo '</li>';
+                } else {
+                    echo '<li><a href="' . get_category_link(get_the_category()[0]->term_id) . '">' . get_the_category()[0]->name . '</a></li>';
                 }
-                echo '<li>';
-                single_cat_title();
-                echo '</li>';
             }
             echo '</ol>';
-        }
+        //}
     }
 }
 
