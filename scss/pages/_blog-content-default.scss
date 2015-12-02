@@ -58,4 +58,8 @@
   .alignnone {
     max-width: 100%;
   }
+
+  iframe { // youtube
+    width: 100% !important; height: 501px !important;
+  }
 }

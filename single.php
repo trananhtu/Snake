@@ -66,11 +66,9 @@
 
                             <?php tuta_entry_next_prev(); ?>
 
-                        </footer>
-                        <!-- footer -->
+                        </footer> <!-- footer -->
 
-                    </article>
-                    <!-- article -->
+                    </article> <!-- article -->
 
                     <?php comments_template(); ?>
 

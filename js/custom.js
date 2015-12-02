@@ -20,7 +20,8 @@
 
  jQuery(document).ready(function() {
 
-     var tuta_variable = {
+    var temp_path = '/wp/wp-content/themes/snake/';
+    var tuta_variable = {
         "contact": {
             "address": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
             "marker": "/url image"
@@ -52,8 +53,6 @@
             }
         }
     };
-
-    var temp_path = '/wp-content/themes/snake/';
 
     /* =========================================================
     1. Main menu
