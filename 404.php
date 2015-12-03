@@ -15,12 +15,15 @@
 
                         get_search_form();
 
+                        echo '<div class="tuta-pane">';
                         _e('<h3>Content categories</h3>', 'tuta');
-                        echo '<div class="404-catlist">';
+                        echo '<div class="catlist-404 list-inline mb-20">';
                             wp_list_categories(array('title_li' => ''));
                         echo '</div>';
                         _e('<h3>Tag Cloud</h3>', 'tuta');
+
                         wp_tag_cloud();
+                        echo '</div>';
 
                     ?>
                 </div>

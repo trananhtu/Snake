@@ -414,20 +414,18 @@ if(!function_exists('tuta_entry_next_prev')) {
  */
 if(!function_exists('tua_breadcrumbs')) {
     function tuta_breadcrumbs() {
-        $delimiter = '';
         $name = 'Home'; // text for home link
-        $currentBefore = '<span class="current">';
-        $currentAfter = '</span>';
 
-        if(!is_home() && !is_front_page() && !is_paged() && !is_search() && !is_tag() && !is_author()) {
+        if(is_category() || is_single()) {
             echo '<ol class="breadcrumb">';
             global $post;
             $home = get_bloginfo('url');
-            echo '<li class="sao van vao dc"><a href="' . $home . '">' . $name . '</a>' . $delimiter . '</li>';
-            if(is_category()) {
-                global $wp_query;
-                $cat_obj = $wp_query->get_queried_object();
-                $this_cat = $cat_obj->term_id;
+            echo '<li><a href="' . $home . '">' . $name . '</a></li>';
+            global $wp_query;
+            $cat_obj = $wp_query->get_queried_object();
+            //var_dump($cat_obj->term_id . 'tuta');
+            $this_cat = $cat_obj->term_id;
+            if(!empty($this_cat)) {
                 $this_cat = get_category($this_cat);
                 $parent_cat = get_category($this_cat->parent);
 
@@ -442,10 +440,33 @@ if(!function_exists('tua_breadcrumbs')) {
                 echo '<li>';
                 single_cat_title();
                 echo '</li>';
+            } else {
+                echo '<li><a href="' . get_category_link(get_the_category()[0]->term_id) . '">' . get_the_category()[0]->name . '</a></li>';
             }
-            echo '</ol>';
         }
+        echo '</ol>';
     }
+}
+
+/**
+ * Sửa lại search mặc định
+ */
+
+if(!function_exists('tuta_form_search_top')) {
+    function tuta_form_search_top($form) {
+        $form = '<form class="searchform" role="search" method="get" action="' . home_url('/') . '">
+            <div class="input-group">
+                <label class="screen-reader-text">' . __('Search for: ', 'tuta') . '</label>
+                <input type="search" class="form-control" name="s" placeholder="' . __('Search', 'tuta') . '" value="' . get_search_query() . '">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>';
+
+        return $form;
+    }
+    add_filter('get_search_form', 'tuta_form_search_top');
 }
 
 

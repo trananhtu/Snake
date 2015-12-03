@@ -1,0 +1,11 @@
+.table-fake {
+  display: table;
+}
+
+.table-fake .col-main {
+  display: table-cell;
+}
+
+.table-fake .col-aside {
+  display: table-cell;
+}

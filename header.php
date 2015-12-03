@@ -8,11 +8,11 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
     <?php wp_head();?>
 </head>
-    
+
 <body <?php body_class('tuta-sub-page tuta-style-flat'); ?>>
 
     <header id="tuta-page-header">
-        
+
         <div class="clearfix">
 
             <div class="header-top clearfix">
@@ -20,7 +20,7 @@
 
                     <?php tuta_logo(); ?>
                     <?php //tuta_menu('primery-menu'); ?>
-                    
+
                     <div class="login-wrapper">
                         <ul>
                             <li><span>Welcome!</span></li>
@@ -28,7 +28,7 @@
                             <li><span class="sepa">i</span></li>
                             <li><a href="#">Register</a></li>
                         </ul>
-                    </div>                
+                    </div>
                     <!-- .login-wrapper -->
 
                     <nav class="page-nav">
@@ -42,11 +42,11 @@
                         </ul>
                     </nav>
                     <!-- .page-top -->
-                
+
                 </div>
             </div>
             <!-- .header-top -->
-            
+
             <div class="header-middle clearfix">
                 <div class="wrapper clearfix">
                     <div class="on-shoping-box row">
@@ -82,6 +82,7 @@
         <div class="header-bottom">
             <div class="wrapper clearfix">
                 <div class="waypoint">
+
                     <nav id="main-nav" class="clearfix">
 
                         <ul id="main-menu">
@@ -172,13 +173,13 @@
                                         <li><a href="single-car.html">Single Car</a></li>
                                     </ul>
                                 </div>
-                                
+
                             </li>
                             <li><a href="contact-us.html"><span>Contact Us</span></a></li>
                         </ul>
 
                         <i class='fa fa-align-justify'></i>
-                    
+
                         <div class="mobile-menu-wrapper">
                             <ul id="mobile-menu">
                                 <li class="current-menu-item">
@@ -190,7 +191,7 @@
                                         <li><a href="index-3-pattern.html">Home 3 Pattern</a></li>
                                         <li><a href="index-4.html">Home 4</a></li>
                                         <li><a href="index-4-flat.html">Home 4 Flat</a></li>
-                                        <li><a href="index-5.html">Home 5</a></li>                                        
+                                        <li><a href="index-5.html">Home 5</a></li>
                                         <li><a href="index-5-flat.html">Home 5 Flat</a></li>
                                     </ul>
                                 </li>
@@ -237,18 +238,23 @@
                         <!-- mobile-menu-wrapper -->
 
                     </nav>
+                    <!-- .main-nav -->
 
                     <div class="search-top">
-                        <form>
+
+                        <?php get_search_form(); ?>
+
+                        <!-- <form>
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Search" value="" name="search">
                                 <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button"><i class="fa fa-search" onclick="alert('a');"></i></button>
+                                    <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
                                 </span>
-                            </div><!-- /input-group -->
-                        </form>
+                            </div>
+                        </form> -->
                     </div>
                     <!-- .search-wrapper -->
+
                 </div>
                 <!-- .waypoint -->
             </div>

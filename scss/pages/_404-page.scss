@@ -1,6 +1,36 @@
 /**
  * 404 page
  */
+
 .page-404 {
-    //text-align: center;
+  > h2 {
+    font-size: 40px; margin-top: 50px;
+  }
+
+  #searchsubmit {
+      @extend .tuta-button-default;
+  }
+
+  .searchform {
+    width: 50%; text-align: center; margin: 0 auto; margin-top: 50px; margin-bottom: 50px;
+    input[type="text"] {
+      margin-bottom: 10px; border: 1px solid #eee; padding: 7px 15px; height: auto;
+    }
+    .screen-reader-text {
+      display: none;
+    }
+  }
+
+  .tuta-pane {
+    padding: 0; background-color: transparent;
+    h3 {
+      margin-bottom: 0; line-height: 1.4;
+    }
+    a {
+      color: #111; font-size: 13px !important; text-transform: none; font-weight: 400;
+      &:hover {
+        color: $color-3;
+      }
+    }
+  }
 }

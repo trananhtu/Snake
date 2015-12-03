@@ -11,23 +11,27 @@
         a {
           color: $color-3;
           &:after {
-            content: '\f0c8'; color: $color-3;
+            //content: '\f0c8'; color: $color-3;
+            background-color: $color-3; border-color: $color-3;
           }
         }
       }
     }
     a {
-      color: $color-1; padding-left: 22px; position: relative;
-
+      color: $color-1; padding-left: 22px; position: relative; display: inline-block;
       &:after {
-        content: '\f096'; font: 400 17px/1 FontAwesome; position: absolute; top: 1px; left: 0;
-        line-height: 18px;
+        //content: '\f096'; font: 400 17px/1 FontAwesome;
+        content: '';
+        width: 13px; height: 13px; border-radius: 2px; border: 1px solid #999;
+        background-color: #fff;
+        position: absolute; top: 4px; left: 0;
         @include transition();
       }
       &:hover {
         color: $color-3;
         &:after {
-          content: '\f0c8'; color: $color-3;
+          //content: '\f0c8'; color: $color-3;
+          background-color: $color-3; border-color: $color-3;
         }
       }
     }

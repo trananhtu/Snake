@@ -14,9 +14,13 @@
   }
 }
 
+.btn {
+    line-height: 1.428571429;
+}
+
 .tuta-button-default {
   @include transition($transition);
-  display: inline-block; font: 400 13px/#{$height-button-md} $font-heading; height: $height-button-md; color: $color-4; 
+  display: inline-block; font: 400 13px/#{$height-button-md} $font-heading; height: $height-button-md; color: $color-4;
   padding: 0 15px; background: $bg-3; text-transform: uppercase; font-weight: 700; @include border-radius();
   border: none; outline: none;
   &:hover, &:focus {
@@ -39,7 +43,7 @@
 }
 .button-gde {
   background: $bg-3; // Old browsers
-  // IE9 SVG, needs conditional override of 'filter' to 'none' 
+  // IE9 SVG, needs conditional override of 'filter' to 'none'
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2QzMDgxOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2Q5MDYxOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkMzA4MTkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
   background: -moz-linear-gradient(top,  #d30819 0%, #d90618 50%, #d30819 100%); // FF3.6+
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d30819), color-stop(50%,#d90618), color-stop(100%,#d30819)); // Chrome,Safari4+
@@ -224,10 +228,10 @@
   .col-lg-8 {
     position: absolute; top: 50%; right: 0;
     &.expand { //2 row
-      height: $height-btn-wrap*2 + $margin-btn-wrap; margin-top: - ($height-btn-wrap*2 + $margin-btn-wrap)/2; 
+      height: $height-btn-wrap*2 + $margin-btn-wrap; margin-top: - ($height-btn-wrap*2 + $margin-btn-wrap)/2;
     }
     &.narrow { //1 row
-      height: $height-btn-wrap; margin-top: - $height-btn-wrap/2; 
+      height: $height-btn-wrap; margin-top: - $height-btn-wrap/2;
     }
     &.btn-color-wrap { //btn available corlor
       height: $height-button-md*2 + $margin-btn-wrap/2; margin-top: - ($height-button-md*2 + $margin-btn-wrap/2)/2;
@@ -246,7 +250,7 @@
     }
   }
   .box-wrap-1 {
-    @extend %tuta-template-1-widget; 
+    @extend %tuta-template-1-widget;
     p {
       margin: 10px 0 0 0;
       &:first-child {

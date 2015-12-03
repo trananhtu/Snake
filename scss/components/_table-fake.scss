@@ -1,0 +1,10 @@
+.table-fake {
+  display: table;
+  .col-main {
+    display: table-cell;
+  }
+
+  .col-aside {
+    display: table-cell;
+  }
+}

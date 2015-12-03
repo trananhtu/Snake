@@ -58,6 +58,8 @@
 
                     <div class="widget-area-2">
 
+                        <?php get_sidebar(); ?>
+
                         <?php include (TEMPLATEPATH . '/inc/random-posts.php'); ?>
 
                         <?php include (TEMPLATEPATH . '/inc/category.php'); ?>
@@ -70,14 +72,7 @@
                                 <p class="customer">Brent Jarvis, <span>Customer</span></p>
                             </blockquote>
                         </div>
-                        <!-- .widget-area-2 -->
-
-                        <!-- <div class="widget tuta-ads-1-widget">
-                            <a href="#" title="">
-                                <img src="placeholders/post-image/image-ads-1.jpg" height="251" width="300" alt="">
-                            </a>
-                        </div> -->
-                        <!-- .widget tuta-ads-1-widget -->
+                        <!-- .tuta-testimonial-1-widget -->
 
                     </div>
                     <!-- .widget-area-2 -->

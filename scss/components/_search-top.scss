@@ -1,0 +1,68 @@
+/**
+ * search-top
+ */
+
+.search-top {
+  width: 200px; position: absolute; top: 0; right: 0; z-index: 1; // width: 172px;
+
+  .screen-reader-text {
+    display: none;
+  }
+
+  .form-control, input[type="text"] {
+    background-color: $bg-2; height: 42px; font-size: 13px; line-height: 18px; padding: 10px 12px; width: 130px;
+    border: none; outline: none; text-transform: uppercase; color: $color-4; font-family: $font-heading; font-weight: bold;
+    @include placeholder($color-4);
+    @include border-radius(0);
+    @include box-shadow(none);
+    &:hover, &:focus {
+      border: none; outline: none; background-color: $bg-2;
+    }
+  }
+
+  .input-group-btn {}
+
+  .btn, input[type="submit"] {
+    background-color: $bg-6; width: 42px; height: 42px; border: none; outline: none; @include border-radius(0);
+    cursor: pointer; outline: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  input[type="submit"] {
+    width: 1%; white-space: nowrap; vertical-align: middle; display: table-cell;
+  }
+  .fa {
+    font-size: 18px; color: $color-4;
+  }
+
+  .searchform { // search default wp
+    position: relative; padding-right: 42px;
+    input[type="submit"] {
+      position: absolute; top: 0; right: 0; width: 42px;
+    }
+  }
+
+  @include until($device-width-lg) {
+    //position: static; width: 100%;
+    &:after {
+      content: ''; position: absolute; top: 0; left: -$height-main-menu;
+      @include before-top($height-main-menu, 0, $height-main-menu, $bg-2);
+    }
+  }
+
+  @include until($device-width-md) {
+    &:after {
+      border-bottom-width: 38px; border-left-width: 38px; left: -38px;
+    }
+    .form-control {
+      font-size: 12px; height: 38px;
+    }
+    .btn {
+      height: 38px;
+    }
+    .fa {
+      font-size: 16px;
+    }
+  }
+}

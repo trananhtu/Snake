@@ -12,7 +12,7 @@
   > div:first-child {
     overflow: hidden; padding-bottom: $height-main-menu-2; position: relative;
     &:before, &:after {
-      content: ''; position: absolute; bottom: 0; width: 1000px; height: $height-main-menu-2; 
+      content: ''; position: absolute; bottom: 0; width: 1000px; height: $height-main-menu-2;
       background-color: $bg-8;
     }
     &:before {
@@ -89,7 +89,7 @@
   overflow: hidden; padding: 0 0 #{$padding-bot-logo + 28}; background: transparent; position: relative;
   margin-bottom: -#{$padding-bot-logo + 56}; width: $width-logo-page-2; float: left;
   &:before, &:after {
-    content: ''; position: absolute; @include border-radius(50%); width: 120%; height: 96px; bottom: $padding-bot-logo; 
+    content: ''; position: absolute; @include border-radius(50%); width: 120%; height: 96px; bottom: $padding-bot-logo;
     background-color: $bg-12; border: none; left: 50%; margin-left: -60%;
   }
   &:after {
@@ -116,7 +116,7 @@
   top: 0; left: $width-logo-page-2; height: 100%; padding: 0;
   ul {
     position: relative; top: 50%; right: 0; margin-top: -10px;
-    
+
   }
   li {
     display: inline-block;
@@ -177,7 +177,7 @@
       &:hover {
         &:before {
           color: $color-3; @include transition();
-        }        
+        }
       }
     }
   }
@@ -190,10 +190,10 @@
     margin-left: 30px;
     &:first-child {
       margin-left: 0;
-    } 
+    }
     &:before {
       position: absolute; top: 2px; left: 0;
-      width: 40px; height: 40px; line-height: 40px; text-align: center; background-color: $bg-12; 
+      width: 40px; height: 40px; line-height: 40px; text-align: center; background-color: $bg-12;
       font-size: 18px; color: $color-4; font-family: FontAwesome;
     }
     .fa-wrap {
@@ -215,7 +215,7 @@
       a.h6 {
         &:before {
           content: '\f07a'; position: absolute; top: 2px; left: 0;
-          width: 40px; height: 40px; line-height: 40px; text-align: center; background-color: $bg-12; 
+          width: 40px; height: 40px; line-height: 40px; text-align: center; background-color: $bg-12;
           font-size: 18px; color: $color-4; font-family: FontAwesome;
 
           background: $bg-11;
@@ -234,7 +234,7 @@
         &:hover {
           color: $color-11;
         }
-      }      
+      }
     }
   }
 }
@@ -295,7 +295,7 @@
     @include backface-visibility(hidden); @include transform(translate3d(0,0,0));
 
     &:before, &:after {
-      content: ''; position: absolute; bottom: -8px; width: 1000px; height: $height-main-menu-2; 
+      content: ''; position: absolute; bottom: -8px; width: 1000px; height: $height-main-menu-2;
       background-color: $bg-8;
     }
     &:before {
@@ -342,7 +342,7 @@
     }
     &.active, &.sfHover {
       > a {
-        @include box-shadow(0 28px 30px -25px rgba(0, 0, 0, 1) inset);  
+        @include box-shadow(0 28px 30px -25px rgba(0, 0, 0, 1) inset);
       }
     }
     > div {
@@ -353,7 +353,7 @@
       text-transform: uppercase; font: 700 13px/42px $font-heading; height: $height-main-menu; color: $color-4; display: block;
       padding: 0 25px; position: relative;
       @include border-radius(0); @include box-shadow(0 -31px 30px -25px rgba(0, 0, 0, 1) inset);
-      background: #e60a1d; // Old browsers 
+      background: #e60a1d; // Old browsers
       background: -moz-linear-gradient(45deg,  #e60a1d 0%, #e60a1d 22%, #d90618 71%, #e60a1d 100%); // FF3.6+
       background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#e60a1d), color-stop(22%,#e60a1d), color-stop(71%,#d90618), color-stop(100%,#e60a1d)); // Chrome,Safari4+
       background: -webkit-linear-gradient(45deg,  #e60a1d 0%,#e60a1d 22%,#d90618 71%,#e60a1d 100%); // Chrome10+,Safari5.1+
@@ -370,7 +370,7 @@
       }
       &:before, &:after {
         content: ''; position: absolute; bottom: 0; height: $height-main-menu/2; width: 2px;
-        background: #490005; // Old browsers 
+        background: #490005; // Old browsers
         // IE9 SVG, needs conditional override of 'filter' to 'none'
         background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ5MDAwNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMzBhMWMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
         background: -moz-linear-gradient(top,  #490005 0%, #e30a1c 100%); // FF3.6+
@@ -389,7 +389,7 @@
         right: 0;
       }
     }
-    
+
   }
 }
 @include tuta-style-flat {
@@ -399,7 +399,7 @@
         > a {
           background-color: $bg-8;
         }
-      } 
+      }
       > a {
         background: $bg-11; @include box-shadow(none);
         &:hover {
@@ -476,7 +476,7 @@
             background-color: $bg-8; @include box-shadow(none);
           }
         }
-      }    
+      }
     }
   }
 }
@@ -559,7 +559,7 @@
     }
 }
 #mobile-menu ul {
-    z-index: 99999; 
+    z-index: 99999;
 }
 #mobile-menu li {
     margin: 0; list-style: none; padding: 0;
@@ -584,68 +584,10 @@
     text-transform: none;
 }
 #mobile-menu .open > a {
-    border-bottom: 1px solid $border-1; 
+    border-bottom: 1px solid $border-1;
 }
 #mobile-menu li a .caret {
     position: absolute; right: 15px; top: 18px;
 }
 
-.search-top {
-  width: 172px; position: absolute; top: 0; right: 0; z-index: 1;
-  .input-group {
-    .form-control {
-      background-color: $bg-2; height: 42px; font-size: 13px; line-height: 18px; padding: 10px 12px; width: 130px;
-      border: none; outline: none; text-transform: uppercase; color: $color-4; font-family: $font-heading; font-weight: bold;
-      &::-webkit-input-placeholder { // WebKit browsers 
-        color: $color-4;
-      }
-      &:-moz-placeholder { // Mozilla Firefox 4 to 18
-        color: $color-4; opacity: 1;
-      }
-      &::-moz-placeholder { // Mozilla Firefox 19+
-        color: $color-4; opacity: 1;
-      }
-      &:-ms-input-placeholder { // Internet Explorer 10+
-        color: $color-4;
-      }
-      @include border-radius(0); @include box-shadow(none);
-      &:hover, &:focus {
-        border: none; outline: none; background-color: $bg-2;
-      }
-    }
-  }
-  .input-group-btn {
-    .btn {
-      background-color: $bg-6; width: 42px; height: 42px; border: none; outline: none; @include border-radius(0);
-      cursor: pointer;
-    }
-    .fa {
-      font-size: 18px; color: $color-4;
-    }
-  }
-  @include until($device-width-lg) {
-    //position: static; width: 100%;
-    &:after {
-      content: ''; position: absolute; top: 0; left: -$height-main-menu;
-      @include before-top($height-main-menu, 0, $height-main-menu, $bg-2);
-    }
-  }
-  @include until($device-width-md) {
-    &:after {
-      border-bottom-width: 38px; border-left-width: 38px; left: -38px;
-    }
-    .input-group {
-      .form-control {
-        font-size: 12px; height: 38px;
-      }
-    }
-    .input-group-btn {
-      .btn {
-        height: 38px;
-      }
-      .fa {
-        font-size: 16px;
-      }
-    }
-  }
-}
+@import 'components/search-top';
