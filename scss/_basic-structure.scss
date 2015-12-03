@@ -5,49 +5,60 @@
 body {
   font-family: $font-body; line-height: 20px; font-size: 13px; color: $color-1; //overflow-x: hidden;
 }
+
 @include tuta-home-5 {
   background-color: $bg-5;
 }
+
 img {
   width: 100%; max-width: 100%; height: auto; @include border-radius();
 }
+
 ul, ol {
   list-style: none; margin: 0; padding: 0; //overflow: hidden;
 }
+
 label {
   font-weight: 400;
 }
-input[type="text"], textarea, select {
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
   outline: none; border: 0; font-size: 13px; text-transform: none; color: $color-1; width: 100%;
   margin: 0; line-height: 16px; height: 30px; @include border-radius(); padding: 6px 10px; background-color: $bg-5;
 }
+
 textarea {
   height: 90px; resize: none;
   &.height-area-1 {
     height: 195px;
   }
 }
-input[type="text"], textarea {
-  &::-webkit-input-placeholder { // WebKit browsers
-        color: $color-1;
-  }
-  &:-moz-placeholder { // Mozilla Firefox 4 to 18
-    color: $color-1; opacity: 1;
-  }
-  &::-moz-placeholder { // Mozilla Firefox 19+
-    color: $color-1; opacity: 1;
-  }
-  &:-ms-input-placeholder { // Internet Explorer 10+
-    color: $color-1;
-  }
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  @include placeholder($color-1);
 }
-textarea:focus, input[type="text"]:focus, select:focus {
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+  &:focus {
     outline: none; @include box-shadow(none); //position: relative; z-index: 1;
+  }
 }
+
 select {
   width: 100%; width: 113% \9; cursor: pointer; background-color: transparent;
   padding-right: 30px; padding-right: 0px \9;
-  -webkit-appearance: none; //for chrome  
+  -webkit-appearance: none; //for chrome
   -moz-appearance: none; //for firefox
   text-indent: 0.01px;
   text-overflow: '';
@@ -56,6 +67,7 @@ select {
     display: none;
   }
 }
+
 .form-control-wrap {
   @extend %template-3d;
   @include create-pane($bg-5, $color-1, 25%);
@@ -74,6 +86,7 @@ select {
     }
   }
 }
+
 .fc-white {
   background-color: $bg-4;
   &:after, .fa, input[type="text"], textarea {
@@ -83,25 +96,30 @@ select {
     background-color: darken($bg-4, 30%);
   }
 }
+
 .form-control-wrap-1 {
   @include create-skew; border-color: $border-2;
   input[type="text"], textarea {
     background-color: transparent;
   }
 }
+
 .label-1 {
   font: 700 13px/20px $font-heading; color: $color-5; text-transform: uppercase;
 }
+
 .error {
   color: $color-11;
 }
+
 .form-title {
   color: $color-1; padding-left: 22px; position: relative; font-size: 13px; line-height: 20px; margin-bottom: 2px;
   &:after {
     content: '\f096'; font: 400 17px/1 FontAwesome; position: absolute; top: 3px; left: 0;
     @include transition();
-  }  
+  }
 }
+
 .checkbox-wrap {
   position: relative; line-height: 23px; @include ellipsis();
   &:before {
@@ -119,6 +137,7 @@ select {
     }
   }
 }
+
 .file-upload {
   position: relative; overflow: hidden; margin: 0 0 10px;
   input.upload {
@@ -148,12 +167,14 @@ select {
 .mb-f-20 {
   margin-bottom: $margin-page - 5;
 }
+
 .wrapper {
   width: $width-page; margin: 0 auto; position: relative;
   @include until($device-width-lg) {
     width: 100%; padding: 0 10px;
   }
 }
+
 .text-lowercase {
   text-transform: lowercase;
 }
@@ -181,6 +202,7 @@ select {
     width: 100%;
   }
 }
+
 @include tuta-sub-page {
   .col-main {
     @include until($device-width-md) {
@@ -263,4 +285,8 @@ select {
 
 .loading {
   background: url(images/icons/loading.gif) no-repeat center;
+}
+
+.perfect-scrollbar {
+	overflow: hidden;
 }

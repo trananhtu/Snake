@@ -5,7 +5,7 @@
     <ul class="widget-content list-style-1">
         <?php global $post;
             $most_popular_posts = get_posts(array(
-                'posts_per_page' => 6,
+                'posts_per_page' => 10,
                 'orderby' => 'comment_count'
             ));
             foreach($most_popular_posts as $post) : setup_postdata($post); ?>

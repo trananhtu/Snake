@@ -69,12 +69,12 @@
   }
   @include until($device-width-sm) {
     width: 100%;
-    .item {
-      padding-top: 0;
-      .thumbnail {
-        position: static;
-      }
-    }
+    // .item {
+    //   padding-top: 0;
+    //   .thumbnail {
+    //     position: static;
+    //   }
+    // }
   }
 }
 .control-sub-page-slide {
@@ -215,3 +215,29 @@
 }
 
 @import 'blog-content-default';
+
+.blog-row-top {
+  .col-aside {
+    padding-top: 31.745%; position: relative;
+    > * {
+      position: absolute; top: 0; left: 10px; right: 10px; bottom: 0;
+    }
+    .tuta-mp-post-widget {
+      margin-bottom: 0;
+    }
+
+    .perfect-scrollbar {
+      border-radius: 4px;
+    }
+
+    @include until($screen-md) {
+      padding-top: 0;
+      > * {
+        position: static;
+      }
+      .tuta-mp-post-widget {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

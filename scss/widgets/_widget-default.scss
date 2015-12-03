@@ -1,4 +1,66 @@
 /**
- * widget default
+ * widget default wordpress
  */
 
+.col-aside {
+  .widget {
+    list-style: none; background-color: #f2f2f2; padding: 20px; border-radius: 4px;
+    a {
+      color: #111;
+      &:hover {
+        color: $color-3;
+      }
+    }
+    select {
+      border: 1px solid #ddd; line-height: 18px; height: auto;
+    }
+    table {
+      width: 100%;
+    }
+  }
+}
+
+
+.searchform {
+  .screen-reader-text {
+    display: none
+  }
+}
+
+.widget_calendar {
+  #wp-calendar {
+    width: 100%;
+    th, td {
+      text-align: center;
+    }
+  }
+}
+
+.widget_rss {
+  .widgettitle {
+    overflow: hidden;
+    img {
+      width: auto; float: left; margin: 3px 8px 0 0;
+    }
+  }
+  li {
+    & + li {
+      margin-top: 10px;
+    }
+  }
+}
+
+.widget_text {
+  img {
+    margin: 10px 0;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+.widget_tag_cloud {
+  a[class^="tag-link"] {
+    font-size: 13px !important;
+  }
+}

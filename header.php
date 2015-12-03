@@ -83,6 +83,8 @@
             <div class="wrapper clearfix">
                 <div class="waypoint">
 
+                    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+
                     <nav id="main-nav" class="clearfix">
 
                         <ul id="main-menu">

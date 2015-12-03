@@ -6,7 +6,7 @@
 
         <div class="wrapper">
 
-            <div class="row">
+            <div class="row blog-row-top">
 
                 <div class="col-main">
 
@@ -16,7 +16,7 @@
                 <!-- .col-main -->
 
                 <div class="col-aside">
-                    <div class="widget-area-12">
+                    <div class="widget-area-12 perfect-scrollbar">
 
                         <?php include (TEMPLATEPATH . '/inc/most-popular-posts.php'); ?>
 

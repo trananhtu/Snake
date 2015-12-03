@@ -10,13 +10,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /**
  * Table of Contents:
- * 
+ *
  * 1 - Body
  *  1.1 - Repeatable Patterns
  *  1.2 - Basic Structure
  *  1.3 - Widget
  * 2 - Header / .tuta-page-header
- * 3 - Content 
+ * 3 - Content
  *  3.1 - Home Page
  *  3.2 - Sub Page
  * 4.0 - Footer / #tuta-page-footer
@@ -24,7 +24,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 @import 'scss/variables';
 @import 'scss/vendor';
-@import 'scss/mixin'; 
+@import 'scss/mixin';
 @import 'scss/typography';
 @import 'scss/shortcodes';
 @import 'scss/basic-structure';
@@ -34,5 +34,5 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import 'scss/widgets';
 @import 'scss/layout';
 @import 'scss/pages';
-@import 'scss/footer'; 
-@import 'scss/ie'; 
+@import 'scss/footer';
+@import 'scss/ie';

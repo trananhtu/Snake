@@ -20,7 +20,7 @@
 
  jQuery(document).ready(function() {
 
-    var temp_path = '/wp/wp-content/themes/snake/';
+    var temp_path = '/wp-content/themes/snake/';
     var tuta_variable = {
         "contact": {
             "address": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -786,6 +786,21 @@
                 });
             }
         }]);
+    }
+
+    /* =========================================================
+    10. Perfect scrollbar
+    ============================================================ */
+
+    if(!jQuery(".ie8").length) {
+        Modernizr.load([
+            {
+                load: [temp_path + '/js/perfect-scrollbar.jquery.min.js'],
+                complete: function () {
+                    jQuery('.perfect-scrollbar').perfectScrollbar();
+                }
+            }
+        ]);
     }
 
     /* =========================================================

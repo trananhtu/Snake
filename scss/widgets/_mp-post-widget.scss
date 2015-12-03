@@ -27,7 +27,7 @@
     @include atLeastUntil($device-width-md, $device-width-lg) {
       .widget-content {
         li:nth-child(n+4) {
-          display: none;
+          //display: none;
         }
       }
     }

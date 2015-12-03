@@ -60,14 +60,9 @@ if (!function_exists('tuta_theme_setup')) {
 		/**
 		 * Thêm chức năng post-format
 		 */
-		add_theme_support('post-formats',
-			array(
-				'video',
-				'image',
-				'audio',
-				'gallery'
-			)
-		);
+		add_theme_support('post-formats', array('video', 'image',	'audio', 'gallery'));
+
+        add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption'));
 
 		/**
 		 * Thêm chức năng custom background
@@ -182,7 +177,7 @@ function tuta_style() {
   	wp_register_script('maps-google-js', 'http://maps.google.com/maps/api/js?sensor=true', array('jquery'));
   	wp_enqueue_script('maps-google-js' );
 
-  	wp_register_script('gmaps-js', get_template_directory_uri() . 'js/gmaps.js', array('jquery'));
+  	wp_register_script('gmaps-js', get_template_directory_uri() . '/js/gmaps.js', array('jquery'));
   	wp_enqueue_script('gmaps-js');
 
   	wp_register_script( 'custom-js', get_template_directory_uri() . '/js/custom.js', array('jquery') );

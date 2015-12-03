@@ -3,7 +3,7 @@
  */
 
 .contact-box {
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   .form-control-wrap {
     margin-bottom: 20px;
   }
@@ -37,5 +37,38 @@
   }
 }
 #kp-map {
-  height: 475px; margin-bottom: 20px;
+  height: 525px; margin-bottom: 20px;
+}
+
+/**
+ * contact form 7
+ */
+
+.wpcf7 {
+  .wpcf7-form-control-wrap {
+    @extend %template-3d;
+    @include create-pane($bg-5, $color-1, 25%);
+    padding: 0; margin-bottom: 10px; overflow: hidden; display: block; min-height: 32px; font-weight: 400;
+    min-width: 160px; margin-top: 5px;
+    select {
+      position: relative; z-index: 1; z-index: 2\9;
+    }
+    .fa {
+      content: ''; position: absolute; top: 0; right: 0; bottom: 2px; width: 30px; z-index: 1; //height: 30px;
+      background-color: $bg-5; @include border-radius(); cursor: default; margin: 0;
+      pointer-events:none; //IE10+
+      &:before {
+        position: absolute; width: 14px; height: 14px; top: 50%; left: 50%; margin-top: -6px; margin-left: -7px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .wpcf7-submit {
+    @extend .tuta-button-default;
+  }
+
+  .ajax-loader {
+    width: auto;
+  }
 }
