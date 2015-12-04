@@ -14,12 +14,15 @@
 
                     <div class="row clearfix">
 
-                        <div class="col-md-6 contact-box">
+                        <div class="col-md-12 mb-20">
                             <p class="h3">Getting in touch is easy</p>
                             <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque.
                             Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet</p>
+                        </div>
 
-                            <?php echo do_shortcode('[contact-form-7 id="1442" title="Contact form 1"]'); ?>
+                        <div class="col-md-6 contact-box">
+
+                            <?php echo do_shortcode('[contact-form-7 id="32" title="Liên hệ"]'); ?>
 
                         </div>
                         <!-- .col-md-6 -->

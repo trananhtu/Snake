@@ -75,7 +75,7 @@ if (!function_exists('tuta_theme_setup')) {
 		/**
 		 * Tạo menu cho theme
 		 */
-		register_nav_menu('primary-menu', __('Primary Menu', 'tuta'));
+		register_nav_menu('main-menu', __('TuTa Main Menu', 'tuta'));
 
 		/**
 		 * Tạo sidebar cho theme
@@ -146,7 +146,11 @@ if (!function_exists('tuta_menu')) {
 		$menu = array(
 			'theme_location' => $slug,
 			'container' => 'nav',
-			'container_class' => $slug
+			'container_id' => 'main-nav',
+            //'menu_class' => 'main-nav',
+            'menu_id' => 'main-menu',
+            'link_before' => '<span>',
+            'link_after' => '</span>'
 		);
 		wp_nav_menu($menu);
 	}

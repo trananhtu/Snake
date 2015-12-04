@@ -68,6 +68,14 @@
   -moz-backface-visibility: $val;
   -ms-backface-visibility: $val;
 }
+@mixin selection($bg-color, $text-color: #fff) {
+  ::selection {
+  background: $bg-color; color: $text-color;
+  }
+  ::-moz-selection {
+    background: $bg-color; color: $text-color;
+  }
+}
 // Overflow Ellipsis
 @mixin ellipsis() {
   overflow: hidden; white-space: nowrap; text-overflow: ellipsis;

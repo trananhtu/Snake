@@ -9,7 +9,7 @@
     <?php wp_head();?>
 </head>
 
-<body <?php body_class('tuta-sub-page tuta-style-flat'); ?>>
+<body <?php body_class('tuta-sub-page'); ?>> <!-- tuta-style-flat -->
 
     <header id="tuta-page-header">
 
@@ -19,7 +19,6 @@
                 <div class="wrapper clearfix">
 
                     <?php tuta_logo(); ?>
-                    <?php //tuta_menu('primery-menu'); ?>
 
                     <div class="login-wrapper">
                         <ul>
@@ -83,9 +82,9 @@
             <div class="wrapper clearfix">
                 <div class="waypoint">
 
-                    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+                    <?php tuta_menu('main-menu'); ?>
 
-                    <nav id="main-nav" class="clearfix">
+                    <!-- <nav id="main-nav" class="clearfix">
 
                         <ul id="main-menu">
                             <li class="active">
@@ -149,7 +148,7 @@
 
                                     </div>
                                 </div>
-                                <!--.sub-main-menu-->
+                                .sub-main-menu
                             </li>
                             <li><a href="#"><span>Single Post</span></a></li>
                             <li>
@@ -235,25 +234,17 @@
                                     <a href="contact-us.html">Contact Us</a>
                                 </li>
                             </ul>
-                            <!-- mobile-menu -->
+                            mobile-menu
                         </div>
-                        <!-- mobile-menu-wrapper -->
+                        mobile-menu-wrapper
 
-                    </nav>
+                    </nav> -->
                     <!-- .main-nav -->
 
                     <div class="search-top">
 
                         <?php get_search_form(); ?>
 
-                        <!-- <form>
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search" value="" name="search">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
-                                </span>
-                            </div>
-                        </form> -->
                     </div>
                     <!-- .search-wrapper -->
 

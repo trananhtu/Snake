@@ -16,11 +16,11 @@
                 elseif(is_single()) :
                     printf(__('Blogs', 'tuta'));
                 elseif(is_day()) :
-                    printf(__('Dayly Archives: %1$s', 'tuta'), the_time('l, F j, Y'));
+                    printf(__('Dayly Archives: %1$s', 'tuta'), get_the_time('l, F j, Y'));
                 elseif(is_month()) :
-                    printf(__('Monthly Archives: %1$s', 'tuta'), the_time('F Y'));
+                    printf(__('Monthly Archives: %1$s', 'tuta'), get_the_time('F Y'));
                 elseif(is_year()) :
-                    printf(__('Yearly Archives: %1$s', 'tuta'), the_time('Y'));
+                    printf(__('Yearly Archives: %1$s', 'tuta'), get_the_time('Y'));
                 endif;
 
                 if(is_tag() || is_category()) :
