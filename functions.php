@@ -288,11 +288,11 @@ if(!function_exists('tuta_entry_meta')) {
 
 			// Hiển thị số đếm lượt bình luận
 			if(comments_open()) :
-				echo ', Comment: ';
+				echo __(', Comment: ');
 					comments_popup_link(
 						__('Leave a comment', 'tuta'),
 						__('One comment', 'tuta'),
-						__('% comments', 'tuta'),
+						'% ' . __('comments', 'tuta'),
 						__('Read all comments', 'tuta')
 					);
 			endif;

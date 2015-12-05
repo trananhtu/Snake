@@ -1,0 +1,210 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: TuTa Theme - Vietnamese translate\n"
+"POT-Creation-Date: 2015-12-05 12:02+0700\n"
+"PO-Revision-Date: 2015-12-05 12:22+0700\n"
+"Last-Translator: \n"
+"Language-Team: TuTa Blog <tr.anhtu@live.com>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:13
+msgid "<h2 class=\"text-center\">404 NOT FOUND</h2>"
+msgstr "<h2 class=\"text-center\">404 NOT FOUND</h2>"
+
+#: 404.php:14
+msgid ""
+"<p class=\"text-center\">The article you were looking for was not found, but "
+"maybe try looking again!</p>"
+msgstr ""
+"<p class=\"text-center\">Bài viết mà bạn đang tìm kiếm không được tìm thấy, "
+"bạn hay thử tìm kiếm lại.</p>"
+
+#: 404.php:19
+msgid "<h3>Content categories</h3>"
+msgstr "<h3>Danh sách danh mục</h3>"
+
+#: 404.php:23
+msgid "<h3>Tag Cloud</h3>"
+msgstr "<h3>Danh Sách Các Thẻ</h3>"
+
+#: author-bio.php:7
+#, php-format
+msgid "Write by <a href=\"%1$s\">%2$s</a>"
+msgstr "Được viết bởi <a href=\"%1$s\">%2$s</a>"
+
+#: content-image.php:12
+#, php-format
+msgid "<p>This image post contains %1$s photos</p>"
+msgstr "<p>Bài đăng chứa %1$s hình ảnh</p>"
+
+#: functions.php:78
+msgid "TuTa Main Menu"
+msgstr "TuTa Main Menu"
+
+#: functions.php:84
+msgid "Main Sidebar"
+msgstr "Main Sidebar"
+
+#: functions.php:217
+msgid ""
+"<span class=\"tuta-button-default button-3d button-sm btn-white-hover"
+"\">Prev</span>"
+msgstr ""
+"<span class=\"tuta-button-default button-3d button-sm btn-white-hover"
+"\">Trước</span>"
+
+#: functions.php:218
+msgid ""
+"<span class=\"tuta-button-default button-3d button-sm btn-white-hover"
+"\">Next</span>"
+msgstr ""
+"<span class=\"tuta-button-default button-3d button-sm btn-white-hover\">Sau</"
+"span>"
+
+#: functions.php:282
+#, php-format
+msgid "<span class=\"time\">%1$s, By: <a href=\"%4$s\">%2$s</a>, In: %3$s"
+msgstr "<span class=\"time\">%1$s, Bởi: <a href=\"%4$s\">%2$s</a>, Trong: %3$s"
+
+#: functions.php:291
+msgid ", Comment: "
+msgstr ", Bình luận: "
+
+#: functions.php:293
+msgid "Leave a comment"
+msgstr "Bình luận"
+
+#: functions.php:294
+msgid "One comment"
+msgstr "Một bình luận"
+
+#: functions.php:295
+msgid "comments"
+msgstr "bình luận"
+
+#: functions.php:296
+msgid "Read all comments"
+msgstr "Xem tất cả bình luận"
+
+#: functions.php:309 inc/featured.php:23
+msgid "View more details"
+msgstr "Xem thêm"
+
+#: functions.php:334
+msgid ""
+"<span>Pages: </span>\n"
+"\t\t\t\t\t\t\t\t<div class=\"page-links\">"
+msgstr ""
+"<span>Trang: </span>\n"
+"\t\t\t\t\t\t\t\t<div class=\"page-links\">"
+
+#: functions.php:339
+msgid "Next Page"
+msgstr "Trang Sau"
+
+#: functions.php:340
+msgid "Previous Page"
+msgstr "Trang Trước"
+
+#: functions.php:355
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: functions.php:378
+msgid "&laquo; Previous Article"
+msgstr "Bài Viết Trước"
+
+#: functions.php:394
+msgid "Next Article &raquo;"
+msgstr "Bài Viết Sau"
+
+#: functions.php:458
+msgid "Search for: "
+msgstr "Tìm kiếm: "
+
+#: functions.php:459 inc/head-main.php:15
+msgid "Search"
+msgstr "Tìm kiếm"
+
+#: inc/category.php:3
+msgid "Blog Categories"
+msgstr "Danh Mục Blog"
+
+#: inc/category.php:15
+#, php-format
+msgid "View all posts in %s"
+msgstr "Xem tất cả các bài viết trong %s"
+
+#: inc/head-main.php:7 inc/head-main.php:17
+msgid "Blogs"
+msgstr "Blogs"
+
+#: inc/head-main.php:9
+#, php-format
+msgid "Posts Tagged: %1$s"
+msgstr "Thẻ bài viết: %1$s"
+
+#: inc/head-main.php:11
+#, php-format
+msgid "Posts Categories: %1$s"
+msgstr "Danh Mục Bài Viết: %1$s"
+
+#: inc/head-main.php:13
+#, php-format
+msgid "Author: %1$s"
+msgstr "Tác giả: %1$s"
+
+#: inc/head-main.php:19
+#, php-format
+msgid "Dayly Archives: %1$s"
+msgstr "Lưu Trữ Theo Ngày: %1$s"
+
+#: inc/head-main.php:21
+#, php-format
+msgid "Monthly Archives: %1$s"
+msgstr "Lưu Trữ Theo Tháng: %1$s"
+
+#: inc/head-main.php:23
+#, php-format
+msgid "Yearly Archives: %1$s"
+msgstr "Lưu Trữ Theo Năm: %1$s"
+
+#: inc/most-popular-posts.php:3
+msgid "Most Popular Posts"
+msgstr "Quan Tâm Nhiều Nhất"
+
+#: inc/random-posts.php:3
+msgid "Featured Listings"
+msgstr "Danh Sách Nổi Bật"
+
+#: inc/related-posts.php:3
+msgid "Related Post"
+msgstr "Bài Viết Liên Quan"
+
+#: search.php:17
+#, php-format
+msgid ""
+"Search result for <strong>%1$s</strong>. We found <strong>%2$s</strong> "
+"articles for you."
+msgstr ""
+"Kết quả tìm kiếm với <strong>%1$s</strong>. Có trong <strong>%2$s</strong> "
+"bài viết"
+
+#: sidebar.php:5
+msgid "This is widget area. Go to Appearance -> Widgets to add some widget."
+msgstr ""
+"Đây là một Widget Area. Bạn hay vào Appearance -> Widgets để thêm một vài "
+"Widget."
+
+#~ msgid "% comments"
+#~ msgstr "% bình luận"
