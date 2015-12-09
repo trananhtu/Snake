@@ -22,7 +22,7 @@
       right: 50%; margin-right: $width-page/2;
     }
     .wrapper {
-      position: relative;
+      position: relative; min-height: 44px;
     }
   }
   @include until($device-width-lg) {

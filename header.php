@@ -11,6 +11,13 @@
 
 <body <?php body_class('tuta-sub-page'); ?>> <!-- tuta-style-flat -->
 
+<?php
+// global $tuta_options;
+// echo '<pre>';
+// print_r($tuta_options);
+// echo '</pre>';
+?>
+
     <header id="tuta-page-header">
 
         <div class="clearfix">

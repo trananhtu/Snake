@@ -102,38 +102,40 @@ if (!function_exists('tuta_theme_setup')) {
  */
 if (!function_exists('tuta_logo')) {
 	function tuta_logo() {
-		if (is_home()) {
-			printf(
-				'<h1 class="logo-image">
-		            <span>
-		               <a href="%1$s" title="%2$s">
-		                   <img src="%4$s/placeholders/logo.png" width="259" height="58" alt="%3$s">
-		                   <span class="sr-only">%3$s</span>
-		               </a>
-		            </span>
-		        </h1>',
-		        get_bloginfo('url'),
-		        get_bloginfo('description'),
-		        get_bloginfo('sitename'),
-		        get_template_directory_uri()
-			);
-		} else {
-			printf(
-				'<div class="logo-image">
-		            <span>
-		               <a href="%1$s" title="%2$s">
-		                   <img src="%4$s/placeholders/logo.png" width="259" height="58" alt="%3$s">
-		                   <span class="sr-only">%3$s</span>
-		               </a>
-		            </span>
-		        </div>',
-		        get_bloginfo('url'),
-		        get_bloginfo('description'),
-		        get_bloginfo('sitename'),
-		        get_template_directory_uri()
-			);
-		}
-
+        global $tuta_options;
+        if(!$tuta_options['logo-on']) {
+            if (is_home()) {
+                printf(
+                    '<h1 class="logo-image">
+                        <span>
+                           <a href="%1$s" title="%2$s">
+                               <img src="%4$s/placeholders/logo.png" width="259" height="58" alt="%3$s">
+                               <span class="sr-only">%3$s</span>
+                           </a>
+                        </span>
+                    </h1>',
+                    get_bloginfo('url'),
+                    get_bloginfo('description'),
+                    get_bloginfo('sitename'),
+                    get_template_directory_uri()
+                );
+            } else {
+                printf(
+                    '<div class="logo-image">
+                        <span>
+                           <a href="%1$s" title="%2$s">
+                               <img src="%4$s/placeholders/logo.png" width="259" height="58" alt="%3$s">
+                               <span class="sr-only">%3$s</span>
+                           </a>
+                        </span>
+                    </div>',
+                    get_bloginfo('url'),
+                    get_bloginfo('description'),
+                    get_bloginfo('sitename'),
+                    get_template_directory_uri()
+                );
+            }
+        }
 	}
 }
 
