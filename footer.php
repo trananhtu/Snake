@@ -12,7 +12,7 @@
                         <div class="widget widget-text">
                             <p>AutoDealer is a professional responsive vehicle marketplace WordPress theme.</p>
                             <p>The theme has been developed especially for car sellers, dealers or auto motor retailers.</p>
-                            <a href="#" class="purchase">Purchase This Theme &raquo;</a>
+                            <a href="#" class="purchase"><?php echo __('Purchase This Theme &raquo;', 'tuta')?></a>
                         </div>
                     </div>
                     <!-- .widget-area-7 -->
@@ -21,7 +21,7 @@
                 <div class="col-xs-6 col-sm-3 col-md-2">
                     <div class="widget-area-8">
                         <div class="widget widget_text">
-                            <h3 class="widget-title widget-title-6">Privacy</h3>
+                            <h3 class="widget-title widget-title-6"><?php echo __('Privacy', 'tuta')?></h3>
                             <ul class="widget-content">
                                 <li><a href="#">Terms &amp; Conditions</a></li>
                                 <li><a href="#">Privacy Statement</a></li>
@@ -37,7 +37,7 @@
                 <div class="col-xs-6 col-sm-3 col-md-2">
                     <div class="widget-area-8">
                         <div class="widget widget_text">
-                            <h3 class="widget-title widget-title-6">Vehicle</h3>
+                            <h3 class="widget-title widget-title-6"><?php echo __('Vehicle', 'tuta')?></h3>
                             <ul class="widget-content">
                                 <li><a href="#">Motorbikes</a></li>
                                 <li><a href="#">Compacts</a></li>
@@ -54,7 +54,7 @@
                 <div class="col-xs-6 col-sm-3 col-md-2">
                     <div class="widget-area-10">
                         <div class="widget widget_text">
-                            <h3 class="widget-title widget-title-6">Support</h3>
+                            <h3 class="widget-title widget-title-6"><?php echo __('Support', 'tuta')?></h3>
                             <ul class="widget-content">
                                 <li><a href="#">About</a></li>
                                 <li><a href="#">Contact</a></li>
@@ -71,14 +71,14 @@
                 <div class="col-xs-6 col-sm-3 col-md-2">
                     <div class="widget-area-11">
                         <div class="widget widget_text">
-                            <h3 class="widget-title widget-title-6">Address</h3>
+                            <h3 class="widget-title widget-title-6"><?php echo __('Address', 'tuta')?></h3>
                             <ul class="widget-content">
                                 <li>King Street, Melbourne</li>
                                 <li>Victoria 3000 Australia</li>
                                 <li>Mon - Fri: 9AM - 7 PM</li>
                                 <li>Sat - Sun: 9AM - 2 PM</li>
                             </ul>
-                            <a class="view-bmap" href="#">View Bigger Map </a>
+                            <a class="view-bmap" href="#"><?php echo __('View Bigger Map &raquo;', 'tuta')?></a>
                         </div>
                     </div>
                     <!-- .widget-area-11 -->
@@ -94,18 +94,24 @@
             <div class="row">
 
                 <div class="col-md-5">
-                    <p class="copyright">&copy; Copyright <?php echo date('Y'); ?> <?php bloginfo('sitename' ); ?> Theme by TUTA.</p>
+                    <p class="copyright">
+                        <?php printf(
+                            __('&copy; Copyright %1$s %2$s Theme by TUTA.', 'tuta'),
+                            date('Y'),
+                            get_bloginfo('sitename')
+                        ); ?>
+                    </p>
                 </div>
 
                 <div class="col-md-7">
                     <nav class="page-nav">
-                        <span class="quick-link">Quick links <i class="fa fa-angle-down"></i></span>
+                        <span class="quick-link"><?php echo __('Quick links', 'tuta')?> <i class="fa fa-angle-down"></i></span>
                         <ul>
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">Wishlist</a></li>
-                            <li><a href="#">My Cart</a></li>
-                            <li><a href="#">Checkout</a></li>
-                            <li><a href="#">Log In</a></li>
+                            <li><a href="#"><?php echo __('My Account', 'tuta')?></a></li>
+                            <li><a href="#"><?php echo __('Wishlist', 'tuta')?></a></li>
+                            <li><a href="#"><?php echo __('My Cart', 'tuta')?></a></li>
+                            <li><a href="#"><?php echo __('Checkout', 'tuta')?></a></li>
+                            <li><a href="#"><?php echo __('Log In', 'tuta')?></a></li>
                         </ul>
                     </nav>
                     <!-- .page-top -->

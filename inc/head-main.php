@@ -23,9 +23,13 @@
                     printf(__('Yearly Archives: %1$s', 'tuta'), get_the_time('Y'));
                 endif;
 
-                if(is_tag() || is_category()) :
-                    echo term_description();
-                endif;
+                //the_archive_title();
+                the_archive_description();
+                echo term_description();
+
+                // if(is_tag() || is_category()) :
+                //     echo term_description();
+                // endif;
             ?>
         </h1>
 
@@ -37,16 +41,16 @@
 <div class="tool-box">
     <div class="wrapper">
         <a href="#" class="tuta-button-default button-3d button-ico button-sm btn-white-hover pull-left">
-            <i class="fa fa-print"></i> Print This Page
+            <i class="fa fa-print"></i> <?php echo __('Print This Page', 'tuta')?>
         </a>
         <a href="#" class="tuta-button-default button-3d button-ico button-sm btn-white-hover pull-left">
-            <i class="fa fa-star"></i> Add To Favorites
+            <i class="fa fa-star"></i> <?php echo __('Add To Favorites', 'tuta')?>
         </a>
         <a href="#" class="tuta-button-default button-3d button-ico button-sm btn-white-hover pull-left">
-            <i class="fa fa-share-alt"></i> Share Vehicle
+            <i class="fa fa-share-alt"></i> <?php echo __('Share Vehicle', 'tuta')?>
         </a>
         <a href="#" class="tuta-button-default button-3d button-ico button-sm btn-white-hover pull-right">
-            Back to Previous Page
+            <?php echo __('Back to Previous Page', 'tuta')?>
         </a>
     </div>
 </div> <!-- .tool-box -->
