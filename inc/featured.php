@@ -20,7 +20,10 @@
                         <a href="<?php echo get_author_posts_url($post->ID); ?>"><?php the_author(); ?></a>
                     </div>
                     <?php the_excerpt(); ?>
-                    <a class="more-link" href="<?php the_permalink(); ?>"><?php echo __('View more details', 'tuta'); ?></a>
+                    <a class="more-link" href="<?php the_permalink(); ?>"> <?php
+                        echo __('View more details', 'tuta');
+                        the_title( '<span class="screen-reader-text">', '</span>', true); ?>
+                    </a>
                 </div>
             </article>
         <?php endforeach; wp_reset_postdata(); ?>

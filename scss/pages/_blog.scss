@@ -203,6 +203,21 @@
   }
   .info-1 {
     color: $color-2;
+    a {
+      color: inherit;
+      &:hover {
+        color: $color-hover;
+      }
+    }
+    .updated {
+      display: none;
+    }
+    .time {
+      > span,
+      > a {
+        margin-right: 20px;
+      }
+    }
   }
 
   > footer {

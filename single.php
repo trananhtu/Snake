@@ -22,18 +22,15 @@
 
                         <footer>
 
-                            <?php get_template_part('author-bio'); ?>
+                            <?php
+                                if(is_single() && get_the_author_meta('description')) :
+                                    get_template_part('author-bio');
+                                endif;
+                            ?>
 
                             <div class="box-wrap clearfix">
-
-                                <div class="page-links-wrap">
-                                    <?php tuta_link_pages(); ?>
-                                </div>
-
-                                <div class="tag-box pull-left">
-                                	<?php tuta_entry_tag(); ?>
-                                </div>
-
+                                <?php tuta_link_pages(); ?>
+                            	<?php tuta_entry_tag(); ?>
                             </div>
 
                             <?php tuta_entry_next_prev(); ?>

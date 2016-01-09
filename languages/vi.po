@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: TuTa Theme - Vietnamese translate\n"
-"POT-Creation-Date: 2015-12-05 12:22+0700\n"
-"PO-Revision-Date: 2015-12-07 09:38+0700\n"
+"POT-Creation-Date: 2016-01-06 15:03+0700\n"
+"PO-Revision-Date: 2016-01-06 15:05+0700\n"
 "Last-Translator: \n"
 "Language-Team: TuTa Blog <tr.anhtu@live.com>\n"
 "Language: vi\n"
@@ -36,25 +36,434 @@ msgstr "<h3>Danh sách danh mục</h3>"
 msgid "<h3>Tag Cloud</h3>"
 msgstr "<h3>Danh Sách Các Thẻ</h3>"
 
-#: author-bio.php:7
+#: author-bio.php:20
 #, php-format
-msgid "Write by <a href=\"%1$s\">%2$s</a>"
-msgstr "Được viết bởi <a href=\"%1$s\">%2$s</a>"
+msgid "Write by <a href=\"%1$s\" rel=\"author\">%2$s</a>"
+msgstr "Viết bởi <a href=\"%1$s\" rel=\"author\">%2$s</a>"
+
+#: author-bio.php:28
+#, php-format
+msgid "View all posts by %s"
+msgstr "Xem tất cả bài viết bởi %s"
+
+#: comments.php:61
+msgid "Comments are closed."
+msgstr "Đóng chức năng bình luận."
+
+#: comments.php:67
+msgid "Name"
+msgstr "Họ tên"
+
+#: comments.php:73
+msgid "Email"
+msgstr "Email"
+
+#: comments.php:79
+msgid "Website"
+msgstr "Trang web"
+
+#: comments.php:90
+msgid "Post Comment"
+msgstr "Gửi bình luận"
+
+#: comments.php:91
+msgid "<span class=\"tuta-pane tuta-pane-1 show\">Leave a Reply"
+msgstr "<span class=\"tuta-pane tuta-pane-1 show\">Trả lời"
+
+#: comments.php:92
+#, php-format
+msgid "<span class=\"tuta-pane tuta-pane-1 show\">Leave a Reply to %s"
+msgstr "<span class=\"tuta-pane tuta-pane-1 show\">Trả lời tới %s"
+
+#: comments.php:93
+msgid "Cancel Reply"
+msgstr "Hủy"
+
+#: comments.php:96
+msgid "Your comment"
+msgstr "Bình luận"
+
+#: comments.php:100
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Bạn cần phải <a href=\"%s\">đăng nhập</a> để bình luận."
+
+#: comments.php:104
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+"Đăng nhập với tài khoản <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title="
+"\"Đăng xuất khỏi tài khoản này\">Đăng xuất?</a>"
+
+#: comments.php:110
+msgid "Your email address will not be published. Required fields are marked *"
+msgstr "Địa chỉ email của bạn sẽ được giấu kín. * là các trường cần nhập"
 
 #: content-image.php:12
 #, php-format
 msgid "<p>This image post contains %1$s photos</p>"
 msgstr "<p>Bài đăng chứa %1$s hình ảnh</p>"
 
-#: functions.php:78
+#: core/class-tgm-plugin-activation.php:333
+msgid "Install Required Plugins"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:334
+msgid "Install Plugins"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:335
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:336
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:397
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:398
+msgid "Return to the dashboard"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:399
+#: core/class-tgm-plugin-activation.php:3029
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:400
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:402
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:403
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:404
+msgid "Dismiss this notice"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:405
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2167
+msgid "Required"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2170
+msgid "Recommended"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2186
+msgid "WordPress Repository"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2189
+msgid "External Source"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2192
+msgid "Pre-Packaged"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2209
+msgid "Not Installed"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2213
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2215
+msgid "Active"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2221
+msgid "Required Update not Available"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2224
+msgid "Requires Update"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2227
+msgid "Update recommended"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2379
+msgid "Installed version:"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2387
+msgid "Minimum required version:"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2399
+msgid "Available version:"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2422
+#, php-format
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2436
+msgid "Plugin"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2437
+msgid "Source"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2438
+msgid "Type"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2442
+msgid "Version"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2443
+msgid "Status"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2603
+msgid "Install"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2609
+msgid "Update"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2612
+msgid "Activate"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2643
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2645
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2681
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2683
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:3028
+msgid "Plugin activation failed."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:3362
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:3364
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:3365
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:3369
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:3370
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:3371
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:3372
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:3375
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:3377
+msgid "All installations have been completed."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:3378
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: core/options.php:55 core/options.php:56
+msgid "TuTa Theme Options"
+msgstr ""
+
+#: core/options.php:99
+msgid "Theme Information 1"
+msgstr ""
+
+#: core/options.php:100
+msgid "<p>This is the tab content 1, HTML is allowed.</p>"
+msgstr ""
+
+#: core/options.php:105
+msgid "Theme Infomation 2"
+msgstr ""
+
+#: core/options.php:106
+msgid "<p>This is the tab content 2, HTML is allowed.</p>"
+msgstr ""
+
+#: core/options.php:110
+msgid "<p>This is the sidebar content, HTML is allowed.</p>"
+msgstr ""
+
+#: core/options.php:121
+msgid "TuTa Header"
+msgstr ""
+
+#: core/options.php:122
+msgid "All of settings for header on this theme"
+msgstr ""
+
+#: core/options.php:129
+msgid "Disable Image Logo"
+msgstr ""
+
+#: core/options.php:131
+msgid "Do you want to use image as a logo?"
+msgstr ""
+
+#: core/options.php:132
+msgid "Enable"
+msgstr ""
+
+#: core/options.php:133
+msgid "Disable"
+msgstr ""
+
+#: core/options.php:138
+msgid "Logo Image"
+msgstr ""
+
+#: core/options.php:139
+msgid "Image that you want to use as logo"
+msgstr ""
+
+#: core/options.php:146
+msgid "Typography"
+msgstr ""
+
+#: core/options.php:147
+msgid "All of settings for themes typography"
+msgstr ""
+
+#: footer.php:15
+msgid "Purchase This Theme &raquo;"
+msgstr "Mua Theme này &raquo;"
+
+#: footer.php:24
+msgid "Privacy"
+msgstr "Chính sách"
+
+#: footer.php:40
+msgid "Vehicle"
+msgstr "Xe cộ"
+
+#: footer.php:57
+msgid "Support"
+msgstr "Hỗ trợ"
+
+#: footer.php:74
+msgid "Address"
+msgstr "Địa chỉ"
+
+#: footer.php:81
+msgid "View Bigger Map &raquo;"
+msgstr "Xem bản đồ &raquo;"
+
+#: footer.php:99
+#, php-format
+msgid "&copy; Copyright %1$s %2$s Theme by TUTA."
+msgstr "&copy; Bản quyền %1$s %2$s Theme bởi TUTA."
+
+#: footer.php:108 header.php:41
+msgid "Quick links"
+msgstr "Liên kết"
+
+#: footer.php:110 header.php:43
+msgid "My Account"
+msgstr "Tài khoản"
+
+#: footer.php:111 header.php:44
+msgid "Wishlist"
+msgstr "Yêu thích"
+
+#: footer.php:112 header.php:45
+msgid "My Cart"
+msgstr "Giỏ hàng"
+
+#: footer.php:113 header.php:46
+msgid "Checkout"
+msgstr "Thanh toán"
+
+#: footer.php:114 header.php:47
+msgid "Log In"
+msgstr "Đăng nhập"
+
+#: functions.php:91
 msgid "TuTa Main Menu"
 msgstr "TuTa Main Menu"
 
-#: functions.php:84
+#: functions.php:97
 msgid "Main Sidebar"
 msgstr "Main Sidebar"
 
-#: functions.php:217
+#: functions.php:99
+msgid "Main sidebar for TUTA theme"
+msgstr ""
+
+#: functions.php:229
+msgid "Posts navigation"
+msgstr "Phân trang bài viết"
+
+#: functions.php:233
 msgid ""
 "<span class=\"tuta-button-default button-3d button-sm btn-white-hover"
 "\">Prev</span>"
@@ -62,7 +471,7 @@ msgstr ""
 "<span class=\"tuta-button-default button-3d button-sm btn-white-hover"
 "\">Trước</span>"
 
-#: functions.php:218
+#: functions.php:234
 msgid ""
 "<span class=\"tuta-button-default button-3d button-sm btn-white-hover"
 "\">Next</span>"
@@ -70,71 +479,124 @@ msgstr ""
 "<span class=\"tuta-button-default button-3d button-sm btn-white-hover\">Sau</"
 "span>"
 
-#: functions.php:282
-#, php-format
-msgid "<span class=\"time\">%1$s, By: <a href=\"%4$s\">%2$s</a>, In: %3$s"
-msgstr "<span class=\"time\">%1$s, Bởi: <a href=\"%4$s\">%2$s</a>, Trong: %3$s"
+#: functions.php:235 functions.php:458 inc/template-tags.php:28
+msgid "Page"
+msgstr "Trang"
 
-#: functions.php:291
-msgid ", Comment: "
-msgstr ", Bình luận: "
-
-#: functions.php:293
+#: functions.php:374
 msgid "Leave a comment"
-msgstr "Bình luận"
+msgstr "0 bình luận"
 
-#: functions.php:294
+#: functions.php:375
 msgid "One comment"
-msgstr "Một bình luận"
+msgstr "1 bình luận"
 
-#: functions.php:295
+#: functions.php:376
 msgid "comments"
 msgstr "bình luận"
 
-#: functions.php:296
-msgid "Read all comments"
-msgstr "Xem tất cả bình luận"
+#: functions.php:378
+msgid "Comment disable"
+msgstr "Đóng bình luận"
 
-#: functions.php:309 inc/featured.php:23
-msgid "View more details"
-msgstr "Xem thêm"
+#: functions.php:383 functions.php:628 functions.php:682
+msgid "Edit"
+msgstr "Sửa"
 
-#: functions.php:334
+#: functions.php:452
 msgid ""
-"<span>Pages: </span>\n"
-"\t\t\t\t\t\t\t\t<div class=\"page-links\">"
+"<div class=\"page-links-wrap\"><span>Pages: </span><div class=\"page-links\">"
 msgstr ""
-"<span>Trang: </span>\n"
-"\t\t\t\t\t\t\t\t<div class=\"page-links\">"
+"<div class=\"page-links-wrap\"><span>Trang: </span><div class=\"page-links\">"
 
-#: functions.php:339
+#: functions.php:456
 msgid "Next Page"
 msgstr "Trang Sau"
 
-#: functions.php:340
+#: functions.php:457
 msgid "Previous Page"
 msgstr "Trang Trước"
 
-#: functions.php:355
-#, php-format
-msgid "%1$s"
-msgstr ""
+#: functions.php:477
+msgid "No Tag"
+msgstr "Không có Tag"
 
-#: functions.php:378
+#: functions.php:498
 msgid "&laquo; Previous Article"
-msgstr "Bài Viết Trước"
+msgstr "&laquo; Bài Viết Trước"
 
-#: functions.php:394
+#: functions.php:514
 msgid "Next Article &raquo;"
-msgstr "Bài Viết Sau"
+msgstr "Bài Viết Sau &raquo;"
 
-#: functions.php:458
+#: functions.php:536
+msgid "Home"
+msgstr "Trang chủ"
+
+#: functions.php:578
 msgid "Search for: "
 msgstr "Tìm kiếm: "
 
-#: functions.php:459 inc/head-main.php:15
+#: functions.php:579 inc/head-main.php:15
 msgid "Search"
 msgstr "Tìm kiếm"
+
+#: functions.php:624
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s tại %2$s"
+
+#: functions.php:632 functions.php:685
+msgid "Reply"
+msgstr "Trả lời"
+
+#: functions.php:647
+msgid "Your comment is awaitting moderation."
+msgstr "Bình luận của bạn đang đợi kiểm duyệt."
+
+#: functions.php:678
+msgid " at "
+msgstr " tại "
+
+#: header.php:32
+msgid "Welcome!"
+msgstr "Xin chào!"
+
+#: header.php:33
+msgid "Sign in"
+msgstr "Đăng nhập"
+
+#: header.php:35
+msgid "Register"
+msgstr "Đăng ký"
+
+#: header.php:61
+msgid "Free Ship"
+msgstr "Miễn phí giao hàng"
+
+#: header.php:62
+msgid "on order over "
+msgstr "với đơn hàng trên "
+
+#: header.php:65
+msgid "Free Return"
+msgstr "Miễn phí đổi trả"
+
+#: header.php:66
+msgid "free 90 days return policy"
+msgstr "hoàn trả 90 ngày"
+
+#: header.php:69
+msgid "Member discount"
+msgstr "Ưu đãi thành viên"
+
+#: header.php:70
+msgid "free register"
+msgstr "miễn phí đăng ký"
+
+#: header.php:75
+msgid "Shopping Cart"
+msgstr "Giỏ hàng"
 
 #: inc/category.php:3
 msgid "Blog Categories"
@@ -144,6 +606,10 @@ msgstr "Danh Mục Blog"
 #, php-format
 msgid "View all posts in %s"
 msgstr "Xem tất cả các bài viết trong %s"
+
+#: inc/featured.php:24
+msgid "View more details"
+msgstr "Xem thêm"
 
 #: inc/head-main.php:7 inc/head-main.php:17
 msgid "Blogs"
@@ -179,6 +645,22 @@ msgstr "Lưu Trữ Theo Tháng: %1$s"
 msgid "Yearly Archives: %1$s"
 msgstr "Lưu Trữ Theo Năm: %1$s"
 
+#: inc/head-main.php:44
+msgid "Print This Page"
+msgstr "In trang"
+
+#: inc/head-main.php:47
+msgid "Add To Favorites"
+msgstr "Yêu thích"
+
+#: inc/head-main.php:50
+msgid "Share Vehicle"
+msgstr "Chia sẻ"
+
+#: inc/head-main.php:53
+msgid "Back to Previous Page"
+msgstr "Quay lại trang trước"
+
 #: inc/most-popular-posts.php:3
 msgid "Most Popular Posts"
 msgstr "Quan Tâm Nhiều Nhất"
@@ -190,6 +672,18 @@ msgstr "Danh Sách Nổi Bật"
 #: inc/related-posts.php:3
 msgid "Related Post"
 msgstr "Bài Viết Liên Quan"
+
+#: inc/template-tags.php:22
+msgid "Comment navigation"
+msgstr "Điều hướng bình luận"
+
+#: inc/template-tags.php:26
+msgid "<span class=\"previous\">&laquo; Previous</span>"
+msgstr "<span class=\"previous\">&laquo; Bình luận trước</span>"
+
+#: inc/template-tags.php:27
+msgid "<span class=\"next\">Next &raquo;</span>"
+msgstr "<span class=\"next\">Bình luận sau &raquo;</span>"
 
 #: search.php:17
 #, php-format
@@ -206,5 +700,53 @@ msgstr ""
 "Đây là một Widget Area. Bạn hay vào Appearance -> Widgets để thêm một vài "
 "Widget."
 
+#~ msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
+#~ msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">nói rằng:</span>"
+
+#~ msgid "Your comment is awaiting moderation."
+#~ msgstr "Bình luận của bạn đang đợi để kiểm duyệt."
+
+#~ msgid "Older Comments"
+#~ msgstr "Bình luận cũ hơn"
+
+#~ msgid "Newer Comments"
+#~ msgstr "Bình luận mới hơn"
+
+#~ msgid "(Edit)"
+#~ msgstr "(Sửa)"
+
+#~ msgid "<span class=\"time\">%1$s, By: <a href=\"%4$s\">%2$s</a>, In: %3$s"
+#~ msgstr ""
+#~ "<span class=\"time\">%1$s, Bởi: <a href=\"%4$s\">%2$s</a>, Trong: %3$s"
+
+#~ msgid "View Bigger Map"
+#~ msgstr "Xem bản đồ"
+
+#~ msgid "on order over $75.00"
+#~ msgstr "với đơn hàng trên $75.00"
+
+#~ msgid "Read all comments"
+#~ msgstr "Xem tất cả bình luận"
+
+#~ msgid ", Comment: "
+#~ msgstr ", Bình luận: "
+
+#~ msgid "Comment AA: "
+#~ msgstr "BL"
+
+#~ msgid "Comment: "
+#~ msgstr "Bình luận"
+
+#, fuzzy
 #~ msgid "% comments"
 #~ msgstr "% bình luận"
+
+#~ msgid "Write by <a href=\"%1$s\">%2$s</a>"
+#~ msgstr "Được viết bởi <a href=\"%1$s\">%2$s</a>"
+
+#~ msgid ""
+#~ "<span>Pages: </span>\n"
+#~ "\t\t\t\t\t\t\t\t<div class=\"page-links\">"
+#~ msgstr ""
+#~ "<span>Trang: </span>\n"
+#~ "\t\t\t\t\t\t\t\t<div class=\"page-links\">"

@@ -4,8 +4,45 @@
 		"selected_items":
 		[
 			[
+<<<<<<< HEAD
 				"temp",
 				"template"
+=======
+				"fa-time",
+				"fa-times-circle	fa-times-circle"
+			],
+			[
+				"comments_fi",
+				"$comments_fields〔variable〕"
+			],
+			[
+				"in",
+				"inherit"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"fa-tag",
+				"fa-tag	fa-tag"
+			],
+			[
+				"fa-boo",
+				"fa-bookmark	fa-bookmark"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"Redux",
+				"ReduxFramework"
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 			],
 			[
 				"back",
@@ -88,8 +125,41 @@
 				"width"
 			],
 			[
+<<<<<<< HEAD
 				"the_pre",
 				"the_permalink"
+=======
+				"bs3-che",
+				"bs3-input:checkbox	bs3-input-checkbox"
+			],
+			[
+				"text",
+				"text-red	 _predefined.scss"
+			],
+			[
+				"GLOBAL",
+				"global_terms_enabled"
+			],
+			[
+				"_",
+				"$_GLOBALS〔variable〕"
+			],
+			[
+				"the_po",
+				"the_posts"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"line-",
+				"line-height"
+			],
+			[
+				"font-",
+				"font-size"
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 			],
 			[
 				"bre",
@@ -148,14 +218,30 @@
 	"buffers":
 	[
 		{
+<<<<<<< HEAD
 			"file": "functions.php",
 			"settings":
 			{
 				"buffer_size": 13952,
+=======
+			"file": "single.php",
+			"settings":
+			{
+				"buffer_size": 3099,
 				"line_ending": "Windows"
 			}
 		},
 		{
+			"file": "inc/template-tags.php",
+			"settings":
+			{
+				"buffer_size": 1260,
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
+				"line_ending": "Windows"
+			}
+		},
+		{
+<<<<<<< HEAD
 			"contents": "Searching 153 files for \".container\"\n\nD:\\Work\\Projects\\wordpress\\wp-content\\themes\\snake\\scss\\vendor\\bootstrap\\_grid.scss:\n    8  // Set the container width, and override it for fixed navbars in media queries.\n    9  \n   10: .container {\n   11    @include container-fixed();\n   12  \n   ..\n   28  // width for fluid, full width layouts.\n   29  \n   30: .container-fluid {\n   31    @include container-fixed();\n   32  }\n\nD:\\Work\\Projects\\wordpress\\wp-content\\themes\\snake\\scss\\vendor\\bootstrap\\_jumbotron.scss:\n   20    }\n   21  \n   22:   .container & {\n   23      border-radius: $border-radius-large; // Only round corners at higher resolutions if contained in a container\n   24    }\n   25  \n   26:   .container {\n   27      max-width: 100%;\n   28    }\n   ..\n   32      padding-bottom: ($jumbotron-padding * 1.6);\n   33  \n   34:     .container & {\n   35        padding-left:  ($jumbotron-padding * 2);\n   36        padding-right: ($jumbotron-padding * 2);\n\nD:\\Work\\Projects\\wordpress\\wp-content\\themes\\snake\\scss\\vendor\\bootstrap\\_navbar.scss:\n   94  // When a container is present, change the behavior of the header and collapse.\n   95  \n   96: .container,\n   97: .container-fluid {\n   98    > .navbar-header,\n   99    > .navbar-collapse {\n  ...\n  164  \n  165    @media (min-width: $grid-float-breakpoint) {\n  166:     .navbar > .container &,\n  167:     .navbar > .container-fluid & {\n  168        margin-left: -$navbar-padding-horizontal;\n  169      }\n\nD:\\Work\\Projects\\wordpress\\wp-content\\themes\\snake\\scss\\vendor\\bootstrap\\_variables.scss:\n  308  //== Container sizes\n  309  //\n  310: //## Define the maximum width of `.container` for different screen sizes.\n  311  \n  312  // Small screen / tablet\n\nD:\\Work\\Projects\\wordpress\\wp-content\\themes\\snake\\scss\\vendor\\bootstrap\\bootstrap.css:\n  819  }\n  820  \n  821: .container {\n  822    margin-right: auto;\n  823    margin-left: auto;\n  ...\n  825    padding-right: 10px;\n  826  }\n  827: .container:before, .container:after {\n  828    content: \" \";\n  829    display: table;\n  830  }\n  831: .container:after {\n  832    clear: both;\n  833  }\n  834  @media (min-width: 768px) {\n  835:   .container {\n  836      width: 740px;\n  837    }\n  838  }\n  839  @media (min-width: 992px) {\n  840:   .container {\n  841      width: 960px;\n  842    }\n  843  }\n  844  @media (min-width: 1210px) {\n  845:   .container {\n  846      width: 1230px;\n  847    }\n  848  }\n  849  \n  850: .container-fluid {\n  851    margin-right: auto;\n  852    margin-left: auto;\n  ...\n  854    padding-right: 10px;\n  855  }\n  856: .container-fluid:before, .container-fluid:after {\n  857    content: \" \";\n  858    display: table;\n  859  }\n  860: .container-fluid:after {\n  861    clear: both;\n  862  }\n  ...\n 4186  }\n 4187  \n 4188: .container > .navbar-header,\n 4189: .container > .navbar-collapse,\n 4190: .container-fluid > .navbar-header,\n 4191: .container-fluid > .navbar-collapse {\n 4192    margin-right: -10px;\n 4193    margin-left: -10px;\n 4194  }\n 4195  @media (min-width: 768px) {\n 4196:   .container > .navbar-header,\n 4197:   .container > .navbar-collapse,\n 4198:   .container-fluid > .navbar-header,\n 4199:   .container-fluid > .navbar-collapse {\n 4200      margin-right: 0;\n 4201      margin-left: 0;\n ....\n 4249  }\n 4250  @media (min-width: 768px) {\n 4251:   .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {\n 4252      margin-left: -10px;\n 4253    }\n ....\n 4838    font-weight: 200;\n 4839  }\n 4840: .container .jumbotron {\n 4841    border-radius: 6px;\n 4842  }\n 4843: .jumbotron .container {\n 4844    max-width: 100%;\n 4845  }\n ....\n 4849      padding-bottom: 48px;\n 4850    }\n 4851:   .container .jumbotron {\n 4852      padding-left: 60px;\n 4853      padding-right: 60px;\n\n34 matches across 5 files\n",
 			"settings":
 			{
@@ -179,13 +265,56 @@
 			{
 				"buffer_size": 481,
 				"line_ending": "Unix"
+=======
+			"file": "scss/pages/_single-blog.scss",
+			"settings":
+			{
+				"buffer_size": 3769,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "comments.php",
+			"settings":
+			{
+				"buffer_size": 5804,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scss/widgets/_widget-common.scss",
+			"settings":
+			{
+				"buffer_size": 5264,
+				"line_ending": "Windows"
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 			}
 		},
 		{
 			"file": "scss/_extend.scss",
 			"settings":
 			{
+<<<<<<< HEAD
 				"buffer_size": 1333,
+=======
+				"buffer_size": 23280,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<?php\n\n\n\n\n\n\nfunction custom_comments( $comment, $args, $depth ) {\n    $GLOBALS['comment'] = $comment;\n    switch( $comment->comment_type ) :\n        case 'pingback' :\n        case 'trackback' : ?>\n            <li <?php comment_class(); ?> id=\"comment<?php comment_ID(); ?>\">\n            <div class=\"back-link\"><?php comment_author_link(); ?></div>\n        <?php break;\n        default : ?>\n            <li <?php comment_class(); ?> id=\"comment-<?php comment_ID(); ?>\">\n                <article <?php comment_class(); ?> class=\"comment\">\n                    <div class=\"thumbnail\">\n                        <?php echo get_avatar( $comment, 50 ); ?>\n                    </div>\n\n                    <div class=\"comment-body\">\n                        <div class=\"comment-header clearfix\">\n                            <p class=\"tuta-author\"><?php comment_author(); ?></p>\n                            <div class=\"info-1 clearfix\">\n                                <time <?php comment_time('c'); ?> class=\"time\">\n                                    <?php echo get_comment_date() . __(' at ', 'tuta') . get_comment_time(); ?>\n                                </time>\n\n                                <div class=\"pull-right edit-box\">\n                                    <?php edit_comment_link( __('Edit', 'tuta') ); ?>\n                                    <span class=\"reply\"><?php\n                                        comment_reply_link( array_merge( $args, array(\n                                        'reply_text' => __('Reply', 'tuta'),\n                                        //'after' => ' <span>&amp;amp;darr;</span>',\n                                        'depth' => $depth,\n                                        'max_depth' => $args['max_depth']\n                                        ) ) ); ?>\n                                    </span><!-- .reply -->\n                                </div>\n\n                            </div>\n                        </div>\n                        <p><?php comment_text(); ?></p>\n\n                    </div><!-- comment-body -->\n\n                </article><!-- #comment-<?php comment_ID(); ?> -->\n        <?php // End the default styling of comment\n        break;\n    endswitch;\n}",
+			"settings":
+			{
+				"buffer_size": 2224,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<section class=\"post-comment\">\n\n    <h3 class=\"tuta-pane tuta-pane-1\">Leave a Reply</h3>\n    <p>Your email address will not be published. Required fields are marked *</p>\n\n    <form class=\"comments-form\" novalidate=\"novalidate\">\n        <div class=\"row\">\n\n            <div class=\"col-md-6\">\n                <span class=\"form-control-wrap\">\n                    <input id=\"comment-name\" class=\"show-input\" placeholder=\"Name *\" type=\"text\" value=\"\" name=\"name\">\n                </span>\n\n                <span class=\"form-control-wrap\">\n                    <input id=\"comment-email\" class=\"show-input\" placeholder=\"Email *\" type=\"text\" value=\"\" name=\"email\">\n                </span>\n\n                <span class=\"form-control-wrap\">\n                    <input id=\"comment-url\" class=\"show-input\" placeholder=\"Website\" type=\"text\" value=\"\" name=\"url\">\n                </span>\n            </div>\n\n            <div class=\"col-md-6\">\n                <span class=\"form-control-wrap\">\n                    <textarea id=\"comment-message\" name=\"message\" cols=\"30\" rows=\"10\" placeholder=\"Your comment *\"></textarea>\n                </span>\n            </div>\n\n            <div class=\"col-md-12\">\n                <input type=\"submit\" value=\"Post Comment\" id=\"submit-comment\" class=\"tuta-button-default button-gde\">\n            </div>\n\n        </div>\n    </form>\n</section>\n<?php \n$args = array(\n  'id_form'           => 'commentform',\n  'class_form'      => 'comment-form',\n  'id_submit'         => 'submit',\n  'class_submit'      => 'submit',\n  'name_submit'       => 'submit',\n  'title_reply'       => __( 'Leave a Reply' ),\n  'title_reply_to'    => __( 'Leave a Reply to %s' ),\n  'cancel_reply_link' => __( 'Cancel Reply' ),\n  'label_submit'      => __( 'Post Comment' ),\n  'format'            => 'xhtml',\n\n  'comment_field' =>  '<p class=\"comment-form-comment\"><label for=\"comment\">' . _x( 'Comment', 'noun' ) .\n    '</label><textarea id=\"comment\" name=\"comment\" cols=\"45\" rows=\"8\" aria-required=\"true\">' .\n    '</textarea></p>',\n\n  'must_log_in' => '<p class=\"must-log-in\">' .\n    sprintf(\n      __( 'You must be <a href=\"%s\">logged in</a> to post a comment.' ),\n      wp_login_url( apply_filters( 'the_permalink', get_permalink() ) )\n    ) . '</p>',\n\n  'logged_in_as' => '<p class=\"logged-in-as\">' .\n    sprintf(\n    __( 'Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>' ),\n      admin_url( 'profile.php' ),\n      $user_identity,\n      wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) )\n    ) . '</p>',\n\n  'comment_notes_before' => '<p class=\"comment-notes\">' .\n    __( 'Your email address will not be published.' ) . ( $req ? $required_text : '' ) .\n    '</p>',\n\n  'comment_notes_after' => '<p class=\"form-allowed-tags\">' .\n    sprintf(\n      __( 'You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags and attributes: %s' ),\n      ' <code>' . allowed_tags() . '</code>'\n    ) . '</p>',\n\n  'fields' => apply_filters( 'comment_form_default_fields', $fields ),\n);",
+			"settings":
+			{
+				"buffer_size": 3040,
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 				"line_ending": "Windows"
 			}
 		}
@@ -198,18 +327,32 @@
 	"command_palette":
 	{
 		"height": 392.0,
+<<<<<<< HEAD
 		"last_filter": "instal",
 		"selected_items":
 		[
 			[
 				"instal",
 				"Package Control: Install Package"
+=======
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 			],
 			[
 				"list",
 				"Package Control: List Packages"
 			],
 			[
+<<<<<<< HEAD
 				"install",
 				"Package Control: Install Package"
 			],
@@ -235,6 +378,9 @@
 			],
 			[
 				"ins",
+=======
+				"instal",
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 				"Package Control: Install Package"
 			],
 			[
@@ -275,6 +421,7 @@
 	},
 	"expanded_folders":
 	[
+<<<<<<< HEAD
 		"/D/Work/Projects/wordpress/wp-content/themes/snake",
 		"/D/Work/Projects/wordpress/wp-content/themes/snake/core",
 		"/D/Work/Projects/wordpress/wp-content/themes/snake/inc",
@@ -416,13 +563,170 @@
 	"find":
 	{
 		"height": 23.0
+=======
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/core",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/inc",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/languages",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/images/icons"
+	],
+	"file_history":
+	[
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/_variables.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/pages/_single-blog.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/_basic-structure.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/_extend.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/shortcodes/_buttons.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/components/_comment-list.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/inc/template_tags.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/comments.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/functions.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/single.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/author-bio.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/content.php",
+		"/D/TUTA/Sublime Text Build 3083 x64/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/widgets/_widget-common.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/header.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/pages/_blog.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/index.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/inc/featured.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/inc/head-main.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/components/_product-list-1-o.scss",
+		"/C/Users/tuta/AppData/Local/Temp/Rar$DIa0.957/functions.php",
+		"/D/TUTA/projects/wp/wp-config.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/inc/random-posts.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/footer.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/js/custom.js",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/_widgets.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/snake.sublime-project",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/vendor/bootstrap/bootstrap.css",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/pages/_blog-content-default.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/templates/contact.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/core/init.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/core/options.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/404.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/_header.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/core/plugins.php",
+		"/D/TUTA/Sublime Text Build 3083 x64/Data/Packages/User/Preferences.sublime-settings",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/sidebar.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/components/_search-top.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/_mixin.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/inc/most-popular-posts.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/widgets/_widget-default.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/components/_table-fake.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/_components.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/search.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/vendor/bootstrap/_variables.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/vendor/bootstrap/_mixins.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/pages/_404-page.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/vendor/bootstrap/_buttons.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/style.css",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/author.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/page.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/_pages.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/archive.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/inc/category.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/components/_author-box.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/pages/_sub-page.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/inc/call-to-action.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/widgets/_featured-list-widget.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/content-image.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/content-video.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/widgets/_mp-post-widget.scss",
+		"/D/TUTA/Sublime Text Build 3083 x64/Data/Packages/Terminal/Terminal.sublime-settings",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/content-link.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/content-quote.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/content-gallery.html",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/scss/widgets/_blog-category-widget.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snaketheme/inc/related-posts.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/scss/widgets/_featured-list-widget.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/scss/_ie.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/content.php",
+		"/D/TUTA/Sublime Text Build 3083 x64/Data/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/scss/_header.scss",
+		"/D/TUTA/Sublime Text Build 3083 x64/Data/Packages/SublimeCodeIntel/Default (Windows).sublime-mousemap",
+		"/D/TUTA/Sublime Text Build 3083 x64/Data/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/functions.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/author-bio.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/single.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/index.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/scss/components/_author-box.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/scss/_components.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/scss/pages/_blog.scss",
+		"/D/TUTA/Verado.2014.11.21.14.36.59/HTML/blog.html",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/scss/shortcodes/_buttons.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/scss/shortcodes/_pagination.scss",
+		"/D/TUTA/Verado.2014.11.21.14.36.59/HTML/bootstrap/_mixins.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/scss/_variables.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/scss/pages/_sub-page.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/style.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/scss/_extend.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/scss/_mixin.scss",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/scss/_shortcodes.scss",
+		"/D/TUTA/Verado.2014.11.21.14.36.59/HTML/style.css",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/header.php",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/snake.sublime-project",
+		"/D/TUTA/projects/vinclub.narrow/layouts/intro_hoi_nhom_green_style_col_2.php",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/scss/components/elements/_buttons.scss",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/scss/vendors/bootstrap/_panels.scss",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/scss/components/_overide.scss",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/scss/components/_elements.scss",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/hoan_thien_thong_tin.html",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/scss/components/_login.scss",
+		"/D/TUTA/Sublime Text Build 3083 x64/Data/Packages/User/Package Control.sublime-settings",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/scss/components/_predefined.scss",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/dang_nhap.html",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/scss/vendors/_awesome-bootstrap-checkbox.scss",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/dang_ky.html",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/scss/components/elements/_step-item.scss",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/scss/components/_mixin.scss",
+		"/D/TUTA/Sublime Text Build 3083 x64/Data/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/index-1.html",
+		"/D/TUTA/projects/wp/wp-content/themes/snake/HTML/index-1.html",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/trang_chi_tiet_1.html",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/scss/vendors/bootstrap/_variables.scss",
+		"/D/TUTA/projects/nguoi.trai.nghiem/nguoi.trai.nghiem.sublime-project",
+		"/D/TUTA/projects/vinclub.narrow/layouts/bai_viet_1.php",
+		"/D/TUTA/projects/vinclub.narrow/widgets/main/main_article_1.php",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/scss/components/elements/_main-nav.scss",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/scss/vendors/bootstrap/_navbar.scss",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/scss/components/_layout.scss",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/home.html",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/scss/style.scss",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/css/style.css",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/scss/components/_common.scss",
+		"/C/Users/tuta/Desktop/Flat-UI-master/dist/js/vendor/html5shiv.js",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/scss/vendors/modules/_glyphicons.scss",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/scss/vendors/_variables.scss",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/scss/vendors/_flat-ui.scss",
+		"/D/TUTA/projects/nguoi.trai.nghiem/html/elements.html"
+	],
+	"find":
+	{
+		"height": 39.0
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 	},
 	"find_in_files":
 	{
 		"height": 90.0,
 		"where_history":
 		[
+<<<<<<< HEAD
 			"D:\\Work\\Projects\\wordpress\\wp-content\\themes\\snake\\scss",
+=======
+			"D:\\TUTA\\projects\\wp\\wp-content\\themes\\snaketheme",
+			"D:\\TUTA\\projects\\wp\\wp-content\\themes\\snaketheme\\scss\\",
+			"D:\\TUTA\\projects\\wp\\wp-content\\themes\\snaketheme\\",
+			"D:\\TUTA\\projects\\wp\\wp-content\\themes\\snaketheme\\scss",
+			"D:\\TUTA\\projects\\wp\\wp-content\\themes\\snaketheme\\",
+			"D:\\TUTA\\projects\\wp\\wp-content\\themes\\snaketheme\\scss",
+			"D:\\TUTA\\projects\\wp\\wp-content\\themes\\snaketheme",
+			"D:\\TUTA\\projects\\wp\\wp-content\\themes\\snaketheme\\scss",
+			"D:\\TUTA\\projects\\wp\\wp-content\\themes\\snaketheme",
+			"D:\\TUTA\\projects\\wp\\wp-content\\themes\\snaketheme\\scss",
+			"D:\\TUTA\\projects\\wp\\wp-content\\themes\\snake\\scss",
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 			"",
 			"<open folders>"
 		]
@@ -432,6 +736,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+<<<<<<< HEAD
 			".container",
 			"#kp-map",
 			"form-control-wrap",
@@ -446,6 +751,66 @@
 			".other-article",
 			"transition",
 			"related-article",
+=======
+			".reply",
+			"reply",
+			".comments-list",
+			"user_identity",
+			".info-1",
+			".related-article",
+			".post-comment",
+			"%template-3d",
+			".form-control-wrap",
+			".comment-box",
+			"printf",
+			"tuta_comment",
+			"twentyfifteen",
+			"get_avatar",
+			"avatar",
+			"#comments",
+			"tuta_link_pages",
+			"twentyfifteen",
+			".info-1",
+			"add_post_type",
+			"meta",
+			"twentyfifteen",
+			".blog-content",
+			"info-1",
+			"FEATURED LISTINGS",
+			"tag-box",
+			"tuta_link_pages",
+			"wp_link_pages",
+			"printf",
+			"Helvetica Neue",
+			"\"Helvetica Neue\",Helvetica,Arial,sans-serif",
+			".blog-content",
+			"scroll",
+			"#tuta-page-header",
+			"setSections",
+			"setAgruments",
+			"% comments",
+			"TuTa Main Menu",
+			"<a href=\"%1$s\">%2$s</a>",
+			"Content categories",
+			".active",
+			"input[type=\"password\"],",
+			"sub-main-menu-o",
+			"sub-menu",
+			"sub-main-menu",
+			".sub-main-menu",
+			"menu",
+			"tuta_theme_setup",
+			"select",
+			".btn",
+			".btn {",
+			"line-height",
+			"input-group-btn",
+			"<h1 class=\"page-title\">",
+			"<h1 class=\"page-title\">Blogs</h1>",
+			"tuta_readmore",
+			"mỏe",
+			"content-title",
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 			".content-title",
 			".tuta-blog-category-widget",
 			".tag-box",
@@ -500,6 +865,11 @@
 		"regex": false,
 		"replace_history":
 		[
+<<<<<<< HEAD
+=======
+			"tuta",
+			"setArguments",
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 			"tuta",
 			"jQuery(",
 			"temp_path + '/js",
@@ -518,24 +888,41 @@
 	"groups":
 	[
 		{
+<<<<<<< HEAD
 			"selected": 2,
+=======
+			"selected": 5,
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 			"sheets":
 			[
 				{
 					"buffer": 0,
+<<<<<<< HEAD
 					"file": "functions.php",
 					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 13952,
+=======
+					"file": "single.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3099,
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								1577,
 								1577
+=======
+								1181,
+								1181
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 							]
 						],
 						"settings":
@@ -543,6 +930,7 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+<<<<<<< HEAD
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
@@ -553,11 +941,19 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+=======
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+<<<<<<< HEAD
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -568,11 +964,34 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
+=======
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
+<<<<<<< HEAD
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -583,20 +1002,31 @@
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+=======
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+<<<<<<< HEAD
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+=======
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
+<<<<<<< HEAD
 								"bh_tag_content"
 							],
 							"syntax": "Packages/PHP/PHP.tmLanguage"
@@ -606,14 +1036,40 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
+=======
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"dfw_side_bar_vis": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 140.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+<<<<<<< HEAD
 					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 3750,
+=======
+					"file": "inc/template-tags.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1260,
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 						"regions":
 						{
 							"match":
@@ -764,8 +1220,13 @@
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								231,
 								231
+=======
+								1157,
+								1157
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 							]
 						],
 						"settings":
@@ -773,6 +1234,7 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+<<<<<<< HEAD
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
@@ -783,11 +1245,19 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+=======
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+<<<<<<< HEAD
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -798,11 +1268,34 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
+=======
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
+<<<<<<< HEAD
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -813,20 +1306,31 @@
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+=======
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+<<<<<<< HEAD
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+=======
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
+<<<<<<< HEAD
 								"bh_tag_content"
 							],
 							"default_dir": "D:\\Work\\Projects\\wordpress\\wp-content\\themes\\snake",
@@ -839,29 +1343,58 @@
 							"scroll_past_end": true,
 							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
 							"translate_tabs_to_spaces": false
+=======
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"dfw_side_bar_vis": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+<<<<<<< HEAD
 					"stack_index": 1,
+=======
+					"stack_index": 5,
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+<<<<<<< HEAD
 					"file": "scss/vendor/bootstrap/_grid.scss",
 					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 1451,
+=======
+					"file": "scss/pages/_single-blog.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3769,
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								626,
 								178
+=======
+								2703,
+								2703
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 							]
 						],
 						"settings":
@@ -869,6 +1402,7 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+<<<<<<< HEAD
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
@@ -879,11 +1413,19 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+=======
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+<<<<<<< HEAD
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -894,11 +1436,34 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
+=======
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
+<<<<<<< HEAD
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -909,48 +1474,88 @@
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+=======
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+<<<<<<< HEAD
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+=======
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
+<<<<<<< HEAD
 								"bh_tag_content"
 							],
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+=======
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3032.0,
 						"zoom_level": 1.0
 					},
+<<<<<<< HEAD
 					"stack_index": 0,
+=======
+					"stack_index": 2,
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 					"type": "text"
 				},
 				{
 					"buffer": 3,
+<<<<<<< HEAD
 					"file": "/D/Setup/Programme Tool/Sublime Text Build 3083 x64/Data/Packages/Terminal/Terminal.sublime-settings",
 					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 481,
+=======
+					"file": "comments.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5804,
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								294,
 								294
+=======
+								1146,
+								1162
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 							]
 						],
 						"settings":
@@ -958,66 +1563,94 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+<<<<<<< HEAD
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+=======
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
+<<<<<<< HEAD
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
+=======
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+<<<<<<< HEAD
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+=======
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+<<<<<<< HEAD
+=======
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
-								"bh_tag_content"
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
 							],
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"dfw_side_bar_vis": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 440.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -1025,19 +1658,328 @@
 				},
 				{
 					"buffer": 4,
-					"file": "scss/_extend.scss",
-					"semi_transient": true,
+					"file": "scss/widgets/_widget-common.scss",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1333,
+						"buffer_size": 5264,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+								1118,
+								1118
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_indent": true,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+<<<<<<< HEAD
+=======
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+<<<<<<< HEAD
+								"bh_double_quote_content",
+=======
+								"bh_double_quote_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 899.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "functions.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23280,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21906,
+								21906
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"dfw_side_bar_vis": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 15823.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2224,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1861,
+								1802
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+<<<<<<< HEAD
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+=======
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+<<<<<<< HEAD
+								"bh_tag_content"
+							],
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+=======
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"default_dir": "D:\\TUTA\\projects\\wp\\wp-content\\themes\\snaketheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
+						},
+						"translation.x": 0.0,
+						"translation.y": 207.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+<<<<<<< HEAD
+					"buffer": 4,
+					"file": "scss/_extend.scss",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1333,
+=======
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3040,
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+<<<<<<< HEAD
 								222,
 								222
+=======
+								532,
+								532
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 							]
 						],
 						"settings":
@@ -1045,6 +1987,7 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+<<<<<<< HEAD
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
@@ -1065,6 +2008,8 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
+=======
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -1075,6 +2020,7 @@
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+<<<<<<< HEAD
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
@@ -1085,11 +2031,26 @@
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+=======
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+<<<<<<< HEAD
+=======
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -1099,6 +2060,7 @@
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
+<<<<<<< HEAD
 								"bh_square_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
@@ -1111,6 +2073,40 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
+=======
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"default_dir": "D:\\TUTA\\projects\\wp\\wp-content\\themes\\snaketheme",
+							"dfw_side_bar_vis": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 					"type": "text"
 				}
 			]
@@ -1118,7 +2114,11 @@
 	],
 	"incremental_find":
 	{
+<<<<<<< HEAD
 		"height": 23.0
+=======
+		"height": 31.0
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 	},
 	"input":
 	{
@@ -1133,11 +2133,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -1159,7 +2166,11 @@
 	"project": "snake.sublime-project",
 	"replace":
 	{
+<<<<<<< HEAD
 		"height": 42.0
+=======
+		"height": 72.0
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1169,18 +2180,60 @@
 		"selected_items":
 		[
 			[
+<<<<<<< HEAD
 				"fun",
 				"functions.php"
+=======
+				"varia",
+				"scss\\_variables.scss"
+			],
+			[
+				"exte",
+				"scss\\_extend.scss"
+			],
+			[
+				"commen",
+				"scss\\components\\_comment-list.scss"
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 			],
 			[
 				"custom",
 				"js\\custom.js"
 			],
 			[
+				"comment",
+				"comments.php"
+			],
+			[
+				"singl",
+				"single.php"
+			],
+			[
+				"func",
+				"functions.php"
+			],
+			[
+				"single",
+				"single.php"
+			],
+			[
+				"index",
+				"index.php"
+			],
+			[
+				"contnet",
+				"content.php"
+			],
+			[
+				"content",
+				"content.php"
+			],
+			[
 				"header",
 				"header.php"
 			],
 			[
+<<<<<<< HEAD
 				"page",
 				"page.php"
 			],
@@ -1191,6 +2244,30 @@
 			[
 				"button",
 				"scss\\shortcodes\\_buttons.scss"
+=======
+				"va",
+				"scss\\_variables.scss"
+			],
+			[
+				"footer",
+				"footer.php"
+			],
+			[
+				"author",
+				"author-bio.php"
+			],
+			[
+				"sing",
+				"single.php"
+			],
+			[
+				"featur",
+				"inc\\featured.php"
+			],
+			[
+				"struc",
+				"scss\\_basic-structure.scss"
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 			],
 			[
 				"mix",
@@ -1201,7 +2278,15 @@
 				"functions.php"
 			],
 			[
-				"cus",
+				"bas",
+				"scss\\_basic-structure.scss"
+			],
+			[
+				"widget",
+				"scss\\widgets\\_widget-common.scss"
+			],
+			[
+				"custom",
 				"js\\custom.js"
 			],
 			[
@@ -1209,12 +2294,45 @@
 				"templates\\contact.php"
 			],
 			[
+<<<<<<< HEAD
 				"testimonial-1-widget",
 				"scss\\widgets\\_testimonial-1-widget.scss"
 			],
 			[
 				"widget",
 				"css\\widgets\\_widget-default.css"
+=======
+				"stru",
+				"scss\\_basic-structure.scss"
+			],
+			[
+				"init",
+				"core\\init.php"
+			],
+			[
+				"head",
+				"scss\\_header.scss"
+			],
+			[
+				"fun",
+				"functions.php"
+			],
+			[
+				"cus",
+				"js\\custom.js"
+			],
+			[
+				"mix",
+				"scss\\_mixin.scss"
+			],
+			[
+				"component",
+				"scss\\_components.scss"
+			],
+			[
+				"side",
+				"sidebar.php"
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 			],
 			[
 				"mp-post-widget",
@@ -1226,17 +2344,46 @@
 			],
 			[
 				"style",
+<<<<<<< HEAD
 				"style.scss"
 			],
 			[
 				"404",
 				"scss\\pages\\_404-page.scss"
+=======
+				"style.css"
+			],
+			[
+				"variable",
+				"scss\\vendor\\bootstrap\\_variables.scss"
+			],
+			[
+				"butotn",
+				"scss\\vendor\\bootstrap\\_buttons.scss"
+			],
+			[
+				"page",
+				"scss\\_pages.scss"
+			],
+			[
+				"404",
+				"404.php"
+			],
+			[
+				"autho",
+				"author-bio.php"
+			],
+			[
+				"cate",
+				"inc\\category.php"
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 			],
 			[
 				"ie",
 				"scss\\ie.scss"
 			],
 			[
+<<<<<<< HEAD
 				"sty",
 				"style.scss"
 			],
@@ -1259,18 +2406,39 @@
 			[
 				"va",
 				"scss\\_variables.scss"
+=======
+				"featured-list-widget",
+				"scss\\widgets\\_featured-list-widget.scss"
+			],
+			[
+				"video",
+				"content_video.php"
+			],
+			[
+				"rela",
+				"inc\\related-posts.php"
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 			],
 			[
 				"blog-category-widget",
 				"scss\\widgets\\_blog-category-widget.scss"
 			],
 			[
+<<<<<<< HEAD
 				"ar",
 				"archive.php"
 			],
 			[
 				"catego",
 				"scss\\widgets\\_blog-category-widget.scss"
+=======
+				"funct",
+				"functions.php"
+			],
+			[
+				"cust",
+				"js\\custom.js"
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 			],
 			[
 				"comment",
@@ -1282,7 +2450,75 @@
 			],
 			[
 				"vari",
+<<<<<<< HEAD
 				"scss\\_variables.scss"
+=======
+				"snake\\scss\\_variables.scss"
+			],
+			[
+				"sty",
+				"snake\\style.scss"
+			],
+			[
+				"sub-page",
+				"snake\\scss\\pages\\_sub-page.scss"
+			],
+			[
+				"mixin",
+				"HTML\\bootstrap\\_mixins.scss"
+			],
+			[
+				"exten",
+				"snake\\scss\\_extend.scss"
+			],
+			[
+				"paginati",
+				"snake\\scss\\shortcodes\\_pagination.scss"
+			],
+			[
+				"intro",
+				"layouts\\intro_p_l.php"
+			],
+			[
+				"over",
+				"html\\scss\\components\\_overide.scss"
+			],
+			[
+				"panel",
+				"html\\scss\\vendors\\bootstrap\\_panels.scss"
+			],
+			[
+				"pre",
+				"html\\scss\\components\\_predefined.scss"
+			],
+			[
+				"dang_ky",
+				"html\\dang_ky.html"
+			],
+			[
+				"login",
+				"html\\scss\\components\\_login.scss"
+			],
+			[
+				"dang_nhap",
+				"html\\dang_nhap.html"
+			],
+			[
+				"hoang",
+				"html\\hoan_thien_thong_tin.html"
+			],
+			[
+				"define",
+				"html\\scss\\components\\_predefined.scss"
+			],
+			[
+				"step",
+				"html\\scss\\components\\elements\\_step-item.scss"
+			],
+			[
+				"index-1",
+				"index-1.html"
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 			],
 			[
 				"content",
@@ -1317,6 +2553,53 @@
 		"last_filter": "",
 		"selected_items":
 		[
+<<<<<<< HEAD
+=======
+			[
+				"",
+				"D:\\TUTA\\projects\\wp\\wp-content\\themes\\wp-themes.sublime-project"
+			],
+			[
+				"vinclub",
+				"D:\\TUTA\\projects\\vinclub.narrow\\vinclub.n.sublime-project"
+			],
+			[
+				"vinc",
+				"D:\\TUTA\\projects\\vinclub.narrow\\vinclub.n.sublime-project"
+			],
+			[
+				"nguoi",
+				"D:\\TUTA\\projects\\nguoi.trai.nghiem\\nguoi.trai.nghiem.sublime-project"
+			],
+			[
+				"vin",
+				"D:\\TUTA\\projects\\vinclub.narrow\\vinclub.n.sublime-project"
+			],
+			[
+				"ngu",
+				"D:\\TUTA\\projects\\nguoi.trai.nghiem\\nguoi.trai.nghiem.sublime-project"
+			],
+			[
+				"color",
+				"D:\\TUTA\\projects\\wp\\wp-content\\themes\\snaketheme\\snake.sublime-project"
+			],
+			[
+				"hoa",
+				"D:\\TUTA\\examples\\haze\\haze.sublime-project"
+			],
+			[
+				"snake",
+				"D:\\TUTA\\projects\\wp\\wp-content\\themes\\snaketheme\\snake.sublime-project"
+			],
+			[
+				"ng",
+				"D:\\TUTA\\projects\\nguoi.trai.nghiem\\nguoi.trai.nghiem.sublime-project"
+			],
+			[
+				"ngoi",
+				"D:\\TUTA\\projects\\nguoi.trai.nghiem\\nguoi.trai.nghiem.sublime-project"
+			]
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 		],
 		"width": 380.0
 	},
@@ -1336,8 +2619,13 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
+<<<<<<< HEAD
 	"side_bar_visible": true,
 	"side_bar_width": 329.0,
+=======
+	"side_bar_visible": false,
+	"side_bar_width": 249.0,
+>>>>>>> 9e9a3ed26278f092c230a98f4c3d11da0680b08c
 	"status_bar_visible": true,
 	"template_settings":
 	{

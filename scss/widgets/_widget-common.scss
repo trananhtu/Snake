@@ -1,5 +1,6 @@
 .widget {
   margin-bottom: $margin-page; color: $color-2;
+  word-wrap: break-word;
 }
 @include tuta-style-grid-1 {
   .widget {
@@ -59,6 +60,10 @@
 .content-lead {}
 .info-1 {
   margin: 0 0 10px;
+  .time {
+    //font-style: normal;
+    font-size: 13px;
+  }
   > span {
     padding-left: 16px; position: relative;
     &:first-child {

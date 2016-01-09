@@ -1,6 +1,6 @@
 <div class="widget tuta-featured-list-widget">
 
-    <h3 class="widget-title"><?php echo __('Featured Listings',' tuta'); ?></h3>
+    <h3 class="widget-title"><?php echo __('Featured Listings', 'tuta'); ?></h3>
 
     <ul class="widget-content list-style-1">
         <?php global $post;
